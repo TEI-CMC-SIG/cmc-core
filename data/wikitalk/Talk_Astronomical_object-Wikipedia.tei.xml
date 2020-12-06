@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../out/cmc-wikitalk.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Talk:Astronomical object - Wikipedia</title>
+                <editor>TEI Special Interest Group Computer-Mediated Communication (TEI CMC SIG).
+                    Sample annotation accompanying feature request from German Wikipedia talk
+                    pages</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher />
+                <pubPlace />
+                <availability>
+                    <licence target="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                        Attribution/Share Alike</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <respStmt>
+                            <persName>MiszaBot I et al.</persName>
+                            <resp>Collaborative authors</resp>
+                        </respStmt>
+                        <title type="main">Wikipedia Talk:Astronomical object</title>
+                        <ref target="https://en.wikipedia.org/wiki/Talk:Astronomical_object" />
+                        <textLang mainLang="en">English</textLang>
+                    </analytic>
+                    <monogr>
+                        <imprint>
+                            <publisher>Wikimedia Foundation</publisher>
+                            <pubPlace>
+                                <ref target="https://wikipedia.org/" />
+                            </pubPlace>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person role="user" xml:id="u001">
+                        <persName type="userName">MiszaBot I</persName>
+                        <signatureContent>
+                            <ref type="link">/wiki/User:MiszaBot_I</ref>
+                        </signatureContent>
+                    </person>
+                    <person role="user" xml:id="u002">
+                        <persName type="userName">RJH</persName>
+                        <signatureContent>
+                            <ref type="link">/wiki/User:RJHall</ref>
+                        </signatureContent>
+                    </person>
+                    <person role="user" xml:id="u004">
+                        <persName type="userName">Penyulap</persName>
+                        <signatureContent>
+                            <ref type="link">/wiki/User:Penyulap</ref>
+                        </signatureContent>
+                    </person>
+                    <person role="user" xml:id="u005">
+                        <persName type="userName">Greenodd</persName>
+                        <signatureContent>
+                            <ref type="link">/wiki/User:Greenodd</ref>
+                        </signatureContent>
+                    </person>
+                    <person role="user" xml:id="u006">
+                        <persName type="userName">Praemonitus</persName>
+                        <signatureContent>
+                            <ref type="link">/wiki/User:Praemonitus</ref>
+                        </signatureContent>
+                    </person>
+                    <person role="user" xml:id="u007">
+                        <persName type="userName">Piotr Konieczny aka Prokonsul Piotrus</persName>
+                        <signatureContent>
+                            <ref type="link">/wiki/User:Piotrus</ref>
+                        </signatureContent>
+                    </person>
+                    <person role="user" xml:id="u009">
+                        <persName type="userName">talk</persName>
+                        <signatureContent>
+                            <ref type="link">wiki/User_talk:65.94.47.63</ref>
+                        </signatureContent>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textDesc>
+                <channel />
+                <constitution />
+                <derivation />
+                <domain />
+                <factuality />
+                <interaction>
+                    <timeline>
+                        <when xml:id="t001" rend="19:56, 23 March 2011 (UTC)" />
+                        <when xml:id="t002" rend="21:22, 14 June 2011 (UTC)" />
+                        <when xml:id="t003" rend="23:28, 14 June 2011 (UTC)" />
+                        <when xml:id="t004" rend="07:20, 2 July 2011 (UTC)" />
+                        <when xml:id="t005" rend="01:00, 21 July 2011 (UTC)" />
+                        <when xml:id="t006" rend="01:15, 1 April 2015 (UTC)" />
+                        <when xml:id="t007" rend="12:12, 21 December 2013 (UTC)" />
+                        <when xml:id="t008" rend="01:13, 1 April 2015 (UTC)" />
+                    </timeline>
+                </interaction>
+                <preparedness />
+                <purpose />
+            </textDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="mw-parser-output">
+
+                <head>Talk:Astronomical object</head>
+
+
+                <gap reason="toc" />
+
+                <div type="thread">
+                    <head>Not an "object"</head>
+
+                    <post mode="written" indentLevel="0" who="#u002" synch="#t001">
+                        <p>Transiting planet is a propitious orbital alignment, rather than a type
+                            of planet. I'm not clear it belongs on the table. Likewise, optical
+                            binaries, visual binaries, astrometric binaries, spectroscopic binaries
+                            and eclipsing binaries are dependent on the location observer, rather
+                            than being a physical type of binary star. Similar provisos apply to
+                            asterisms and constellations. Do we need a separate table for these
+                                categorizations?<signed creation="template">—<ref
+                                    target="/wiki/User:RJHall">RJH</ref> (<ref
+                                    target="/wiki/User_talk:RJHall">talk</ref>) <time>19:56, 23
+                                    March 2011 (UTC)</time></signed></p>
+                    </post>
+                </div>
+
+                <div type="thread">                    
+
+                    <head>Is the use of telescopes with cameras to photograph satellites and the
+                        space station called astrophotography ?</head>
+
+                    <post xml:id="p1" indentLevel="0" who="#u004" synch="#t002" mode="written">
+                        <p> The ISS and HTV photographed using a telescope-mounted camera in 2011 by
+                                <ref target="/wiki/Astrophotography"> astrophotographer</ref> Ralf
+                            Vandebergh (left) and the International Space Station in a time exposure
+                            (right) </p>
+                        <p>I want to add links from the sightings section of the <ref
+                                target="/wiki/International_Space_Station">International Space
+                                Station</ref> article to the Astrophotography article.</p>
+                        <p>There are no references on any page to satellites in relation to people
+                            who are interested in photographing them, are satellites and the space
+                            station considered to be celestial objects or astronomical objects ? it
+                            says 'natural bodies' does that need redefining, or should
+                            astrophotography be identified as a misnomer, and if so, what is this
+                            activities technical definition ?</p>
+                        <p>Where can defining statements be found in relation to man-made objects,
+                            and why aren't they mentioned on this page, I'm no expert in this field,
+                            I need expert definitive opinion on this matter, please help me if you
+                            know where it can be found. Quoting wiki won't help. <signed
+                                creation="template"><ref target="/wiki/User:Penyulap">Penyulap</ref>
+                                <ref target="/wiki/User_talk:Penyulap">talk</ref>
+                                <time>21:22, 14 June 2011 (UTC)</time></signed></p>
+                    </post>                    
+                    
+                    <post xml:id="p2" indentLevel="0" replyTo="#p1" who="#u004" synch="#t003"
+                        mode="written">
+                        <p>To make it simple for everyone to discuss this together instead of on
+                            different pages, may I suggest discussing it here</p>
+                        <p>
+                            <ref
+                                target="http://en.wikipedia.org/wiki/Talk:Astrophotography#Is_the_use_of_telescopes_with_cameras_to_photograph_satellites_and_the_space_station_called_astrophotography_.3F"
+                                >http://en.wikipedia.org/wiki/Talk:Astrophotography#Is_the_use_of_telescopes_with_cameras_to_photograph_satellites_and_the_space_station_called_astrophotography_.3F</ref>
+                        </p>
+                        <p>
+                            <signed creation="template">
+                                <ref target="/wiki/User:Penyulap">Penyulap</ref>
+                                <ref target="/wiki/User_talk:Penyulap">talk</ref>
+                                <time>23:28, 14 June 2011 (UTC)</time>
+                            </signed>
+                        </p>
+                    </post>
+
+
+                    <post xml:id="p3" mode="written" indentLevel="1" replyTo="#p2" who="#u003"
+                        synch="#t004">
+                        <p>This article is about astronomical objects, and the ISS is not an
+                            astronomical object. So it should not appear here. You should be asking
+                            at the astrophotography article. <signed creation="template"><ref
+                                    target="/wiki/Special:Contributions/65.94.47.63"
+                                    >65.94.47.63</ref> (<ref target="/wiki/User_talk:65.94.47.63"
+                                    >talk</ref>) <time>07:20, 2 July 2011 (UTC)</time></signed></p>
+                    </post>
+                </div>
+
+                <div type="thread">
+                    <head>Naturally occurring?</head>
+
+                    <post mode="written" xml:id="p4" indentLevel="0" who="#u005" synch="#t005">
+                        <p>I'm not sure that this is a proper criterium, or even what this means.
+                            What if we set an explosion that breaks a comet into two pieces? What if
+                            we build a moon? Cheers, <signed creation="template"><ref
+                                    target="/wiki/User:Greenodd">Greenodd</ref> (<ref
+                                    target="/wiki/User_talk:Greenodd">talk</ref>) <time>01:00, 21
+                                    July 2011 (UTC)</time></signed></p>
+                    </post>
+
+                    <post mode="written" xml:id="p5" indentLevel="1" replyTo="#p4" who="#u006"
+                        synch="#t006">
+                        <p>Those haven't happened. If they do, we can revisit the concern. <signed
+                                creation="template"><ref target="/wiki/User:Praemonitus"
+                                    >Praemonitus</ref> (<ref target="/wiki/User_talk:Praemonitus"
+                                    >talk</ref>) <time>01:15, 1 April 2015 (UTC)</time></signed></p>
+                    </post>
+                </div>
+
+                <div type="thread">
+                    <head>Should <ref
+                            target="/w/index.php?title=Stellar_body&amp;action=edit&amp;redlink=1"
+                            >Stellar body</ref> redirect here?</head>
+
+                    <post mode="written" xml:id="p6" indentLevel="0" who="#u007" synch="#t007">
+                        <p>Per topic. <signed creation="template">--<ref target="/wiki/User:Piotrus"
+                                    >Piotr Konieczny aka Prokonsul Piotrus</ref>| <ref
+                                    target="/wiki/User_talk:Piotrus">reply here</ref>
+                                <time>12:12, 21 December 2013 (UTC)</time></signed></p>
+                    </post>
+
+                    <post mode="written" xml:id="p7" indentLevel="1" replyTo="#p6" who="#u006"
+                        synch="#t008">
+                        <p>
+                            <ref target="/wiki/Star">Star</ref> may be a better choice. <signed
+                                creation="template"><ref target="/wiki/User:Praemonitus"
+                                    >Praemonitus</ref> (<ref target="/wiki/User_talk:Praemonitus"
+                                    >talk</ref>) <time>01:13, 1 April 2015 (UTC)</time></signed></p>
+                    </post>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
