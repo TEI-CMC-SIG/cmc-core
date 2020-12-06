@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../out/cmc-core.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Group chat: Recommending a hairdresser
+                    https://db.mocoda2.de/#/view/9Gz4s</title>
+                <editor>TEI Special Interest Group Computer-Mediated
+                    Communication (TEI CMC SIG). Sample annotation accompanying
+                    feature request from Dortmund Chat Corpus in CLARIN-D
+                    v2.2.</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher />
+                <pubPlace />
+                <idno>lscLB</idno>
+                <date>2018-11-26</date>
+                <availability>
+                    <licence
+                        target="https://creativecommons.org/licenses/by/4.0/">CC
+                        BY 4.0. Legal restrictions may arise from data
+                        protection legislation.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording>
+                        <equipment>
+                            <p><ref target="https://www.whatsapp.com/"
+                                    >Messenger: WhatsApp chat</ref></p>
+                        </equipment>
+                        <respStmt>
+                            <resp>Compilation</resp>
+                            <orgName>Project <ref
+                                    target="https://www.whatsapp.com/"
+                                    >MoCoDa</ref></orgName>
+                        </respStmt>
+                        <date>2018-11-04</date>
+                        <time from="10:03:00" to="12:13:00" />
+                    </recording>
+                </recordingStmt>
+                <biblStruct>
+                    <analytic>
+                        <title xml:lang="de">Gruppenchat: Friseurempfehlung</title>
+                        <ref type="url" target="https://db.mocoda2.de/#/view/9Gz4s">https://db.mocoda2.de/#/view/9Gz4s</ref>
+                        <textLang mainLang="de">German</textLang>
+                        <idno>lscLB</idno>
+                        <date>2018-11-04</date>
+                    </analytic>
+                    <monogr>
+                        <title type="main">Mobile Communication Database 2
+                            (MoCoDa2)</title>
+                        <editor corresp="#lscLB.e1">Michael Beißwenger</editor>
+                        <editor corresp="#lscLB.e2">Wolfgang Imo</editor>
+                        <editor corresp="#lscLB.e3">Evelyn Ziegler</editor>
+                        <editor corresp="#lscLB.e4">Marcel Fladrich</editor>
+                        <editor corresp="#lscLB.e5">Torsten Zesch</editor>
+                        <imprint>
+                            <publisher>Universität Duisburg-Essen</publisher>
+                            <pubPlace>Essen</pubPlace>
+                            <note>https://db.mocoda2.de/</note>
+                            <date>2018</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="sex">estimated on the basis of the nick
+                        name</tagUsage>
+                    <tagUsage gi="post" occurs="13">used to mark a single
+                        posting</tagUsage>
+                </namespace>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person role="system" xml:id="A01_System">
+                        <persName type="nickname">system</persName>
+                        <sex evidence="estimated">system</sex>
+                    </person>
+                    <person role="participant" xml:id="A02">
+                        <persName type="nickname">Maren</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="A03">
+                        <persName type="nickname">Anne</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="A04">
+                        <persName type="nickname">Christina</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="A05">
+                        <persName type="nickname">Hanni</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="A06">
+                        <persName type="nickname">Lara</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textDesc>
+                <channel />
+                <constitution />
+                <derivation />
+                <domain />
+                <factuality />
+                <interaction>
+                    <timeline>
+                        <when absolute="10:03:00" xml:id="t001" />
+                        <when absolute="10:04:00" xml:id="t002" />
+                        <when absolute="10:05:00" xml:id="t003" />
+                        <when absolute="10:06:00" xml:id="t004" />
+                        <when absolute="11:21:00" xml:id="t005" />
+                        <when absolute="12:13:00" xml:id="t006" />
+                    </timeline>
+                </interaction>
+                <preparedness />
+                <purpose />
+            </textDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="logfile">
+                <post mode="written" creation="system" who="#A01_System"
+                    xml:id="m1"> So. 4. Nov. 2018 </post>
+                <post mode="written" creation="human" synch="#t001" who="#A02"
+                    xml:id="m2"> Kann einer von euch vll einen. Guten Friseur
+                    empfehlen :)? </post>
+                <post mode="written" creation="human" synch="#t002" who="#A03"
+                    xml:id="m3"> Oliver Schmidt ist aber etwas teurer </post>
+                <post mode="written" creation="human" synch="#t002" who="#A04"
+                    xml:id="m4"> Ich hab leider auch keinen. Gehe immer nur zu
+                    einer Freundin zum schneiden aktuell </post>
+                <post mode="written" creation="human" synch="#t002" who="#A04"
+                    xml:id="m5">
+                    <figure type="emoji" creation="template">
+                        <desc type="meaning">downcast face with sweat</desc>
+                        <desc type="unicode">U+1F613</desc>
+                    </figure>
+                </post>
+                <post mode="spoken" creation="human" synch="#t003" who="#A05"
+                    xml:id="m6"> Hii, also ich war jetzt letztens vor der
+                    Konferenz in Düsseldorf bei diesem Oliver's Hair und das war
+                    mega mega mega gut, also ist jetzt schon wieder länger her.
+                    Ähm und den gibt's ja hier auch in Essen. Ich weiß jetzt
+                    natürlich nicht ob der hier genauso gut ist, müsstest du
+                    dich vielleicht mal informieren, ich glaub nämlich der im
+                    Limbecker hat nicht so gute Berwertungen, aber der in, der
+                    bei vapiano is auch noch einer drin, da an der
+                    Theater-Passage. Ähm ich glaube, der hat auch gute
+                    Bewertungen. Musse vielleicht mal gucken. Also ich fand das
+                    mega gut </post>
+                <post mode="spoken" creation="human" synch="#t003" who="#A05"
+                    xml:id="m7"> Sagt Anne auch gerade. JA! Kann ich zustimmen. </post>
+                <post mode="written" creation="human" synch="#t003" who="#A02"
+                    xml:id="m8"> Da kostet ein Haarschnitt 50 € <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">face screaming in fear</desc>
+                        <desc type="unicode">U+1F631</desc>
+                    </figure>
+                </post>
+                <post mode="spoken" creation="human" synch="#t004" who="#A05"
+                    xml:id="m9"> In Düsseldorf gibt's da so Abstufungen. Da
+                    gibt's einmal Oliver Schmidt, Oliver Schmidt's Hair Design,
+                    also dann, ist eher also, keine Ahnung, zum Beispiel ich war
+                    da bei dem etwas Günstigeren dann. Ich weiß nicht, ob's das
+                    in Essen auch gibt diese Abstufungen </post>
+                <post mode="written" creation="human" synch="#t004" who="#A02"
+                    xml:id="m10"> Ich schau mal :) </post>
+                <post mode="written" creation="human" synch="#t005" who="#A06"
+                    xml:id="m11"> Ich gehe immer nach Katernberg zu Pasha’s
+                    haarem Hahaha also die sind echt entspannt und gut und nicht
+                    teuer </post>
+                <post mode="written" creation="human" synch="#t005" who="#A06"
+                    xml:id="m12">
+                    <figure type="image" creation="human">
+                        <desc>Screenshot von der Google-Suche nach dem Friseur
+                            "Pasha's Haare'm" mit der
+                            Durchschnitts-Google-Bewertung (4,5 von 5 Sternen),
+                            der Adresse, der Telefonnummer und den
+                            Öffnungszeiten</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#t006" who="#A03"
+                    xml:id="m13"> Olivers hair und Oliver Schmidt gehören
+                    zusammen </post>
+            </div>
+        </body>
+    </text>
+</TEI>
