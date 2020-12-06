@@ -1,0 +1,3118 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-model href="../../out/cmc-core.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Chat:
+                    2213001_Internet-Relay-Chat_Netzwerk3_Kanal1_2005-07-14</title>
+                <editor>TEI Special Interest Group Computer-Mediated
+                    Communication (TEI CMC SIG). Sample annotation accompanying
+                    feature request from Dortmund Chat Corpus in CLARIN-D
+                    v2.2.</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher />
+                <pubPlace />
+                <idno>2213001</idno>
+                <date>2018-11-26</date>
+                <availability>
+                    <licence
+                        target="https://creativecommons.org/licenses/by/4.0/">CC
+                        BY 4.0. Legal restrictions may arise from data
+                        protection legislation.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording>
+                        <equipment>
+                            <p>plattformURL=<ref type="URL">[_WWWURL_]</ref></p>
+                        </equipment>
+                        <respStmt>
+                            <persName xml:id="f2213001.p1">Alexander
+                                Kurek</persName>
+                            <resp>recording</resp>
+                        </respStmt>
+                        <date>2005-07-14</date>
+                        <time from="21:31:00" to="01:17:00" />
+                    </recording>
+                </recordingStmt>
+                <biblStruct>
+                    <analytic>
+                        <title>Chat: Internet Relay Chat, Netzwerk 3 Kanal 1</title>
+                        <textLang mainLang="de">German</textLang>                        
+                        <idno>2213001</idno>
+                        <date>2005-07-14</date>
+                    </analytic>
+                    <monogr>
+                        <title type="main">Dortmunder Chatkorpus</title>
+                        <editor corresp="#f2213001.e2">Angelika Storrer</editor>
+                        <editor corresp="#f2213001.e1">Michael
+                            Beißwenger</editor>
+                        <imprint>
+                            <publisher>Institut für deutsche Sprache und
+                                Literatur der Technischen Universität
+                                Dortmund</publisher>
+                            <pubPlace>Dortmund</pubPlace>
+                            <note>http://www.chatkorpus.tu-dortmund.de/</note>
+                            <date>2009</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>POS-annotations according to STTS 2.0 by Universität des
+                    Saarlandes, see <bibl>Beißwenger, Michael; Ehrhardt, Eric;
+                        Horbach, Andrea; Lüngen, Harald; Steffen, Diana;
+                        Storrer, Angelika (2015): Adding Value to CMC Corpora:
+                        CLARINification and Part-of-Speech Annotation of the
+                        Dortmund Chat Corpus. In: Proceedings of the 2nd
+                        Workshop on Natural Language Processing for
+                        Computer-Mediated Communication / Social Media
+                        (NLP4CMC2015). Essen, 12-16. <ref type="URL"
+                            >https://sites.google.com/site/nlp4cmc2015/program</ref></bibl></p>
+            </editorialDecl>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="sex">estimated on the basis of the nick
+                        name</tagUsage>
+                    <tagUsage gi="w" occurs="833">used to mark a single
+                        token</tagUsage>
+                    <tagUsage gi="post" occurs="242">used to mark a single
+                        posting</tagUsage>
+                </namespace>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <catRef
+                    scheme="http://corpora.ids-mannheim.de/taxonomies/taxonomy-handlungsbereiche.tei.xml#handlungsbereiche"
+                    target="http://corpora.ids-mannheim.de/taxonomies/taxonomy-handlungsbereiche.tei.xml#h2213000"
+                 />
+            </textClass>
+            <particDesc>
+                <listPerson>
+                    <person role="system" xml:id="f2213001.A01_System">
+                        <persName type="nickname">system</persName>
+                        <sex evidence="estimated">system</sex>
+                    </person>
+                    <person role="bot" xml:id="f2213001.A02">
+                        <persName type="nickname">[_BOT-A02_]</persName>
+                        <sex evidence="estimated">bot</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A03">
+                        <persName type="nickname">[_PARTICIPANT-A03_]</persName>
+                        <sex evidence="estimated">unknown</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A04">
+                        <persName type="nickname"
+                            >[_FEMALE-PARTICIPANT-A04_]</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A05">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A05_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A06">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A06_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A07">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A07_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A08">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A08_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A09">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A09_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A10">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A10_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A11">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A11_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A12">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A12_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A13">
+                        <persName type="nickname"
+                            >[_FEMALE-PARTICIPANT-A13_]</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A14">
+                        <persName type="nickname"
+                            >[_FEMALE-PARTICIPANT-A14_]</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="bot" xml:id="f2213001.A15">
+                        <persName type="nickname">[_BOT-A15_]</persName>
+                        <sex evidence="estimated">bot</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A16">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A16_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A17">
+                        <persName type="nickname"
+                            >[_FEMALE-PARTICIPANT-A17_]</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A18">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A18_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A19">
+                        <persName type="nickname">[_PARTICIPANT-A19_]</persName>
+                        <sex evidence="estimated">unknown</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A20">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A20_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A21">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A21_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A22">
+                        <persName type="nickname">[_PARTICIPANT-A22_]</persName>
+                        <sex evidence="estimated">unknown</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A23">
+                        <persName type="nickname">[_PARTICIPANT-A23_]</persName>
+                        <sex evidence="estimated">unknown</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A24">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A24_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A25">
+                        <persName type="nickname"
+                            >[_FEMALE-PARTICIPANT-A25_]</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                    <person role="participant" xml:id="f2213001.A26">
+                        <persName type="nickname"
+                            >[_MALE-PARTICIPANT-A26_]</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textDesc>
+                <channel />
+                <constitution />
+                <derivation />
+                <domain />
+                <factuality />
+                <interaction>
+                    <timeline>
+                        <when absolute="21:31:00" xml:id="f2213001.t001" />
+                        <when absolute="21:32:00" xml:id="f2213001.t002" />
+                        <when absolute="21:34:00" xml:id="f2213001.t003" />
+                        <when absolute="21:35:00" xml:id="f2213001.t004" />
+                        <when absolute="21:37:00" xml:id="f2213001.t005" />
+                        <when absolute="21:41:00" xml:id="f2213001.t006" />
+                        <when absolute="21:45:00" xml:id="f2213001.t007" />
+                        <when absolute="21:46:00" xml:id="f2213001.t008" />
+                        <when absolute="21:48:00" xml:id="f2213001.t009" />
+                        <when absolute="21:49:00" xml:id="f2213001.t010" />
+                        <when absolute="21:51:00" xml:id="f2213001.t011" />
+                        <when absolute="21:52:00" xml:id="f2213001.t012" />
+                        <when absolute="21:53:00" xml:id="f2213001.t013" />
+                        <when absolute="21:54:00" xml:id="f2213001.t014" />
+                        <when absolute="21:55:00" xml:id="f2213001.t015" />
+                        <when absolute="21:56:00" xml:id="f2213001.t016" />
+                        <when absolute="22:04:00" xml:id="f2213001.t017" />
+                        <when absolute="22:06:00" xml:id="f2213001.t018" />
+                        <when absolute="22:13:00" xml:id="f2213001.t019" />
+                        <when absolute="22:14:00" xml:id="f2213001.t020" />
+                        <when absolute="22:15:00" xml:id="f2213001.t021" />
+                        <when absolute="22:17:00" xml:id="f2213001.t022" />
+                        <when absolute="22:22:00" xml:id="f2213001.t023" />
+                        <when absolute="22:23:00" xml:id="f2213001.t024" />
+                        <when absolute="22:27:00" xml:id="f2213001.t025" />
+                        <when absolute="22:28:00" xml:id="f2213001.t026" />
+                        <when absolute="22:29:00" xml:id="f2213001.t027" />
+                        <when absolute="22:30:00" xml:id="f2213001.t028" />
+                        <when absolute="22:31:00" xml:id="f2213001.t029" />
+                        <when absolute="22:35:00" xml:id="f2213001.t030" />
+                        <when absolute="22:37:00" xml:id="f2213001.t031" />
+                        <when absolute="22:38:00" xml:id="f2213001.t032" />
+                        <when absolute="22:41:00" xml:id="f2213001.t033" />
+                        <when absolute="22:42:00" xml:id="f2213001.t034" />
+                        <when absolute="22:45:00" xml:id="f2213001.t035" />
+                        <when absolute="22:49:00" xml:id="f2213001.t036" />
+                        <when absolute="22:50:00" xml:id="f2213001.t037" />
+                        <when absolute="22:51:00" xml:id="f2213001.t038" />
+                        <when absolute="22:52:00" xml:id="f2213001.t039" />
+                        <when absolute="22:53:00" xml:id="f2213001.t040" />
+                        <when absolute="22:54:00" xml:id="f2213001.t041" />
+                        <when absolute="22:55:00" xml:id="f2213001.t042" />
+                        <when absolute="22:56:00" xml:id="f2213001.t043" />
+                        <when absolute="22:57:00" xml:id="f2213001.t044" />
+                        <when absolute="23:05:00" xml:id="f2213001.t045" />
+                        <when absolute="23:06:00" xml:id="f2213001.t046" />
+                        <when absolute="23:09:00" xml:id="f2213001.t047" />
+                        <when absolute="23:11:00" xml:id="f2213001.t048" />
+                        <when absolute="23:12:00" xml:id="f2213001.t049" />
+                        <when absolute="23:13:00" xml:id="f2213001.t050" />
+                        <when absolute="23:16:00" xml:id="f2213001.t051" />
+                        <when absolute="23:17:00" xml:id="f2213001.t052" />
+                        <when absolute="23:18:00" xml:id="f2213001.t053" />
+                        <when absolute="23:19:00" xml:id="f2213001.t054" />
+                        <when absolute="23:20:00" xml:id="f2213001.t055" />
+                        <when absolute="23:28:00" xml:id="f2213001.t056" />
+                        <when absolute="23:29:00" xml:id="f2213001.t057" />
+                        <when absolute="23:30:00" xml:id="f2213001.t058" />
+                        <when absolute="23:31:00" xml:id="f2213001.t059" />
+                        <when absolute="23:32:00" xml:id="f2213001.t060" />
+                        <when absolute="23:35:00" xml:id="f2213001.t061" />
+                        <when absolute="23:37:00" xml:id="f2213001.t062" />
+                        <when absolute="23:38:00" xml:id="f2213001.t063" />
+                        <when absolute="23:39:00" xml:id="f2213001.t064" />
+                        <when absolute="23:40:00" xml:id="f2213001.t065" />
+                        <when absolute="23:42:00" xml:id="f2213001.t066" />
+                        <when absolute="23:46:00" xml:id="f2213001.t067" />
+                        <when absolute="23:47:00" xml:id="f2213001.t068" />
+                        <when absolute="23:48:00" xml:id="f2213001.t069" />
+                        <when absolute="23:49:00" xml:id="f2213001.t070" />
+                        <when absolute="23:52:00" xml:id="f2213001.t071" />
+                        <when absolute="23:53:00" xml:id="f2213001.t072" />
+                        <when absolute="23:58:00" xml:id="f2213001.t073" />
+                        <when absolute="00:04:00" xml:id="f2213001.t074" />
+                        <when absolute="00:05:00" xml:id="f2213001.t075" />
+                        <when absolute="00:06:00" xml:id="f2213001.t076" />
+                        <when absolute="00:07:00" xml:id="f2213001.t077" />
+                        <when absolute="00:08:00" xml:id="f2213001.t078" />
+                        <when absolute="00:09:00" xml:id="f2213001.t079" />
+                        <when absolute="00:11:00" xml:id="f2213001.t080" />
+                        <when absolute="00:12:00" xml:id="f2213001.t081" />
+                        <when absolute="00:20:00" xml:id="f2213001.t082" />
+                        <when absolute="00:25:00" xml:id="f2213001.t083" />
+                        <when absolute="00:27:00" xml:id="f2213001.t084" />
+                        <when absolute="00:28:00" xml:id="f2213001.t085" />
+                        <when absolute="00:31:00" xml:id="f2213001.t086" />
+                        <when absolute="00:46:00" xml:id="f2213001.t087" />
+                        <when absolute="00:48:00" xml:id="f2213001.t088" />
+                        <when absolute="00:49:00" xml:id="f2213001.t089" />
+                        <when absolute="00:51:00" xml:id="f2213001.t090" />
+                        <when absolute="00:52:00" xml:id="f2213001.t091" />
+                        <when absolute="00:58:00" xml:id="f2213001.t092" />
+                        <when absolute="01:00:00" xml:id="f2213001.t093" />
+                        <when absolute="01:02:00" xml:id="f2213001.t094" />
+                        <when absolute="01:07:00" xml:id="f2213001.t095" />
+                        <when absolute="01:08:00" xml:id="f2213001.t096" />
+                        <when absolute="01:09:00" xml:id="f2213001.t097" />
+                        <when absolute="01:10:00" xml:id="f2213001.t098" />
+                        <when absolute="01:11:00" xml:id="f2213001.t099" />
+                        <when absolute="01:13:00" xml:id="f2213001.t100" />
+                        <when absolute="01:17:00" xml:id="f2213001.t101" />
+                    </timeline>
+                </interaction>
+                <preparedness />
+                <purpose />
+            </textDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="logfile">
+                <post mode="written" creation="system" rend="color:black"
+                    type="event" who="#f2213001.A01_System" xml:id="f2213001.m1"
+                    > Session Start: Thu Jul 14 21:31:00 2005 </post>
+                <post mode="written" creation="system" rend="color:black"
+                    type="event" who="#f2213001.A01_System" xml:id="f2213001.m2"
+                    > Session Ident: <name type="ROOM"
+                    >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t001" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m3">
+                    <time creation="system"> 21:31 </time> Now talking in
+                        <name type="ROOM">[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t001" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m4">
+                    <time creation="system"> 21:31 </time> Topic is '-&gt;-{@
+                    Welcome ²<name type="ROOM">[_ROOMNAME_]</name> @}-{@ <name
+                        type="OTH">[_OTHERNAME-1_]</name> - Jetzt einschalten: 
+                    » <ref type="URL">[_WWWURL-1_]</ref> @}-{@ Stats » <ref
+                        type="URL">[_WWWURL-2_]</ref>/ @}-{@  <ref type="URL"
+                        >[_WWWURL-3_]</ref> @}-&lt;-' </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t001" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m5">
+                    <time creation="system"> 21:31 </time> Set by <name
+                        corresp="#f2213001.A15" type="NICK">[_BOT-A15_]</name>
+                    on Thu Jul 14 19:27:06 </post>
+                <post mode="written" creation="bot" rend="color:black"
+                    synch="#f2213001.t001" type="standard" who="#f2213001.A02"
+                    xml:id="f2213001.m6">
+                    <time creation="system"> 21:31 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="-" pos="$(" xml:id="f2213001.m6.t1">-</w>
+                    <name corresp="#f2213001.A02" type="NICK">
+                        <w lemma="[_BOT-A02_]" pos="NE" xml:id="f2213001.m6.t2"
+                            >[_BOT-A02_]</w>
+                    </name>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m6.t3">-</w>
+                    <w lemma="[" pos="$(" xml:id="f2213001.m6.t4">[</w>
+                    <name type="ROOM">
+                        <w pos="NE" xml:id="f2213001.m6.t5">[_ROOMNAME-1_]</w>
+                    </name>
+                    <w lemma="]" pos="$(" xml:id="f2213001.m6.t6">]</w>
+                    <w lemma="Willkommen" pos="NN" xml:id="f2213001.m6.t7"
+                        >Willkommen</w>
+                    <w lemma="in" pos="APPR" xml:id="f2213001.m6.t8">in</w>
+                    <name type="ROOM">
+                        <w pos="NE" xml:id="f2213001.m6.t9">[_ROOMNAME-1_]</w>
+                    </name>
+                    <w lemma="," pos="$," xml:id="f2213001.m6.t10">,</w>
+                    <w lemma="viele" pos="PIAT" xml:id="f2213001.m6.t11"
+                        >viel</w>
+                    <w lemma="Spaß" pos="NN" xml:id="f2213001.m6.t12">Spaß</w>
+                    <w lemma="bei" pos="APPRART" xml:id="f2213001.m6.t13"
+                        >beim</w>
+                    <w pos="VVINF" xml:id="f2213001.m6.t14">Chatten</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t001" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m7">
+                    <time creation="system"> 21:31 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="!" pos="$." xml:id="f2213001.m7.t1">!</w>
+                    <w pos="ADJA" xml:id="f2213001.m7.t2">wunsch</w>
+                    <w pos="NN" xml:id="f2213001.m7.t3">queen</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m7.t4">-</w>
+                    <w pos="NN" xml:id="f2213001.m7.t5">i</w>
+                    <w pos="ADJA" xml:id="f2213001.m7.t6">want</w>
+                    <w pos="FM" xml:id="f2213001.m7.t7">to</w>
+                    <w pos="VVFIN" xml:id="f2213001.m7.t8">break</w>
+                    <w pos="ADJA" xml:id="f2213001.m7.t9">free</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t001" type="standard" who="#f2213001.A04"
+                    xml:id="f2213001.m8">
+                    <time creation="system"> 21:31 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A04" type="NICK">
+                        <w lemma="[_FEMALE-PARTICIPANT-A04_]" pos="NN"
+                            xml:id="f2213001.m8.t1"
+                            >[_FEMALE-PARTICIPANT-A04_]</w>
+                    </name>
+                    <w lemma="versuchen" pos="VVPP" xml:id="f2213001.m8.t2"
+                        >versucht</w>
+                    <name type="NICK">
+                        <w pos="VVFIN" xml:id="f2213001.m8.t3"
+                            >[_NICKNAME-3_]</w>
+                    </name>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m8.t4">den</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m8.t5"
+                        >wunsch</w>
+                    <w lemma="zu" pos="PTKZU" xml:id="f2213001.m8.t6">zu</w>
+                    <w lemma="erfüllen" pos="VVINF" xml:id="f2213001.m8.t7"
+                        >erfüllen</w>
+                    <w pos="$(" xml:id="f2213001.m8.t8">..</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m8.t9">und</w>
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m8.t10">das</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m8.t11">ist</w>
+                    <w pos="ADJA" xml:id="f2213001.m8.t12">queen</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m8.t13">-</w>
+                    <w pos="NN" xml:id="f2213001.m8.t14">i</w>
+                    <w pos="ADJA" xml:id="f2213001.m8.t15">want</w>
+                    <w pos="FM" xml:id="f2213001.m8.t16">to</w>
+                    <w pos="VVFIN" xml:id="f2213001.m8.t17">break</w>
+                    <w pos="ADJD" xml:id="f2213001.m8.t18">free</w>
+                </post>
+                <post mode="written" creation="human" synch="#f2213001.t002"
+                    type="standard" who="#f2213001.A03" xml:id="f2213001.m9">
+                    <time creation="system"> 21:32 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m9.t1">bin</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m9.t2">ein</w>
+                    <w pos="NE" xml:id="f2213001.m9.t3">"</w>
+                    <w lemma="er" pos="PPER" xml:id="f2213001.m9.t4">er</w>
+                    <w pos="NE" xml:id="f2213001.m9.t5">"</w>
+                    <w pos="EMOASC" xml:id="f2213001.m9.t6">;)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t002" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m10">
+                    <time creation="system"> 21:32 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="Jo" pos="NE" xml:id="f2213001.m10.t1">jo</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t003" type="standard" who="#f2213001.A05"
+                    xml:id="f2213001.m11">
+                    <time creation="system"> 21:34 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m11.t1">ok</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m11.t2">,</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m11.t3">ich</w>
+                    <w pos="VVPPER" xml:id="f2213001.m11.t4">versuchs</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m11.t5">mir</w>
+                    <w lemma="zu" pos="PTKZU" xml:id="f2213001.m11.t6">zu</w>
+                    <w lemma="merken" pos="VVINF" xml:id="f2213001.m11.t7"
+                        >merken</w>
+                    <w pos="EMOASC" xml:id="f2213001.m11.t8">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t003" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m12">
+                    <time creation="system"> 21:34 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="oder" pos="KON" xml:id="f2213001.m12.t1">oder</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m12.t2">ein</w>
+                    <w lemma="es" pos="PPER" xml:id="f2213001.m12.t3">es</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t003" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m13">
+                    <time creation="system"> 21:34 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="die" pos="ART" xml:id="f2213001.m13.t1">das</w>
+                    <name type="NICK">
+                        <w pos="ADJA" xml:id="f2213001.m13.t2"
+                            >[_NICKNAME-3_]</w>
+                    </name>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t003" type="standard" who="#f2213001.A05"
+                    xml:id="f2213001.m14">
+                    <time creation="system"> 21:34 </time>
+                    <anchor type="sentence_start" />
+                    <w subtype="acronym" pos="AKW" xml:id="f2213001.m14.t1"
+                        >löl</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t003" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m15">
+                    <time creation="system"> 21:34 </time>
+                    <name corresp="#f2213001.A07" type="NICK"
+                        >[_MALE-PARTICIPANT-A07_]</name> is now known as <name
+                        corresp="#f2213001.A07" type="NICK"
+                        >[_MALE-PARTICIPANT-A07_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t003" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m16">
+                    <time creation="system"> 21:34 </time>
+                    <anchor type="sentence_start" />
+                    <ref corresp="#f2213001.A06" type="addressingTerm">
+                        <w lemma="[_MALE-PARTICIPANT-A06_]" pos="NE"
+                            xml:id="f2213001.m16.t1"
+                            >[_MALE-PARTICIPANT-A06_]</w>
+                        <w lemma=":" pos="$." xml:id="f2213001.m16.t2">:</w>
+                    </ref>
+                    <w lemma="nur" pos="ADV" xml:id="f2213001.m16.t3">nur</w>
+                    <w lemma="ganz" pos="ADV" xml:id="f2213001.m16.t4">ganz</w>
+                    <w lemma="selten" pos="ADJD" xml:id="f2213001.m16.t5"
+                        >selten</w>
+                    <w lemma="..." pos="$(" xml:id="f2213001.m16.t6">...</w>
+                    <w lemma="in" pos="APPR" xml:id="f2213001.m16.t7">in</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m16.t8">den</w>
+                    <w pos="NN" xml:id="f2213001.m16.t9">Vollmondnaechten</w>
+                    <w pos="EMOASC" xml:id="f2213001.m16.t10">;)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t003" type="event" who="#f2213001.A07"
+                    xml:id="f2213001.m17">
+                    <time creation="system"> 21:34 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A07" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m17.t1"
+                            >[_MALE-PARTICIPANT-A07_]</w>
+                    </name>
+                    <w pos="ADJA" xml:id="f2213001.m17.t2">rehhh</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t004" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m18">
+                    <time creation="system"> 21:35 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NN" xml:id="f2213001.m18.t1">hrhr</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t004" type="standard" who="#f2213001.A05"
+                    xml:id="f2213001.m19">
+                    <time creation="system"> 21:35 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="die" pos="ART" xml:id="f2213001.m19.t1">das</w>
+                    <name corresp="#f2213001.A03" type="NICK">
+                        <w lemma="[_PARTICIPANT-A03_]" pos="NN"
+                            xml:id="f2213001.m19.t2">[_PARTICIPANT-A03_]</w>
+                    </name>
+                    <w lemma="=" pos="XY" xml:id="f2213001.m19.t3">=</w>
+                    <name corresp="#f2213001.A03" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m19.t4"
+                            >[_PARTICIPANT-A03_]</w>
+                    </name>
+                    <w pos="EMOASC" xml:id="f2213001.m19.t5">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t004" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m20">
+                    <time creation="system"> 21:35 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="nur" pos="ADV" xml:id="f2213001.m20.t1">nur</w>
+                    <w lemma="nennen" pos="VVFIN" xml:id="f2213001.m20.t2"
+                        >nennt</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m20.t3">mich</w>
+                    <w lemma="bitte" pos="ADV" xml:id="f2213001.m20.t4"
+                        >bitte</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m20.t5"
+                        >nicht</w>
+                    <w pos="VVPP" xml:id="f2213001.m20.t6">Gesaessfalte</w>
+                    <w lemma="." pos="$." xml:id="f2213001.m20.t7">.</w>
+                    <anchor type="sentence_start" />
+                    <w lemma="danke" pos="PTKANT" xml:id="f2213001.m20.t8"
+                        >Danke</w>
+                    <w lemma="." pos="$." xml:id="f2213001.m20.t9">.</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t004" type="standard" who="#f2213001.A05"
+                    xml:id="f2213001.m21">
+                    <time creation="system"> 21:35 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m21.t1">ok</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t005" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m22">
+                    <time creation="system"> 21:37 </time>
+                    <name corresp="#f2213001.A08" type="NICK"
+                        >[_MALE-PARTICIPANT-A08_]</name> (<name type="OTH"
+                        >[_OTHERNAME-2_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t005" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m23">
+                    <time creation="system"> 21:37 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="machen" pos="VVFIN" xml:id="f2213001.m23.t1"
+                        >macht</w>
+                    <w pos="ADJD" xml:id="f2213001.m23.t2">nueschd</w>
+                    <w lemma="..." pos="$(" xml:id="f2213001.m23.t3">...</w>
+                    <w lemma="da" pos="ADV" xml:id="f2213001.m23.t4">da</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m23.t5">bin</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m23.t6">ich</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m23.t7"
+                        >nicht</w>
+                    <w lemma="so" pos="ADV" xml:id="f2213001.m23.t8">so</w>
+                    <w lemma="empfindlich" pos="ADJD" xml:id="f2213001.m23.t9"
+                        >empfindlich</w>
+                    <w pos="EMOASC" xml:id="f2213001.m23.t10">;)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t006" type="standard" who="#f2213001.A08"
+                    xml:id="f2213001.m24">
+                    <time creation="system"> 21:41 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m24.t1">cuhu</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t006" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m25">
+                    <time creation="system"> 21:41 </time>
+                    <name corresp="#f2213001.A08" type="NICK"
+                        >[_MALE-PARTICIPANT-A08_]</name> (<name type="OTH"
+                        >[_OTHERNAME-3_]</name>) Quit (<name
+                        corresp="#f2213001.A08" type="NICK"
+                        >[_MALE-PARTICIPANT-A08_]</name>) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t007" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m26">
+                    <time creation="system"> 21:45 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="!" pos="$." xml:id="f2213001.m26.t1">!</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m26.t2"
+                        >wunsch</w>
+                    <w pos="NE" xml:id="f2213001.m26.t3">Soehne</w>
+                    <w lemma="Mannheim" pos="NE" xml:id="f2213001.m26.t4"
+                        >Mannheims</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m26.t5">-</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m26.t6">Und</w>
+                    <w lemma="wenn" pos="KOUS" xml:id="f2213001.m26.t7">wenn</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m26.t8">ein</w>
+                    <w lemma="Lied" pos="NN" xml:id="f2213001.m26.t9">Lied</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t007" type="standard" who="#f2213001.A04"
+                    xml:id="f2213001.m27">
+                    <time creation="system"> 21:45 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A04" type="NICK">
+                        <w lemma="[_FEMALE-PARTICIPANT-A04_]" pos="NE"
+                            xml:id="f2213001.m27.t1"
+                            >[_FEMALE-PARTICIPANT-A04_]</w>
+                    </name>
+                    <w lemma="versuchen" pos="VVPP" xml:id="f2213001.m27.t2"
+                        >versucht</w>
+                    <name corresp="#f2213001.A03" type="NICK">
+                        <w pos="VVFIN" xml:id="f2213001.m27.t3"
+                            >[_PARTICIPANT-A03_]</w>
+                    </name>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m27.t4">den</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m27.t5"
+                        >wunsch</w>
+                    <w lemma="zu" pos="PTKZU" xml:id="f2213001.m27.t6">zu</w>
+                    <w lemma="erfüllen" pos="VVINF" xml:id="f2213001.m27.t7"
+                        >erfüllen</w>
+                    <w pos="$(" xml:id="f2213001.m27.t8">..</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m27.t9">und</w>
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m27.t10">das</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m27.t11"
+                        >ist</w>
+                    <w pos="NE" xml:id="f2213001.m27.t12">Soehne</w>
+                    <w lemma="Mannheim" pos="NE" xml:id="f2213001.m27.t13"
+                        >Mannheims</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m27.t14">-</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m27.t15">Und</w>
+                    <w lemma="wenn" pos="KOUS" xml:id="f2213001.m27.t16"
+                        >wenn</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m27.t17">ein</w>
+                    <w lemma="Lied" pos="NN" xml:id="f2213001.m27.t18">Lied</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t008" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m28">
+                    <time creation="system"> 21:46 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="!" pos="$." xml:id="f2213001.m28.t1">!</w>
+                    <w pos="NN" xml:id="f2213001.m28.t2">wunsch</w>
+                    <w lemma="Nu" pos="NE" xml:id="f2213001.m28.t3">Nu</w>
+                    <w pos="NE" xml:id="f2213001.m28.t4">Pagadi</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m28.t5">-</w>
+                    <w pos="NE" xml:id="f2213001.m28.t6">Dying</w>
+                    <w pos="FM" xml:id="f2213001.m28.t7">Words</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t008" type="standard" who="#f2213001.A04"
+                    xml:id="f2213001.m29">
+                    <time creation="system"> 21:46 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A04" type="NICK">
+                        <w lemma="[_FEMALE-PARTICIPANT-A04_]" pos="NE"
+                            xml:id="f2213001.m29.t1"
+                            >[_FEMALE-PARTICIPANT-A04_]</w>
+                    </name>
+                    <w lemma="versuchen" pos="VVPP" xml:id="f2213001.m29.t2"
+                        >versucht</w>
+                    <name corresp="#f2213001.A03" type="NICK">
+                        <w pos="VVFIN" xml:id="f2213001.m29.t3"
+                            >[_PARTICIPANT-A03_]</w>
+                    </name>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m29.t4">den</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m29.t5"
+                        >wunsch</w>
+                    <w lemma="zu" pos="PTKZU" xml:id="f2213001.m29.t6">zu</w>
+                    <w lemma="erfüllen" pos="VVINF" xml:id="f2213001.m29.t7"
+                        >erfüllen</w>
+                    <w pos="$(" xml:id="f2213001.m29.t8">..</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m29.t9">und</w>
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m29.t10">das</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m29.t11"
+                        >ist</w>
+                    <w lemma="Nu" pos="NE" xml:id="f2213001.m29.t12">Nu</w>
+                    <w pos="NE" xml:id="f2213001.m29.t13">Pagadi</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m29.t14">-</w>
+                    <w pos="NE" xml:id="f2213001.m29.t15">Dying</w>
+                    <w pos="FM" xml:id="f2213001.m29.t16">Words</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t009" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m30">
+                    <time creation="system"> 21:48 </time>
+                    <name corresp="#f2213001.A03" type="NICK"
+                        >[_PARTICIPANT-A03_]</name> is now known as <name
+                        corresp="#f2213001.A03" type="NICK"
+                        >[_PARTICIPANT-A03_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t010" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m31">
+                    <time creation="system"> 21:49 </time>
+                    <name corresp="#f2213001.A03" type="NICK"
+                        >[_PARTICIPANT-A03_]</name> is now known as <name
+                        corresp="#f2213001.A03" type="NICK"
+                        >[_PARTICIPANT-A03_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t011" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m32">
+                    <time creation="system"> 21:51 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="!" pos="$." xml:id="f2213001.m32.t1">!</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m32.t2"
+                        >wunsch</w>
+                    <w lemma="Mary" pos="NE" xml:id="f2213001.m32.t3">Mary</w>
+                    <w lemma="J." pos="NE" xml:id="f2213001.m32.t4">J.</w>
+                    <w pos="NN" xml:id="f2213001.m32.t5">Blige</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m32.t6">-</w>
+                    <w pos="NE" xml:id="f2213001.m32.t7">Family</w>
+                    <w lemma="Affair" pos="NE" xml:id="f2213001.m32.t8"
+                        >Affair</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t011" type="standard" who="#f2213001.A04"
+                    xml:id="f2213001.m33">
+                    <time creation="system"> 21:51 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A04" type="NICK">
+                        <w lemma="[_FEMALE-PARTICIPANT-A04_]" pos="NE"
+                            xml:id="f2213001.m33.t1"
+                            >[_FEMALE-PARTICIPANT-A04_]</w>
+                    </name>
+                    <w lemma="versuchen" pos="VVPP" xml:id="f2213001.m33.t2"
+                        >versucht</w>
+                    <name corresp="#f2213001.A03" type="NICK">
+                        <w pos="VVFIN" xml:id="f2213001.m33.t3"
+                            >[_PARTICIPANT-A03_]</w>
+                    </name>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m33.t4">den</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m33.t5"
+                        >wunsch</w>
+                    <w lemma="zu" pos="PTKZU" xml:id="f2213001.m33.t6">zu</w>
+                    <w lemma="erfüllen" pos="VVINF" xml:id="f2213001.m33.t7"
+                        >erfüllen</w>
+                    <w pos="$(" xml:id="f2213001.m33.t8">..</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m33.t9">und</w>
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m33.t10">das</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m33.t11"
+                        >ist</w>
+                    <w lemma="Mary" pos="NE" xml:id="f2213001.m33.t12">Mary</w>
+                    <w lemma="J." pos="NE" xml:id="f2213001.m33.t13">J.</w>
+                    <w pos="NN" xml:id="f2213001.m33.t14">Blige</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m33.t15">-</w>
+                    <w pos="NE" xml:id="f2213001.m33.t16">Family</w>
+                    <w lemma="Affair" pos="NE" xml:id="f2213001.m33.t17"
+                        >Affair</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t011" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m34">
+                    <time creation="system"> 21:51 </time>
+                    <anchor type="sentence_start" />
+                    <ref corresp="#f2213001.A03" type="addressingTerm">
+                        <w lemma="[_PARTICIPANT-A03_]" pos="ADJA"
+                            xml:id="f2213001.m34.t1">[_PARTICIPANT-A03_]</w>
+                    </ref>
+                    <w lemma="was" pos="PIS" xml:id="f2213001.m34.t2">was</w>
+                    <w lemma="hören" pos="VVFIN" xml:id="f2213001.m34.t3"
+                        >hörst</w>
+                    <w lemma="du" pos="PPER" xml:id="f2213001.m34.t4">du</w>
+                    <w lemma="für" pos="APPR" xml:id="f2213001.m34.t5">für</w>
+                    <w lemma="Musik" pos="NN" xml:id="f2213001.m34.t6">musik</w>
+                    <w lemma="?" pos="$." xml:id="f2213001.m34.t7">?</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t011" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m35">
+                    <time creation="system"> 21:51 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="doch" pos="ADV" xml:id="f2213001.m35.t1">doch</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m35.t2">ne</w>
+                    <w lemma="sie" pos="PPER" xml:id="f2213001.m35.t3">sie</w>
+                    <w pos="EMOASC" xml:id="f2213001.m35.t4">:D</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t012" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m36">
+                    <time creation="system"> 21:52 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="viele" pos="PIS" xml:id="f2213001.m36.t1"
+                        >vieles</w>
+                    <w pos="$(" xml:id="f2213001.m36.t2">....</w>
+                    <w lemma="breit" pos="ADJA" xml:id="f2213001.m36.t3"
+                        >breites</w>
+                    <w lemma="Spektrum" pos="NN" xml:id="f2213001.m36.t4"
+                        >Spektrum</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m36.t5">,</w>
+                    <w pos="ADJA" xml:id="f2213001.m36.t6">ausser</w>
+                    <w pos="NN" xml:id="f2213001.m36.t7">Heavy</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m36.t8">,</w>
+                    <w lemma="Klassik" pos="NN" xml:id="f2213001.m36.t9"
+                        >Klassik</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m36.t10">und</w>
+                    <w lemma="Schlager" pos="NN" xml:id="f2213001.m36.t11"
+                        >Schlager</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t012" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m37">
+                    <time creation="system"> 21:52 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m37.t1">das</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m37.t2">ist</w>
+                    <w lemma="auf" pos="APPR" xml:id="f2213001.m37.t3">auf</w>
+                    <w pos="ADJA" xml:id="f2213001.m37.t4">jedenfall</w>
+                    <w pos="NN" xml:id="f2213001.m37.t5">krankheit</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t012" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m38">
+                    <time creation="system"> 21:52 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="VVFIN" xml:id="f2213001.m38.t1">hmm.</w>
+                    <w lemma="." pos="$." xml:id="f2213001.m38.t2">.</w>
+                    <w lemma="was" pos="PWS" xml:id="f2213001.m38.t3">was</w>
+                    <w lemma="von" pos="APPRART" xml:id="f2213001.m38.t4"
+                        >vom</w>
+                    <w lemma="Rammstein" pos="NN" xml:id="f2213001.m38.t5"
+                        >Rammstein</w>
+                    <w pos="ADJA" xml:id="f2213001.m38.t6">waere</w>
+                    <w lemma="noch" pos="ADV" xml:id="f2213001.m38.t7">noch</w>
+                    <w lemma="nett" pos="ADJD" xml:id="f2213001.m38.t8">nett</w>
+                    <phr subtype="emoticon" type="interactionPhrase">
+                        <w lemma=":" pos="EMOASC" xml:id="f2213001.m38.t9">:</w>
+                        <w lemma=")" pos="EMOASC" xml:id="f2213001.m38.t10"
+                            >)</w>
+                    </phr>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t012" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m39">
+                    <time creation="system"> 21:52 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="und" pos="KON" xml:id="f2213001.m39.t1">und</w>
+                    <w lemma="keine" pos="PIAT" xml:id="f2213001.m39.t2"
+                        >keine</w>
+                    <w lemma="Musik" pos="NN" xml:id="f2213001.m39.t3">musik</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t012" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m40">
+                    <time creation="system"> 21:52 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="gut" pos="ADJD" xml:id="f2213001.m40.t1">gut</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m40.t2">,</w>
+                    <w lemma="dass" pos="KOUS" xml:id="f2213001.m40.t3">dass</w>
+                    <w lemma="man" pos="PIS" xml:id="f2213001.m40.t4">man</w>
+                    <w pos="APPR" xml:id="f2213001.m40.t5">ueber</w>
+                    <w lemma="Musikgeschmack" pos="NN" xml:id="f2213001.m40.t6"
+                        >Musikgeschmack</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m40.t7"
+                        >nicht</w>
+                    <w lemma="streiten" pos="VVINF" xml:id="f2213001.m40.t8"
+                        >streiten</w>
+                    <w lemma="müssen" pos="VMFIN" xml:id="f2213001.m40.t9"
+                        >muss</w>
+                    <w pos="EMOASC" xml:id="f2213001.m40.t10">^^</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t013" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m41">
+                    <time creation="system"> 21:53 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="na" pos="ITJ" xml:id="f2213001.m41.t1">na</w>
+                    <w lemma="gut" pos="ADV" xml:id="f2213001.m41.t2">gut</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t013" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m42">
+                    <time creation="system"> 21:53 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="aber" pos="ADV" xml:id="f2213001.m42.t1">aber</w>
+                    <w lemma="wer" pos="PWS" xml:id="f2213001.m42.t2">wer</w>
+                    <w pos="NE" xml:id="f2213001.m42.t3">nu</w>
+                    <w pos="NE" xml:id="f2213001.m42.t4">pagadi</w>
+                    <w lemma="hören" pos="VVFIN" xml:id="f2213001.m42.t5"
+                        >hört</w>
+                    <w pos="EMOASC" xml:id="f2213001.m42.t6">:D</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t014" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m43">
+                    <time creation="system"> 21:54 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m43.t1">ich</w>
+                    <w pos="VVFIN" xml:id="f2213001.m43.t2">hoere</w>
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m43.t3">das</w>
+                    <w lemma="auch" pos="ADV" xml:id="f2213001.m43.t4">auch</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m43.t5"
+                        >nicht</w>
+                    <w lemma="jede" pos="PIAT" xml:id="f2213001.m43.t6"
+                        >jeden</w>
+                    <w lemma="Tag" pos="NN" xml:id="f2213001.m43.t7">Tag</w>
+                    <w pos="$(" xml:id="f2213001.m43.t8">....</w>
+                    <w lemma="aber" pos="KON" xml:id="f2213001.m43.t9">aber</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m43.t10">mir</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m43.t11"
+                        >ist</w>
+                    <w lemma="mal" pos="ADV" xml:id="f2213001.m43.t12">mal</w>
+                    <w lemma="wieder" pos="ADV" xml:id="f2213001.m43.t13"
+                        >wieder</w>
+                    <w lemma="danach" pos="PAV" xml:id="f2213001.m43.t14"
+                        >danach</w>
+                    <w pos="$(" xml:id="f2213001.m43.t15">..</w>
+                    <w pos="EMOASC" xml:id="f2213001.m43.t16">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t014" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m44">
+                    <time creation="system"> 21:54 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="XY" xml:id="f2213001.m44.t1">nagut</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m44.t2">ich</w>
+                    <w lemma="wollen" pos="VMFIN" xml:id="f2213001.m44.t3"
+                        >will</w>
+                    <w pos="PTKNEG" xml:id="f2213001.m44.t4">nciht</w>
+                    <w lemma="streiten" pos="VVINF" xml:id="f2213001.m44.t5"
+                        >streiten</w>
+                    <w pos="EMOASC" xml:id="f2213001.m44.t6">^^</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t015" type="event" who="#f2213001.A09"
+                    xml:id="f2213001.m45">
+                    <time creation="system"> 21:55 </time>
+                    <anchor type="sentence_start" />
+                    <name type="NICK">
+                        <w lemma="[_NICKNAME_]" pos="NE"
+                            xml:id="f2213001.m45.t1">[_NICKNAME_]</w>
+                        <w lemma="[" pos="$(" xml:id="f2213001.m45.t2">[</w>
+                        <w pos="NE" xml:id="f2213001.m45.t3">[_NICKNAME_]</w>
+                        <w lemma="]" pos="$(" xml:id="f2213001.m45.t4">]</w>
+                    </name>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m45.t5">ist</w>
+                    <w pos="NE" xml:id="f2213001.m45.t6">away</w>
+                    <w lemma="(" pos="$(" xml:id="f2213001.m45.t7">(</w>
+                    <w lemma="aber" pos="KON" xml:id="f2213001.m45.t8">Aber</w>
+                    <w lemma="alle" pos="PIS" xml:id="f2213001.m45.t9">alles</w>
+                    <w lemma="werden" pos="VAFIN" xml:id="f2213001.m45.t10"
+                        >wird</w>
+                    <w lemma="gut" pos="ADJD" xml:id="f2213001.m45.t11">gut</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m45.t12">,</w>
+                    <w lemma="aber" pos="KON" xml:id="f2213001.m45.t13">aber</w>
+                    <w lemma="ihr" pos="PPER" xml:id="f2213001.m45.t14">ihr</w>
+                    <w lemma="haben" pos="VVFIN" xml:id="f2213001.m45.t15"
+                        >hättet</w>
+                    <w lemma="es" pos="PPER" xml:id="f2213001.m45.t16">es</w>
+                    <w lemma="wissen" pos="VVINF" xml:id="f2213001.m45.t17"
+                        >wissen</w>
+                    <w lemma="müssen" pos="VMFIN" xml:id="f2213001.m45.t18"
+                        >müssen</w>
+                    <w lemma=")" pos="$(" xml:id="f2213001.m45.t19">)</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t015" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m46">
+                    <time creation="system"> 21:55 </time>
+                    <name corresp="#f2213001.A06" type="NICK"
+                        >[_MALE-PARTICIPANT-A06_]</name> is now known as <name
+                        corresp="#f2213001.A06" type="NICK"
+                        >[_MALE-PARTICIPANT-A06_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t015" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m47">
+                    <time creation="system"> 21:55 </time>
+                    <name corresp="#f2213001.A06" type="NICK"
+                        >[_MALE-PARTICIPANT-A06_]</name> is now known as <name
+                        corresp="#f2213001.A06" type="NICK"
+                        >[_MALE-PARTICIPANT-A06_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t015" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m48">
+                    <time creation="system"> 21:55 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="da" pos="ADV" xml:id="f2213001.m48.t1">da</w>
+                    <w pos="NN" xml:id="f2213001.m48.t2">hats</w>
+                    <w pos="VVFIN" xml:id="f2213001.m48.t3">meim</w>
+                    <name type="NICK">
+                        <w pos="NE" xml:id="f2213001.m48.t4">[_NICKNAME-4_]</w>
+                    </name>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m48.t5">die</w>
+                    <w lemma="kraft" pos="APPR" xml:id="f2213001.m48.t6"
+                        >kraft</w>
+                    <w pos="VVFIN" xml:id="f2213001.m48.t7">verlassen</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t015" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m49">
+                    <time creation="system"> 21:55 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="Flucht" pos="NN" xml:id="f2213001.m49.t1"
+                        >Flucht</w>
+                    <w lemma="vor" pos="APPR" xml:id="f2213001.m49.t2">vor</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m49.t3">der</w>
+                    <w lemma="Mucke" pos="NN" xml:id="f2213001.m49.t4">Mucke</w>
+                    <w lemma="?" pos="$." xml:id="f2213001.m49.t5">?</w>
+                    <w pos="EMOASC" xml:id="f2213001.m49.t6">;))</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t016" type="standard" who="#f2213001.A06"
+                    xml:id="f2213001.m50">
+                    <time creation="system"> 21:56 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="scheinbar" pos="ADJD" xml:id="f2213001.m50.t1"
+                        >scheinbar</w>
+                    <w pos="EMOASC" xml:id="f2213001.m50.t2">:D</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t016" type="event" who="#f2213001.A06"
+                    xml:id="f2213001.m51">
+                    <time creation="system"> 21:56 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A06" type="NICK">
+                        <w lemma="[_MALE-PARTICIPANT-A06_]" pos="NE"
+                            xml:id="f2213001.m51.t1"
+                            >[_MALE-PARTICIPANT-A06_]</w>
+                    </name>
+                    <w pos="NE" xml:id="f2213001.m51.t2">np</w>
+                    <w lemma=":" pos="$." xml:id="f2213001.m51.t3">:</w>
+                    <w pos="NE" xml:id="f2213001.m51.t4">Böhse</w>
+                    <w pos="NE" xml:id="f2213001.m51.t5">Onkelz</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m51.t6">-</w>
+                    <w lemma="Angst" pos="NN" xml:id="f2213001.m51.t7">Angst</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m51.t8">ist</w>
+                    <w lemma="nur" pos="ADV" xml:id="f2213001.m51.t9">nur</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m51.t10">ein</w>
+                    <w lemma="Gefühl" pos="NN" xml:id="f2213001.m51.t11"
+                        >Gefühl</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t017" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m52">
+                    <time creation="system"> 22:04 </time>
+                    <name corresp="#f2213001.A13" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A13_]</name> is now known as <name
+                        corresp="#f2213001.A13" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A13_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t018" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m53">
+                    <time creation="system"> 22:06 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t019" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m54">
+                    <time creation="system"> 22:13 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-4_]</name>) Quit (( <ref type="URL"
+                        >[_WWWURL-4_]</ref> :: NoNameScript 3.81 :: <ref
+                        type="URL">[_WWWURL-5_]</ref> )) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t020" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m55">
+                    <time creation="system"> 22:14 </time>
+                    <name corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name> (<name type="OTH"
+                        >[_OTHERNAME-5_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t020" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m56">
+                    <time creation="system"> 22:14 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +ao <name corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name><name
+                        corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t021" type="standard" who="#f2213001.A10"
+                    xml:id="f2213001.m57">
+                    <time creation="system"> 22:15 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m57.t1">moin</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t022" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m58">
+                    <time creation="system"> 22:17 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-6_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t022" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m59">
+                    <time creation="system"> 22:17 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-6_]</name>) has left <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t022" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m60">
+                    <time creation="system"> 22:17 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-6_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t022" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m61">
+                    <time creation="system"> 22:17 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-6_]</name>) has left <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t023" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m62">
+                    <time creation="system"> 22:22 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-7_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t023" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m63">
+                    <time creation="system"> 22:22 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +v <name type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t024" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m64">
+                    <time creation="system"> 22:23 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-7_]</name>) Quit (<name type="NICK"
+                        >[_NICKNAME_]</name>) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t025" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m65">
+                    <time creation="system"> 22:27 </time>
+                    <name corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name> (<name type="OTH"
+                        >[_OTHERNAME-8_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t025" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m66">
+                    <time creation="system"> 22:27 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +o <name corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t026" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m67">
+                    <time creation="system"> 22:28 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A11" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m67.t1"
+                            >[_MALE-PARTICIPANT-A11_]</w>
+                        <w pos="NE" xml:id="f2213001.m67.t2"
+                            >[_MALE-PARTICIPANT-A11_]</w>
+                    </name>
+                    <w pos="NE" xml:id="f2213001.m67.t3">.........</w>
+                    <w lemma="machen" pos="VVFIN" xml:id="f2213001.m67.t4"
+                        >mach</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m67.t5">mir</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m67.t6">ein</w>
+                    <w lemma="Kind" pos="NN" xml:id="f2213001.m67.t7">Kind</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t027" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m68">
+                    <time creation="system"> 22:29 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A11" type="NICK">
+                        <w lemma="die" pos="ART" xml:id="f2213001.m68.t1"
+                            >Der</w>
+                        <w pos="NE" xml:id="f2213001.m68.t2"
+                            >[_MALE-PARTICIPANT-A11_]</w>
+                    </name>
+                    <w lemma="wünschen" pos="VVFIN" xml:id="f2213001.m68.t3"
+                        >wünscht</w>
+                    <w lemma="alle" pos="PIS" xml:id="f2213001.m68.t4">allen</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m68.t5">einen</w>
+                    <w lemma="wunderschön" pos="ADJA" xml:id="f2213001.m68.t6"
+                        >wunderschönen</w>
+                    <w lemma="gut" pos="ADJA" xml:id="f2213001.m68.t7">guten</w>
+                    <w lemma="Abend" pos="NN" xml:id="f2213001.m68.t8">Abend</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t028" type="standard" who="#f2213001.A12"
+                    xml:id="f2213001.m69">
+                    <time creation="system"> 22:30 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m69.t1">hoi</w>
+                    <name corresp="#f2213001.A11" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m69.t2"
+                            >[_MALE-PARTICIPANT-A11_]</w>
+                    </name>
+                    <w pos="EMOASC" xml:id="f2213001.m69.t3">:D</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t029" type="standard" who="#f2213001.A12"
+                    xml:id="f2213001.m70">
+                    <time creation="system"> 22:31 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m70.t1">ui</w>
+                    <name corresp="#f2213001.A13" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m70.t2"
+                            >[_FEMALE-PARTICIPANT-A13_]</w>
+                    </name>
+                    <phr subtype="inflective" type="interactionPhrase">
+                        <w pos="VAFIN" xml:id="f2213001.m70.t3">is</w>
+                        <w lemma="ja" pos="ADV" xml:id="f2213001.m70.t4">ja</w>
+                        <w lemma="wieder" pos="ADV" xml:id="f2213001.m70.t5"
+                            >wieder</w>
+                        <w lemma="da" pos="ADV" xml:id="f2213001.m70.t6">da</w>
+                    </phr>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m70.t7">*</w>
+                    <name corresp="#f2213001.A13" type="NICK">
+                        <w lemma="klein" pos="ADJA" xml:id="f2213001.m70.t8"
+                            >kleines</w>
+                        <w pos="NN" xml:id="f2213001.m70.t9"
+                            >[_FEMALE-PARTICIPANT-A13_]</w>
+                    </name>
+                    <w pos="VVFIN" xml:id="f2213001.m70.t10">kraul</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m70.t11">*</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t030" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m71">
+                    <time creation="system"> 22:35 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m71.t1">hi</w>
+                    <name corresp="#f2213001.A12" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m71.t2"
+                            >[_MALE-PARTICIPANT-A12_]</w>
+                    </name>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t030" type="standard" who="#f2213001.A12"
+                    xml:id="f2213001.m72">
+                    <time creation="system"> 22:35 </time>
+                    <w pos="EMOASC" xml:id="f2213001.m72.t1">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t030" type="standard" who="#f2213001.A12"
+                    xml:id="f2213001.m73">
+                    <time creation="system"> 22:35 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A12" type="NICK">
+                        <w pos="NN" xml:id="f2213001.m73.t1"
+                            >[_MALE-PARTICIPANT-A12_]</w>
+                    </name>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t031" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m74">
+                    <time creation="system"> 22:37 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="*" pos="$(" xml:id="f2213001.m74.t1">*</w>
+                    <w subtype="inflective" pos="AKW" xml:id="f2213001.m74.t2"
+                        >schnuurrr</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m74.t3">*</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t032" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m75">
+                    <time creation="system"> 22:38 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m75.t1">oha</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t032" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m76">
+                    <time creation="system"> 22:38 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A13" type="NICK">
+                        <w lemma="die" pos="ART" xml:id="f2213001.m76.t1"
+                            >die</w>
+                        <w pos="NE" xml:id="f2213001.m76.t2"
+                            >[_FEMALE-PARTICIPANT-A13_]</w>
+                    </name>
+                    <w lemma="haben" pos="VAFIN" xml:id="f2213001.m76.t3"
+                        >hat</w>
+                    <w pos="NE" xml:id="f2213001.m76.t4">hungi</w>
+                    <w pos="VVFIN" xml:id="f2213001.m76.t5">hungi</w>
+                    <w lemma="?" pos="$." xml:id="f2213001.m76.t6">?</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t032" type="event" who="#f2213001.A11"
+                    xml:id="f2213001.m77">
+                    <time creation="system"> 22:38 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A11" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m77.t1"
+                            >[_MALE-PARTICIPANT-A11_]</w>
+                    </name>
+                    <w lemma="stellen" pos="VVFIN" xml:id="f2213001.m77.t2"
+                        >stellt</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m77.t3">dem</w>
+                    <name corresp="#f2213001.A13" type="NICK">
+                        <w lemma="[_FEMALE-PARTICIPANT-A13_]" pos="NN"
+                            xml:id="f2213001.m77.t4"
+                            >[_FEMALE-PARTICIPANT-A13_]</w>
+                    </name>
+                    <w lemma="mal" pos="ADV" xml:id="f2213001.m77.t5">mal</w>
+                    <w lemma="eine" pos="ART" xml:id="f2213001.m77.t6">ne</w>
+                    <w lemma="Schüssel" pos="NE" xml:id="f2213001.m77.t7"
+                        >Schüssel</w>
+                    <w pos="NE" xml:id="f2213001.m77.t8">Asbach</w>
+                    <w lemma="hin" pos="PTKVZ" xml:id="f2213001.m77.t9">hin</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t033" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m78">
+                    <time creation="system"> 22:41 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="*" pos="$(" xml:id="f2213001.m78.t1">*</w>
+                    <w subtype="inflective" pos="AKW" xml:id="f2213001.m78.t2"
+                        >ignorier</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m78.t3">*</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t034" type="standard" who="#f2213001.A10"
+                    xml:id="f2213001.m79">
+                    <time creation="system"> 22:42 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ADJD" xml:id="f2213001.m79.t1">hmmm</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t035" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m80">
+                    <time creation="system"> 22:45 </time>
+                    <name corresp="#f2213001.A16" type="NICK"
+                        >[_MALE-PARTICIPANT-A16_]</name> (<name type="OTH"
+                        >[_OTHERNAME-9_]</name>) Quit (Ping timeout) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t035" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m81">
+                    <time creation="system"> 22:45 </time>
+                    <name corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name> is away: [-= Tschillen
+                    =-] </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t035" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m82">
+                    <time creation="system"> 22:45 </time>
+                    <name corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name> is now known as <name
+                        corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t036" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m83">
+                    <time creation="system"> 22:49 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t037" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m84">
+                    <time creation="system"> 22:50 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-10_]</name>) Quit (Connection reset by
+                    peer) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t038" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m85">
+                    <time creation="system"> 22:51 </time>
+                    <name corresp="#f2213001.A14" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A14_]</name> is now known as <name
+                        corresp="#f2213001.A14" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A14_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t038" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m86">
+                    <time creation="system"> 22:51 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +ao <name corresp="#f2213001.A14" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A14_]</name><name
+                        corresp="#f2213001.A14" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A14_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t039" type="standard" who="#f2213001.A14"
+                    xml:id="f2213001.m87">
+                    <time creation="system"> 22:52 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NN" xml:id="f2213001.m87.t1">N'abend</w>
+                    <w pos="EMOASC" xml:id="f2213001.m87.t2">:-)))</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t040" type="standard" who="#f2213001.A05"
+                    xml:id="f2213001.m88">
+                    <time creation="system"> 22:53 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m88.t1">hi</w>
+                    <name corresp="#f2213001.A14" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m88.t2"
+                            >[_FEMALE-PARTICIPANT-A14_]</w>
+                    </name>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t040" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m89">
+                    <time creation="system"> 22:53 </time>
+                    <name corresp="#f2213001.A16" type="NICK"
+                        >[_MALE-PARTICIPANT-A16_]</name> (<name type="OTH"
+                        >[_OTHERNAME-9_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t040" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m90">
+                    <time creation="system"> 22:53 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +o <name corresp="#f2213001.A16" type="NICK"
+                        >[_MALE-PARTICIPANT-A16_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m91">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m91.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m91.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m91.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m91.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m91.t5">»</w>
+                    <ref type="URL">
+                        <w pos="NN" xml:id="f2213001.m91.t6">[_WWWURL-6_]</w>
+                    </ref>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m91.t7">-</w>
+                    <w lemma="zu" pos="APPRART" xml:id="f2213001.m91.t8">Zum</w>
+                    <w lemma="Hören" pos="NN" xml:id="f2213001.m91.t9">Hören</w>
+                    <w lemma="klicken" pos="VVFIN" xml:id="f2213001.m91.t10"
+                        >klickt</w>
+                    <w lemma="einfach" pos="ADV" xml:id="f2213001.m91.t11"
+                        >einfach</w>
+                    <w lemma="auf" pos="APPR" xml:id="f2213001.m91.t12">auf</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m91.t13">die</w>
+                    <w lemma="für" pos="APPR" xml:id="f2213001.m91.t14">für</w>
+                    <w lemma="ihr" pos="PPER" xml:id="f2213001.m91.t15">euch</w>
+                    <w lemma="passend" pos="ADJA" xml:id="f2213001.m91.t16"
+                        >passende</w>
+                    <w lemma="Url" pos="NN" xml:id="f2213001.m91.t17">Url</w>
+                    <w lemma=":" pos="$." xml:id="f2213001.m91.t18">:</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m91.t19">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m91.t20">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m91.t21">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m91.t22">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m91.t23">«</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m92">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m92.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m92.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m92.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m92.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m92.t5">»</w>
+                    <w pos="NE" xml:id="f2213001.m92.t6">96k</w>
+                    <w pos="NE" xml:id="f2213001.m92.t7">DSL</w>
+                    <w pos="NN" xml:id="f2213001.m92.t8">Stream</w>
+                    <w lemma=":" pos="$." xml:id="f2213001.m92.t9">:</w>
+                    <ref type="URL">
+                        <w pos="XY" xml:id="f2213001.m92.t10">[_WWWURL-1_]</w>
+                    </ref>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m92.t11">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m92.t12">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m92.t13">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m92.t14">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m92.t15">«</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m93">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m93.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m93.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m93.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m93.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m93.t5">»</w>
+                    <w pos="NN" xml:id="f2213001.m93.t6">32k</w>
+                    <w pos="NN" xml:id="f2213001.m93.t7">Modem/ISDNStream</w>
+                    <ref type="URL">
+                        <w pos="XY" xml:id="f2213001.m93.t8">[_WWWURL-7_]</w>
+                    </ref>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m93.t9">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m93.t10">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m93.t11">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m93.t12">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m93.t13">«</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m94">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m94.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m94.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m94.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m94.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m94.t5">»</w>
+                    <w lemma="Windows" pos="NE" xml:id="f2213001.m94.t6"
+                        >Windows</w>
+                    <w pos="NN" xml:id="f2213001.m94.t7">Mediaplayer</w>
+                    <w lemma=":" pos="$." xml:id="f2213001.m94.t8">:</w>
+                    <ref type="URL">
+                        <w pos="NE" xml:id="f2213001.m94.t9">[_WWWURL-8_]</w>
+                    </ref>
+                    <w lemma="oder" pos="KON" xml:id="f2213001.m94.t10">oder</w>
+                    <w lemma="für" pos="APPR" xml:id="f2213001.m94.t11">für</w>
+                    <w lemma="Modem" pos="NN" xml:id="f2213001.m94.t12"
+                        >Modem</w>
+                    <ref type="URL">
+                        <w pos="NE" xml:id="f2213001.m94.t13">[_WWWURL-9_]</w>
+                    </ref>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m94.t14">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m94.t15">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m94.t16">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m94.t17">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m94.t18">«</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m95">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <ref corresp="#f2213001.A13" type="addressingTerm">
+                        <w pos="NN" xml:id="f2213001.m95.t1"
+                            >[_FEMALE-PARTICIPANT-A13_]</w>
+                    </ref>
+                    <w lemma="?" pos="$." xml:id="f2213001.m95.t2">?</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m96">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m96.t1">yo</w>
+                    <w lemma="?" pos="$." xml:id="f2213001.m96.t2">?</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m97">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="sehen" pos="VVFIN" xml:id="f2213001.m97.t1"
+                        >siehst</w>
+                    <w lemma="du" pos="PPER" xml:id="f2213001.m97.t2">du</w>
+                    <w lemma="auch" pos="ADV" xml:id="f2213001.m97.t3">auch</w>
+                    <w lemma="so" pos="ADV" xml:id="f2213001.m97.t4">so</w>
+                    <w lemma="aus" pos="PTKVZ" xml:id="f2213001.m97.t5">aus</w>
+                    <w lemma="wie" pos="KOKOM" xml:id="f2213001.m97.t6">wie</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m97.t7">die</w>
+                    <w lemma="Bild" pos="NN" xml:id="f2213001.m97.t8">bilder</w>
+                    <w lemma="unten" pos="ADV" xml:id="f2213001.m97.t9"
+                        >unten</w>
+                    <w lemma="?" pos="$." xml:id="f2213001.m97.t10">?</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m98">
+                    <time creation="system"> 22:54 </time>
+                    <anchor type="sentence_start" />
+                    <ref type="URL">
+                        <w pos="NE" xml:id="f2213001.m98.t1">[_WWWURL-10_]</w>
+                    </ref>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t041" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m99">
+                    <time creation="system"> 22:54 </time>
+                    <w pos="EMOASC" xml:id="f2213001.m99.t1">^^</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t041" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m100">
+                    <time creation="system"> 22:54 </time>
+                    <name corresp="#f2213001.A17" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A17_]</name> (<name type="OTH"
+                        >[_OTHERNAME-11_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m101">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="da" pos="ADV" xml:id="f2213001.m101.t1">da</w>
+                    <w lemma="müssen" pos="VMFIN" xml:id="f2213001.m101.t2"
+                        >musst</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m101.t3">ich</w>
+                    <w lemma="irgendwie" pos="ADV" xml:id="f2213001.m101.t4"
+                        >irgendwie</w>
+                    <w lemma="an" pos="APPR" xml:id="f2213001.m101.t5">an</w>
+                    <name type="NICK">
+                        <w pos="NN" xml:id="f2213001.m101.t6">[_NICKNAME_]</w>
+                    </name>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m101.t7">und</w>
+                    <name corresp="#f2213001.A13" type="NICK">
+                        <w pos="NN" xml:id="f2213001.m101.t8"
+                            >[_FEMALE-PARTICIPANT-A13_]</w>
+                    </name>
+                    <w lemma="denken" pos="VVINF" xml:id="f2213001.m101.t9"
+                        >denken</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m101.t10">*</w>
+                    <w subtype="acronym" pos="AKW" xml:id="f2213001.m101.t11"
+                        >fg</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m101.t12">*</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t042" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m102">
+                    <time creation="system"> 22:55 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +h <name corresp="#f2213001.A17" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A17_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m103">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m103.t1">Hallöle</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m104">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="eine" pos="PTKANT" xml:id="f2213001.m104.t1"
+                        >ne</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m104.t2">,</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m104.t3"
+                        >nicht</w>
+                    <w lemma="wirklich" pos="ADJD" xml:id="f2213001.m104.t4"
+                        >wirklich</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m104.t5">,</w>
+                    <w lemma="mein" pos="PPOSAT" xml:id="f2213001.m104.t6"
+                        >mein</w>
+                    <w pos="NN" xml:id="f2213001.m104.t7">latexanzug</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m104.t8"
+                        >ist</w>
+                    <w lemma="schwarz" pos="ADJD" xml:id="f2213001.m104.t9"
+                        >schwarz</w>
+                    <w pos="EMOASC" xml:id="f2213001.m104.t10">:-P</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m105">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="ahoi" pos="ITJ" xml:id="f2213001.m105.t1">ahoi</w>
+                    <ref corresp="#f2213001.A17" type="addressingTerm">
+                        <w pos="NE" xml:id="f2213001.m105.t2"
+                            >[_FEMALE-PARTICIPANT-A17_]</w>
+                    </ref>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m106">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w subtype="acronym" pos="AKW" xml:id="f2213001.m106.t1"
+                        >löl</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m107">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="VVINF" xml:id="f2213001.m107.t1">huch</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m108">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m108.t1">uiiiuiiiui</w>
+                    <w pos="ITJ" xml:id="f2213001.m108.t2">uiuiuiui</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t042" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m109">
+                    <time creation="system"> 22:55 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m109.t1">huhu</w>
+                    <ref corresp="#f2213001.A17" type="addressingTerm">
+                        <w pos="NE" xml:id="f2213001.m109.t2"
+                            >[_FEMALE-PARTICIPANT-A17_]</w>
+                    </ref>
+                    <w pos="EMOASC" xml:id="f2213001.m109.t3">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t043" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m110">
+                    <time creation="system"> 22:56 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m110.t1">hi</w>
+                    <ref corresp="#f2213001.A16" type="addressingTerm">
+                        <w pos="NE" xml:id="f2213001.m110.t2"
+                            >[_MALE-PARTICIPANT-A16_]</w>
+                    </ref>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m110.t3">und</w>
+                    <ref corresp="#f2213001.A13" type="addressingTerm">
+                        <w pos="VVFIN" xml:id="f2213001.m110.t4"
+                            >[_FEMALE-PARTICIPANT-A13_]</w>
+                    </ref>
+                    <w pos="EMOASC" xml:id="f2213001.m110.t5">;)</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t044" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m111">
+                    <time creation="system"> 22:57 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-12_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t044" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m112">
+                    <time creation="system"> 22:57 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +h <name type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t044" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m113">
+                    <time creation="system"> 22:57 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="aber" pos="ADV" xml:id="f2213001.m113.t1">aber</w>
+                    <w lemma="dies" pos="PDAT" xml:id="f2213001.m113.t2"
+                        >dieses</w>
+                    <w pos="NN" xml:id="f2213001.m113.t3">Icat</w>
+                    <w lemma="teil" pos="PTKVZ" xml:id="f2213001.m113.t4"
+                        >teil</w>
+                    <w lemma="sehen" pos="VVFIN" xml:id="f2213001.m113.t5"
+                        >sieht</w>
+                    <w lemma="ja" pos="ADV" xml:id="f2213001.m113.t6">ja</w>
+                    <w lemma="mal" pos="ADV" xml:id="f2213001.m113.t7">mal</w>
+                    <w lemma="richtig" pos="ADJD" xml:id="f2213001.m113.t8"
+                        >richtig</w>
+                    <w lemma="hässlich" pos="ADJD" xml:id="f2213001.m113.t9"
+                        >hässlich</w>
+                    <w lemma="aus" pos="PTKVZ" xml:id="f2213001.m113.t10"
+                        >aus</w>
+                    <w pos="$(" xml:id="f2213001.m113.t11">....</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t045" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m114">
+                    <time creation="system"> 23:05 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ONO" xml:id="f2213001.m114.t1">hehe</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t045" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m115">
+                    <time creation="system"> 23:05 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="Jo" pos="NE" xml:id="f2213001.m115.t1">jo</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t045" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m116">
+                    <time creation="system"> 23:05 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-12_]</name>) has left <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t045" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m117">
+                    <time creation="system"> 23:05 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="dann" pos="ADV" xml:id="f2213001.m117.t1">dann</w>
+                    <w lemma="lieb" pos="ADV" xml:id="f2213001.m117.t2"
+                        >lieber</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m117.t3">die</w>
+                    <w lemma="nett" pos="ADJA" xml:id="f2213001.m117.t4"
+                        >nette</w>
+                    <w lemma="Lampe" pos="NN" xml:id="f2213001.m117.t5"
+                        >lampe</w>
+                    <w lemma="oben" pos="ADV" xml:id="f2213001.m117.t6">oben</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t045" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m118">
+                    <time creation="system"> 23:05 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="stimmen" pos="VVFIN" xml:id="f2213001.m118.t1"
+                        >stimmt</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t045" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m119">
+                    <time creation="system"> 23:05 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="FM" xml:id="f2213001.m119.t1">is</w>
+                    <w pos="VVFIN" xml:id="f2213001.m119.t2">bestimmt</w>
+                    <w lemma="lustig" pos="ADJD" xml:id="f2213001.m119.t3"
+                        >lustig</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m119.t4">,</w>
+                    <w lemma="wenn" pos="KOUS" xml:id="f2213001.m119.t5"
+                        >wenn</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m119.t6">die</w>
+                    <w lemma="eine" pos="PIS" xml:id="f2213001.m119.t7"
+                        >einem</w>
+                    <w pos="VVFIN" xml:id="f2213001.m119.t8">hinterherschaut</w>
+                    <w lemma="wenn" pos="KOUS" xml:id="f2213001.m119.t9"
+                        >wenn</w>
+                    <w lemma="man" pos="PIS" xml:id="f2213001.m119.t10">man</w>
+                    <w lemma="durchs" pos="APPRART" xml:id="f2213001.m119.t11"
+                        >durchs</w>
+                    <w pos="NN" xml:id="f2213001.m119.t12">zimme</w>
+                    <w lemma="gehen" pos="VVFIN" xml:id="f2213001.m119.t13"
+                        >geht</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t046" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m120">
+                    <time creation="system"> 23:06 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m120.t1">ich</w>
+                    <w lemma="denken" pos="VVFIN" xml:id="f2213001.m120.t2"
+                        >denk</w>
+                    <w lemma="da" pos="ADV" xml:id="f2213001.m120.t3">da</w>
+                    <w pos="ADV" xml:id="f2213001.m120.t4">grad</w>
+                    <w lemma="an" pos="APPR" xml:id="f2213001.m120.t5">an</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m120.t6">die</w>
+                    <w lemma="Lampe" pos="NN" xml:id="f2213001.m120.t7"
+                        >lampe</w>
+                    <w lemma="von" pos="APPR" xml:id="f2213001.m120.t8">von</w>
+                    <w pos="NE" xml:id="f2213001.m120.t9">pixar</w>
+                    <w lemma="(" pos="$(" xml:id="f2213001.m120.t10">(</w>
+                    <w pos="ADJD" xml:id="f2213001.m120.t11"
+                        >zeichentrickhersteller</w>
+                    <w lemma=")" pos="$(" xml:id="f2213001.m120.t12">)</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t046" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m121">
+                    <time creation="system"> 23:06 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t046" type="standard" who="#f2213001.A16"
+                    xml:id="f2213001.m122">
+                    <time creation="system"> 23:06 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="mit" pos="APPR" xml:id="f2213001.m122.t1">mit</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m122.t2">dem</w>
+                    <w lemma="treudoof" pos="ADJA" xml:id="f2213001.m122.t3"
+                        >treudoofen</w>
+                    <w pos="NN" xml:id="f2213001.m122.t4">blick</w>
+                    <w lemma="zu" pos="APPRART" xml:id="f2213001.m122.t5"
+                        >zum</w>
+                    <w lemma="Schluss" pos="NN" xml:id="f2213001.m122.t6"
+                        >schluss</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t047" type="standard" who="#f2213001.A13"
+                    xml:id="f2213001.m123">
+                    <time creation="system"> 23:09 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="*" pos="$(" xml:id="f2213001.m123.t1">*</w>
+                    <w lemma="lachen" subtype="inflective" pos="AKW"
+                        xml:id="f2213001.m123.t2">lach</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m123.t3">*</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t048" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m124">
+                    <time creation="system"> 23:11 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-13_]</name>) Quit (NickServ (GHOST command
+                    used by <name type="NICK">[_NICKNAME_]</name>)) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t048" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m125">
+                    <time creation="system"> 23:11 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-13_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t048" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m126">
+                    <time creation="system"> 23:11 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +v <name type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t049" type="event" who="#f2213001.A18"
+                    xml:id="f2213001.m127">
+                    <time creation="system"> 23:12 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A18" type="NICK">
+                        <w lemma="[_MALE-PARTICIPANT-A18_]" pos="NE"
+                            xml:id="f2213001.m127.t1"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                    </name>
+                    <w pos="ADJA" xml:id="f2213001.m127.t2">reboot</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t049" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m128">
+                    <time creation="system"> 23:12 </time>
+                    <name corresp="#f2213001.A18" type="NICK"
+                        >[_MALE-PARTICIPANT-A18_]</name> (<name type="OTH"
+                        >[_OTHERNAME-14_]</name>) Quit (GermanFunScript V2.04
+                        <ref type="URL">[_WWWURL-11_]</ref>) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t050" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m129">
+                    <time creation="system"> 23:13 </time>
+                    <name corresp="#f2213001.A26" type="NICK"
+                        >[_MALE-PARTICIPANT-A26_]</name> (<name type="OTH"
+                        >[_OTHERNAME-15_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t050" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m130">
+                    <time creation="system"> 23:13 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +h <name corresp="#f2213001.A26" type="NICK"
+                        >[_MALE-PARTICIPANT-A26_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t051" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m131">
+                    <time creation="system"> 23:16 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-16_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t052" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m132">
+                    <time creation="system"> 23:17 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t052" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m133">
+                    <time creation="system"> 23:17 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +h <name type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t053" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m134">
+                    <time creation="system"> 23:18 </time>
+                    <name corresp="#f2213001.A06" type="NICK"
+                        >[_MALE-PARTICIPANT-A06_]</name> is now known as <name
+                        corresp="#f2213001.A06" type="NICK"
+                        >[_MALE-PARTICIPANT-A06_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t054" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m135">
+                    <time creation="system"> 23:19 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t055" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m136">
+                    <time creation="system"> 23:20 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t055" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m137">
+                    <time creation="system"> 23:20 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t055" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m138">
+                    <time creation="system"> 23:20 </time>
+                    <name corresp="#f2213001.A18" type="NICK"
+                        >[_MALE-PARTICIPANT-A18_]</name> (<name type="OTH"
+                        >[_OTHERNAME-14_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t055" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m139">
+                    <time creation="system"> 23:20 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +o <name corresp="#f2213001.A18" type="NICK"
+                        >[_MALE-PARTICIPANT-A18_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t055" type="event" who="#f2213001.A18"
+                    xml:id="f2213001.m140">
+                    <time creation="system"> 23:20 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A18" type="NICK">
+                        <w lemma="[_MALE-PARTICIPANT-A18_]" pos="NE"
+                            xml:id="f2213001.m140.t1"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                    </name>
+                    <w pos="AKW" xml:id="f2213001.m140.t2">re</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t056" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m141">
+                    <time creation="system"> 23:28 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m141.t1">tnx</w>
+                    <name type="NICK">
+                        <w pos="NE" xml:id="f2213001.m141.t2">[_NICKNAME_]</w>
+                        <w pos="NE" xml:id="f2213001.m141.t3">[_NICKNAME_]</w>
+                        <w pos="NE" xml:id="f2213001.m141.t4">[_NICKNAME_]</w>
+                    </name>  <w pos="EMOASC" xml:id="f2213001.m141.t5">:)</w><w
+                        lemma="..." type="$(" xml:id="f2213001.m141.t6"
+                    >...</w></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t057" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m142">
+                    <time creation="system"> 23:29 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-7_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t057" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m143">
+                    <time creation="system"> 23:29 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +v <name type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t057" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m144">
+                    <time creation="system"> 23:29 </time>
+                    <name corresp="#f2213001.A19" type="NICK"
+                        >[_PARTICIPANT-A19_]</name> is now known as <name
+                        corresp="#f2213001.A19" type="NICK"
+                        >[_PARTICIPANT-A19_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t058" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m145">
+                    <time creation="system"> 23:30 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t058" type="standard" who="#f2213001.A19"
+                    xml:id="f2213001.m146">
+                    <time creation="system"> 23:30 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="VVFIN" xml:id="f2213001.m146.t1">nabend</w>
+                    <w lemma="!" pos="$." xml:id="f2213001.m146.t2">!</w>
+                    <w pos="EMOASC" xml:id="f2213001.m146.t3">:)</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t059" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m147">
+                    <time creation="system"> 23:31 </time>
+                    <name corresp="#f2213001.A05" type="NICK"
+                        >[_MALE-PARTICIPANT-A05_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t059" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m148">
+                    <time creation="system"> 23:31 </time>
+                    <name corresp="#f2213001.A18" type="NICK"
+                        >[_MALE-PARTICIPANT-A18_]</name> is now known as <name
+                        corresp="#f2213001.A18" type="NICK"
+                        >[_MALE-PARTICIPANT-A18_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t060" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m149">
+                    <time creation="system"> 23:32 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="für" pos="APPR" xml:id="f2213001.m149.t1">Für</w>
+                    <w lemma="ihr" pos="PPER" xml:id="f2213001.m149.t2">Euch</w>
+                    <w lemma="jetzt" pos="ADV" xml:id="f2213001.m149.t3"
+                        >jetzt</w>
+                    <w lemma="auf" pos="APPR" xml:id="f2213001.m149.t4">auf</w>
+                    <w lemma="Sendung" pos="NN" xml:id="f2213001.m149.t5"
+                        >Sendung</w>
+                    <w lemma=":" pos="$(" xml:id="f2213001.m149.t6">:</w>
+                    <name corresp="#f2213001.A18" type="NICK">
+                        <w lemma="[_MALE-PARTICIPANT-A18_]" pos="NE"
+                            xml:id="f2213001.m149.t7"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="[" pos="$(" xml:id="f2213001.m149.t8">[</w>
+                        <w pos="NE" xml:id="f2213001.m149.t9"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="]" pos="$(" xml:id="f2213001.m149.t10">]</w>
+                    </name>
+                    <w lemma="," pos="$," xml:id="f2213001.m149.t11">,</w>
+                    <w lemma="viel" pos="PIAT" xml:id="f2213001.m149.t12"
+                        >Viel</w>
+                    <w lemma="Spaß" pos="NN" xml:id="f2213001.m149.t13"
+                        >Spass</w>
+                    <w lemma="." pos="$." xml:id="f2213001.m149.t14">.</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t061" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m150">
+                    <time creation="system"> 23:35 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m150.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m150.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m150.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m150.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m150.t5">»</w>
+                    <ref type="URL">
+                        <w pos="NN" xml:id="f2213001.m150.t6">[_WWWURL-6_]</w>
+                    </ref>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m150.t7">-</w>
+                    <w lemma="zu" pos="APPRART" xml:id="f2213001.m150.t8"
+                        >Zum</w>
+                    <w lemma="Hören" pos="NN" xml:id="f2213001.m150.t9"
+                        >Hören</w>
+                    <w lemma="klicken" pos="VVFIN" xml:id="f2213001.m150.t10"
+                        >klickt</w>
+                    <w lemma="einfach" pos="ADV" xml:id="f2213001.m150.t11"
+                        >einfach</w>
+                    <w lemma="auf" pos="APPR" xml:id="f2213001.m150.t12">auf</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m150.t13">die</w>
+                    <w lemma="für" pos="APPR" xml:id="f2213001.m150.t14">für</w>
+                    <w lemma="ihr" pos="PPER" xml:id="f2213001.m150.t15"
+                        >euch</w>
+                    <w lemma="passend" pos="ADJA" xml:id="f2213001.m150.t16"
+                        >passende</w>
+                    <w lemma="Url" pos="NN" xml:id="f2213001.m150.t17">Url</w>
+                    <w lemma=":" pos="$." xml:id="f2213001.m150.t18">:</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m150.t19">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m150.t20">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m150.t21">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m150.t22">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m150.t23">«</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t061" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m151">
+                    <time creation="system"> 23:35 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m151.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m151.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m151.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m151.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m151.t5">»</w>
+                    <w pos="NE" xml:id="f2213001.m151.t6">96k</w>
+                    <w pos="NE" xml:id="f2213001.m151.t7">DSL</w>
+                    <w pos="NN" xml:id="f2213001.m151.t8">Stream</w>
+                    <w lemma=":" pos="$." xml:id="f2213001.m151.t9">:</w>
+                    <ref type="URL">
+                        <w pos="XY" xml:id="f2213001.m151.t10">[_WWWURL-1_]</w>
+                    </ref>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m151.t11">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m151.t12">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m151.t13">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m151.t14">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m151.t15">«</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t061" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m152">
+                    <time creation="system"> 23:35 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m152.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m152.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m152.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m152.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m152.t5">»</w>
+                    <w pos="NN" xml:id="f2213001.m152.t6">32k</w>
+                    <w pos="NN" xml:id="f2213001.m152.t7">Modem/ISDNStream</w>
+                    <ref type="URL">
+                        <w pos="XY" xml:id="f2213001.m152.t8">[_WWWURL-7_]</w>
+                    </ref>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m152.t9">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m152.t10">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m152.t11">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m152.t12">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m152.t13">«</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t061" type="standard" who="#f2213001.A15"
+                    xml:id="f2213001.m153">
+                    <time creation="system"> 23:35 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="»" pos="XY" xml:id="f2213001.m153.t1">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m153.t2">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m153.t3">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m153.t4">»</w>
+                    <w lemma="»" pos="XY" xml:id="f2213001.m153.t5">»</w>
+                    <w lemma="Windows" pos="NE" xml:id="f2213001.m153.t6"
+                        >Windows</w>
+                    <w pos="NN" xml:id="f2213001.m153.t7">Mediaplayer</w>
+                    <w lemma=":" pos="$." xml:id="f2213001.m153.t8">:</w>
+                    <ref type="URL">
+                        <w pos="NE" xml:id="f2213001.m153.t9">[_WWWURL-8_]</w>
+                    </ref>
+                    <w lemma="oder" pos="KON" xml:id="f2213001.m153.t10"
+                        >oder</w>
+                    <w lemma="für" pos="APPR" xml:id="f2213001.m153.t11">für</w>
+                    <w lemma="Modem" pos="NN" xml:id="f2213001.m153.t12"
+                        >Modem</w>
+                    <w pos="NE" xml:id="f2213001.m153.t13">
+                        <m function="ref" type="CITATION">[_CITATION-1_]</m>
+                    </w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m153.t14">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m153.t15">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m153.t16">«</w>
+                    <w lemma="«" pos="XY" xml:id="f2213001.m153.t17">«</w>
+                    <w pos="NE" xml:id="f2213001.m153.t18">«</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t061" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m154">
+                    <time creation="system"> 23:35 </time>
+                    <name corresp="#f2213001.A19" type="NICK"
+                        >[_PARTICIPANT-A19_]</name> sets mode: +v <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t062" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m155">
+                    <time creation="system"> 23:37 </time>
+                    <name corresp="#f2213001.A20" type="NICK"
+                        >[_MALE-PARTICIPANT-A20_]</name> is now known as <name
+                        corresp="#f2213001.A20" type="NICK"
+                        >[_MALE-PARTICIPANT-A20_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t062" type="standard" who="#f2213001.A20"
+                    xml:id="f2213001.m156">
+                    <time creation="system"> 23:37 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="VVFIN" xml:id="f2213001.m156.t1">hallöle</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t063" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m157">
+                    <time creation="system"> 23:38 </time>
+                    <name corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name> (<name type="OTH"
+                        >[_OTHERNAME-17_]</name>) Quit (Connection reset by
+                    peer) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t064" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m158">
+                    <time creation="system"> 23:39 </time>
+                    <name corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name> (<name type="OTH"
+                        >[_OTHERNAME-5_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t064" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m159">
+                    <time creation="system"> 23:39 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +ao <name corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name><name
+                        corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t065" type="standard" who="#f2213001.A10"
+                    xml:id="f2213001.m160">
+                    <time creation="system"> 23:40 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="AKW" xml:id="f2213001.m160.t1">re</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t066" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m161">
+                    <time creation="system"> 23:42 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t067" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m162">
+                    <time creation="system"> 23:46 </time>
+                    <name corresp="#f2213001.A07" type="NICK"
+                        >[_MALE-PARTICIPANT-A07_]</name> (<name type="OTH"
+                        >[_OTHERNAME-18_]</name>) Quit (User has been banned
+                    from <name type="ROOM">[_ROOMNAME-2_]</name> (No Spam)) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t068" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m163">
+                    <time creation="system"> 23:47 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-19_]</name>) Quit (<ref type="URL"
+                        >[_WWWURL-12_]</ref><phr subtype="emoticon"
+                        type="interactionPhrase">:-)</phr>) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t069" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m164">
+                    <time creation="system"> 23:48 </time>
+                    <name corresp="#f2213001.A07" type="NICK"
+                        >[_MALE-PARTICIPANT-A07_]</name> (<name type="OTH"
+                        >[_OTHERNAME-18_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t069" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m165">
+                    <time creation="system"> 23:48 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +h <name corresp="#f2213001.A07" type="NICK"
+                        >[_MALE-PARTICIPANT-A07_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t070" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m166">
+                    <time creation="system"> 23:49 </time>
+                    <name corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name> is back after 1h3m: [-=
+                    Tschillen =-] </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t070" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m167">
+                    <time creation="system"> 23:49 </time>
+                    <name corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name> is now known as <name
+                        corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t070" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m168">
+                    <time creation="system"> 23:49 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m168.t1">Reeeeeee</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t070" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m169">
+                    <time creation="system"> 23:49 </time>
+                    <name corresp="#f2213001.A20" type="NICK"
+                        >[_MALE-PARTICIPANT-A20_]</name> is now known as <name
+                        corresp="#f2213001.A20" type="NICK"
+                        >[_MALE-PARTICIPANT-A20_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t071" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m170">
+                    <time creation="system"> 23:52 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m170.t1">huhu</w>
+                    <w pos="EMOASC" xml:id="f2213001.m170.t2">:-)</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t072" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m171">
+                    <time creation="system"> 23:53 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-7_]</name>) Quit (Connection reset by peer) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t072" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m172">
+                    <time creation="system"> 23:53 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t072" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m173">
+                    <time creation="system"> 23:53 </time>
+                    <name type="NICK">[_NICKNAME_]</name> ist Zurück von ¬mugge
+                    hörn / lesen¬ Das hat gedauert ¬1day 13mins 24secs¬ </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t073" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m174">
+                    <time creation="system"> 23:58 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-20_]</name>) Quit (Connection reset by
+                    peer) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t074" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m175">
+                    <time creation="system"> 00:04 </time>
+                    <name corresp="#f2213001.A22" type="NICK"
+                        >[_PARTICIPANT-A22_]</name> (<name type="OTH"
+                        >[_OTHERNAME-21_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t074" type="standard" who="#f2213001.A22"
+                    xml:id="f2213001.m176">
+                    <time creation="system"> 00:04 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m176.t1">hi</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t074" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m177">
+                    <time creation="system"> 00:04 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m177.t1">hi</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t075" type="standard" who="#f2213001.A10"
+                    xml:id="f2213001.m178">
+                    <time creation="system"> 00:05 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m178.t1">bye</w>
+                    <w lemma="ihr" pos="PPOSAT" xml:id="f2213001.m178.t2"
+                        >ihr</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t075" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m179">
+                    <time creation="system"> 00:05 </time>
+                    <name corresp="#f2213001.A10" type="NICK"
+                        >[_MALE-PARTICIPANT-A10_]</name> (<name type="OTH"
+                        >[_OTHERNAME-17_]</name>) Quit (1895 1860 1904) </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t076" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m180">
+                    <time creation="system"> 00:06 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NN" xml:id="f2213001.m180.t1">SIND</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m180.t2">DAS</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m180.t3">DIE</w>
+                    <w lemma="Letzte" pos="NN" xml:id="f2213001.m180.t4"
+                        >LETZTEN</w>
+                    <w pos="NN" xml:id="f2213001.m180.t5">BINGOZAHLEN</w>
+                    <w lemma="?" pos="$." xml:id="f2213001.m180.t6">?</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t076" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m181">
+                    <time creation="system"> 00:06 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NN" xml:id="f2213001.m181.t1">huch</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t076" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m182">
+                    <time creation="system"> 00:06 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="alle" pos="PIS" xml:id="f2213001.m182.t1">alle</w>
+                    <w lemma="wach" pos="PTKVZ" xml:id="f2213001.m182.t2"
+                        >wach</w>
+                    <w lemma="?" pos="$." xml:id="f2213001.m182.t3">?</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t076" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m183">
+                    <time creation="system"> 00:06 </time>
+                    <w pos="EMOASC" xml:id="f2213001.m183.t1">;)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t076" type="standard" who="#f2213001.A11"
+                    xml:id="f2213001.m184">
+                    <time creation="system"> 00:06 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="Jo" pos="NE" xml:id="f2213001.m184.t1">jo</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t076" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m185">
+                    <time creation="system"> 00:06 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m185.t1">oops</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m185.t2">*</w>
+                    <w pos="NE" xml:id="f2213001.m185.t3">salutier</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m185.t4">*</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t077" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m186">
+                    <time creation="system"> 00:07 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m186.t1">ups</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t078" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m187">
+                    <time creation="system"> 00:08 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t079" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m188">
+                    <time creation="system"> 00:09 </time>
+                    <name corresp="#f2213001.A13" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A13_]</name> is now known as <name
+                        corresp="#f2213001.A13" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A13_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t079" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m189">
+                    <time creation="system"> 00:09 </time>
+                    <name corresp="#f2213001.A22" type="NICK"
+                        >[_PARTICIPANT-A22_]</name> (<name type="OTH"
+                        >[_OTHERNAME-21_]</name>) has left <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t080" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m190">
+                    <time creation="system"> 00:11 </time>
+                    <name corresp="#f2213001.A20" type="NICK"
+                        >[_MALE-PARTICIPANT-A20_]</name> is now known as <name
+                        corresp="#f2213001.A20" type="NICK"
+                        >[_MALE-PARTICIPANT-A20_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t080" type="standard" who="#f2213001.A23"
+                    xml:id="f2213001.m191">
+                    <time creation="system"> 00:11 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m191.t1">nachti</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t081" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m192">
+                    <time creation="system"> 00:12 </time>
+                    <name corresp="#f2213001.A23" type="NICK"
+                        >[_PARTICIPANT-A23_]</name> is now known as <name
+                        corresp="#f2213001.A23" type="NICK"
+                        >[_PARTICIPANT-A23_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t082" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m193">
+                    <time creation="system"> 00:20 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is back [afk] gone
+                    3hrs 34mins 46secs </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t082" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m194">
+                    <time creation="system"> 00:20 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t083" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m195">
+                    <time creation="system"> 00:25 </time>
+                    <name type="NICK">[_NICKNAME_]</name> ist Away: ¬mugge hörn
+                    / peNNen¬ Seit ¬12:22:25 pm¬ </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t083" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m196">
+                    <time creation="system"> 00:25 </time>
+                    <name type="NICK">[_NICKNAME_]</name> is now known as <name
+                        corresp="#f2213001.A24" type="NICK"
+                        >[_MALE-PARTICIPANT-A24_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t083" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m197">
+                    <time creation="system"> 00:25 </time>
+                    <name corresp="#f2213001.A19" type="NICK"
+                        >[_PARTICIPANT-A19_]</name> is now known as <name
+                        corresp="#f2213001.A19" type="NICK"
+                        >[_PARTICIPANT-A19_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t083" type="standard" who="#f2213001.A24"
+                    xml:id="f2213001.m198">
+                    <time creation="system"> 00:25 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="bis" pos="APPR" xml:id="f2213001.m198.t1">bis</w>
+                    <w pos="NN" xml:id="f2213001.m198.t2">morsche</w>
+                    <w pos="EMOASC" xml:id="f2213001.m198.t3">:P</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t084" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m199">
+                    <time creation="system"> 00:27 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m199.t1">bye</w>
+                    <w pos="NE" xml:id="f2213001.m199.t2">bye</w>
+                    <name type="NICK">
+                        <w lemma="[_NICKNAME_]" pos="NE"
+                            xml:id="f2213001.m199.t3">[_NICKNAME_]</w>
+                        <w lemma="[" pos="$(" xml:id="f2213001.m199.t4">[</w>
+                        <w pos="NE" xml:id="f2213001.m199.t5">[_NICKNAME_]</w>
+                        <w lemma="]" pos="$(" xml:id="f2213001.m199.t6">]</w>
+                        <w pos="NE" xml:id="f2213001.m199.t7">[_NICKNAME_]</w>
+                    </name>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t085" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m200">
+                    <time creation="system"> 00:28 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="!" pos="$." xml:id="f2213001.m200.t1">!</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m200.t2"
+                        >wunsch</w>
+                    <w pos="NE" xml:id="f2213001.m200.t3">Aerosmith</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m200.t4">-</w>
+                    <w lemma="I" pos="FM" xml:id="f2213001.m200.t5">I</w>
+                    <w pos="FM" xml:id="f2213001.m200.t6">don't</w>
+                    <w pos="VVFIN" xml:id="f2213001.m200.t7">want</w>
+                    <w pos="NE" xml:id="f2213001.m200.t8">to</w>
+                    <w lemma="miss" pos="PTKVZ" xml:id="f2213001.m200.t9"
+                        >miss</w>
+                    <w lemma="a" pos="FM" xml:id="f2213001.m200.t10">a</w>
+                    <w pos="FM" xml:id="f2213001.m200.t11">thing</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t085" type="standard" who="#f2213001.A04"
+                    xml:id="f2213001.m201">
+                    <time creation="system"> 00:28 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A04" type="NICK">
+                        <w lemma="[_FEMALE-PARTICIPANT-A04_]" pos="NE"
+                            xml:id="f2213001.m201.t1"
+                            >[_FEMALE-PARTICIPANT-A04_]</w>
+                    </name>
+                    <w lemma="versuchen" pos="VVPP" xml:id="f2213001.m201.t2"
+                        >versucht</w>
+                    <name type="NICK">
+                        <w pos="VVFIN" xml:id="f2213001.m201.t3"
+                            >[_NICKNAME-3_]</w>
+                    </name>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m201.t4">den</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m201.t5"
+                        >wunsch</w>
+                    <w lemma="zu" pos="PTKZU" xml:id="f2213001.m201.t6">zu</w>
+                    <w lemma="erfüllen" pos="VVINF" xml:id="f2213001.m201.t7"
+                        >erfüllen</w>
+                    <w pos="$(" xml:id="f2213001.m201.t8">..</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m201.t9">und</w>
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m201.t10">das</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m201.t11"
+                        >ist</w>
+                    <w pos="NE" xml:id="f2213001.m201.t12">Aerosmith</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m201.t13">-</w>
+                    <w lemma="I" pos="FM" xml:id="f2213001.m201.t14">I</w>
+                    <w pos="FM" xml:id="f2213001.m201.t15">don't</w>
+                    <w pos="VVFIN" xml:id="f2213001.m201.t16">want</w>
+                    <w pos="NE" xml:id="f2213001.m201.t17">to</w>
+                    <w lemma="miss" pos="PTKVZ" xml:id="f2213001.m201.t18"
+                        >miss</w>
+                    <w lemma="a" pos="FM" xml:id="f2213001.m201.t19">a</w>
+                    <w pos="FM" xml:id="f2213001.m201.t20">thing</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t086" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m202">
+                    <time creation="system"> 00:31 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-22_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t087" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m203">
+                    <time creation="system"> 00:46 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-22_]</name>) Quit (iZ script v1.3.0 - <ref
+                        type="URL">[_WWWURL-13_]</ref>) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t088" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m204">
+                    <time creation="system"> 00:48 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-10_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t088" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m205">
+                    <time creation="system"> 00:48 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +h <name type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t088" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m206">
+                    <time creation="system"> 00:48 </time>
+                    <name corresp="#f2213001.A19" type="NICK"
+                        >[_PARTICIPANT-A19_]</name> is now known as <name
+                        corresp="#f2213001.A19" type="NICK"
+                        >[_PARTICIPANT-A19_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t089" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m207">
+                    <time creation="system"> 00:49 </time>
+                    <name corresp="#f2213001.A25" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A25_]</name> is now known as <name
+                        corresp="#f2213001.A25" type="NICK"
+                        >[_FEMALE-PARTICIPANT-A25_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t089" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m208">
+                    <time creation="system"> 00:49 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="VVINF" xml:id="f2213001.m208.t1">reee</w>
+                    <w pos="EMOASC" xml:id="f2213001.m208.t2">:))</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t090" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m209">
+                    <time creation="system"> 00:51 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m209.t1">huhu</w>
+                    <name corresp="#f2213001.A25" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m209.t2"
+                            >[_FEMALE-PARTICIPANT-A25_]</w>
+                    </name>
+                    <w pos="EMOASC" xml:id="f2213001.m209.t3">:-)))</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t090" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m210">
+                    <time creation="system"> 00:51 </time>
+                    <anchor type="sentence_start" />
+                    <w subtype="acronym" pos="AKW" xml:id="f2213001.m210.t1"
+                        >wb</w>
+                    <name corresp="#f2213001.A25" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m210.t2"
+                            >[_FEMALE-PARTICIPANT-A25_]</w>
+                    </name>
+                    <w pos="EMOASC" xml:id="f2213001.m210.t3">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t090" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m211">
+                    <time creation="system"> 00:51 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m211.t1">huhu</w>
+                    <name corresp="#f2213001.A18" type="NICK">
+                        <w lemma="[_MALE-PARTICIPANT-A18_]" pos="NE"
+                            xml:id="f2213001.m211.t2"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="[" pos="$(" xml:id="f2213001.m211.t3">[</w>
+                        <w pos="NE" xml:id="f2213001.m211.t4"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="]" pos="$(" xml:id="f2213001.m211.t5">]</w>
+                    </name>
+                    <w pos="EMOASC" xml:id="f2213001.m211.t6">:o)))</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t090" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m212">
+                    <time creation="system"> 00:51 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m212.t1">thx</w>
+                    <name corresp="#f2213001.A03" type="NICK">
+                        <w pos="VVFIN" xml:id="f2213001.m212.t2"
+                            >[_PARTICIPANT-A03_]</w>
+                    </name>
+                    <w pos="EMOASC" xml:id="f2213001.m212.t3">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t090" type="standard" who="#f2213001.A17"
+                    xml:id="f2213001.m213">
+                    <time creation="system"> 00:51 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NE" xml:id="f2213001.m213.t1">huhuuu</w>
+                    <ref corresp="#f2213001.A25" type="addressingTerm">
+                        <w pos="NE" xml:id="f2213001.m213.t2"
+                            >[_FEMALE-PARTICIPANT-A25_]</w>
+                        <w pos="ADJD" xml:id="f2213001.m213.t3">sysse</w>
+                    </ref>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m213.t4">*</w>
+                    <w subtype="inflective" pos="AKW" xml:id="f2213001.m213.t5"
+                        >knuddelz</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m213.t6">*</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t090" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m214">
+                    <time creation="system"> 00:51 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m214.t1">huhu</w>
+                    <w pos="NN" xml:id="f2213001.m214.t2">süsse</w>
+                    <ref corresp="#f2213001.A17" type="addressingTerm">
+                        <w pos="NE" xml:id="f2213001.m214.t3"
+                            >[_FEMALE-PARTICIPANT-A17_]</w>
+                    </ref>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m214.t4">*</w>
+                    <w subtype="inflective" pos="AKW" xml:id="f2213001.m214.t5"
+                        >reknuddelz</w>
+                    <w lemma="*" pos="$(" xml:id="f2213001.m214.t6">*</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t091" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m215">
+                    <time creation="system"> 00:52 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-23_]</name>) Quit (Ich komme wieder keine
+                    Frage) </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t092" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m216">
+                    <time creation="system"> 00:58 </time>
+                    <anchor type="sentence_start" />
+                    <ref corresp="#f2213001.A18" type="addressingTerm">
+                        <w lemma="[_MALE-PARTICIPANT-A18_]" pos="NE"
+                            xml:id="f2213001.m216.t1"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="[" pos="$(" xml:id="f2213001.m216.t2">[</w>
+                        <w pos="NE" xml:id="f2213001.m216.t3"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="]" pos="$(" xml:id="f2213001.m216.t4">]</w>
+                    </ref>
+                    <w lemma="etwas" pos="ADV" xml:id="f2213001.m216.t5"
+                        >etwas</w>
+                    <w lemma="von" pos="APPR" xml:id="f2213001.m216.t6">von</w>
+                    <w pos="NN" xml:id="f2213001.m216.t7">slade</w>
+                    <w lemma="bitten" pos="ADV" xml:id="f2213001.m216.t8"
+                        >bitte</w>
+                    <w pos="EMOASC" xml:id="f2213001.m216.t9">:D</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t092" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m217">
+                    <time creation="system"> 00:58 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ADJD" xml:id="f2213001.m217.t1">okay</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t093" type="standard" who="#f2213001.A03"
+                    xml:id="f2213001.m218">
+                    <time creation="system"> 01:00 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="!" pos="$." xml:id="f2213001.m218.t1">!</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m218.t2"
+                        >wunsch</w>
+                    <w lemma="Tina" pos="NE" xml:id="f2213001.m218.t3">Tina</w>
+                    <w lemma="Turner" pos="NE" xml:id="f2213001.m218.t4"
+                        >Turner</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m218.t5">-</w>
+                    <w lemma="privat" pos="ADJA" xml:id="f2213001.m218.t6"
+                        >private</w>
+                    <w pos="NE" xml:id="f2213001.m218.t7">Dancer</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t093" type="standard" who="#f2213001.A04"
+                    xml:id="f2213001.m219">
+                    <time creation="system"> 01:00 </time>
+                    <anchor type="sentence_start" />
+                    <name corresp="#f2213001.A04" type="NICK">
+                        <w lemma="[_FEMALE-PARTICIPANT-A04_]" pos="NE"
+                            xml:id="f2213001.m219.t1"
+                            >[_FEMALE-PARTICIPANT-A04_]</w>
+                    </name>
+                    <w lemma="versuchen" pos="VVPP" xml:id="f2213001.m219.t2"
+                        >versucht</w>
+                    <name corresp="#f2213001.A03" type="NICK">
+                        <w pos="VVFIN" xml:id="f2213001.m219.t3"
+                            >[_PARTICIPANT-A03_]</w>
+                    </name>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m219.t4">den</w>
+                    <w lemma="Wunsch" pos="NN" xml:id="f2213001.m219.t5"
+                        >wunsch</w>
+                    <w lemma="zu" pos="PTKZU" xml:id="f2213001.m219.t6">zu</w>
+                    <w lemma="erfüllen" pos="VVINF" xml:id="f2213001.m219.t7"
+                        >erfüllen</w>
+                    <w pos="$(" xml:id="f2213001.m219.t8">..</w>
+                    <w lemma="und" pos="KON" xml:id="f2213001.m219.t9">und</w>
+                    <w lemma="die" pos="PDS" xml:id="f2213001.m219.t10">das</w>
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m219.t11"
+                        >ist</w>
+                    <w lemma="Tina" pos="NE" xml:id="f2213001.m219.t12">Tina</w>
+                    <w lemma="Turner" pos="NE" xml:id="f2213001.m219.t13"
+                        >Turner</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m219.t14">-</w>
+                    <w lemma="privat" pos="ADJA" xml:id="f2213001.m219.t15"
+                        >private</w>
+                    <w pos="NE" xml:id="f2213001.m219.t16">Dancer</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t094" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m220">
+                    <time creation="system"> 01:02 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NN" xml:id="f2213001.m220.t1">huch</w>
+                    <w lemma="wissen" pos="VVFIN" xml:id="f2213001.m220.t2"
+                        >wusste</w>
+                    <w lemma="ich" pos="PPER" xml:id="f2213001.m220.t3">ich</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m220.t4"
+                        >nicht</w>
+                    <ref corresp="#f2213001.A18" type="addressingTerm">
+                        <w lemma="[_MALE-PARTICIPANT-A18_]" pos="NN"
+                            xml:id="f2213001.m220.t5"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="[" pos="$(" xml:id="f2213001.m220.t6">[</w>
+                        <w pos="ADJD" xml:id="f2213001.m220.t7">onAir</w>
+                        <w lemma="]" pos="$(" xml:id="f2213001.m220.t8">]</w>
+                    </ref>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t094" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m221">
+                    <time creation="system"> 01:02 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m221.t1">ui</w>
+                    <w pos="NE" xml:id="f2213001.m221.t2">thx</w>
+                    <w pos="EMOASC" xml:id="f2213001.m221.t3">:D</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t095" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m222">
+                    <time creation="system"> 01:07 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ONO" xml:id="f2213001.m222.t1">hihi</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t095" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m223">
+                    <time creation="system"> 01:07 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="die" pos="ART" xml:id="f2213001.m223.t1">das</w>
+                    <w pos="ADJA" xml:id="f2213001.m223.t2">letztemal</w>
+                    <w pos="NN" xml:id="f2213001.m223.t3">hattest</w>
+                    <w lemma="die" pos="ART" xml:id="f2213001.m223.t4">das</w>
+                    <w lemma="noch" pos="ADV" xml:id="f2213001.m223.t5">noch</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m223.t6"
+                        >nicht</w>
+                    <w pos="EMOASC" xml:id="f2213001.m223.t7">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t096" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m224">
+                    <time creation="system"> 01:08 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m224.t1"
+                        >war</w>
+                    <w pos="NE" xml:id="f2213001.m224.t2">sweet</w>
+                    <w lemma="schon" pos="ADV" xml:id="f2213001.m224.t3"
+                        >schon</w>
+                    <ref corresp="#f2213001.A18" type="addressingTerm">
+                        <w lemma="[_MALE-PARTICIPANT-A18_]" pos="NE"
+                            xml:id="f2213001.m224.t4"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="[" pos="$(" xml:id="f2213001.m224.t5">[</w>
+                        <w pos="NE" xml:id="f2213001.m224.t6"
+                            >[_MALE-PARTICIPANT-A18_]</w>
+                        <w lemma="]" pos="$(" xml:id="f2213001.m224.t7">]</w>
+                    </ref>
+                    <w lemma="?" pos="$." xml:id="f2213001.m224.t8">?</w>
+                    <w pos="EMOASC" xml:id="f2213001.m224.t9">:D</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t096" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m225">
+                    <time creation="system"> 01:08 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="noch" pos="ADV" xml:id="f2213001.m225.t1">noch</w>
+                    <w lemma="nicht" pos="PTKNEG" xml:id="f2213001.m225.t2"
+                        >nicht</w>
+                    <w lemma="finden" pos="VVPP" xml:id="f2213001.m225.t3"
+                        >gefunden</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t096" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m226">
+                    <time creation="system"> 01:08 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="ja" pos="ADV" xml:id="f2213001.m226.t1">ja</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t096" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m227">
+                    <time creation="system"> 01:08 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="schade" pos="ADJD" xml:id="f2213001.m227.t1"
+                        >schade</w>
+                    <w pos="$(" xml:id="f2213001.m227.t2">....</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t097" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m228">
+                    <time creation="system"> 01:09 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="sein" pos="VAFIN" xml:id="f2213001.m228.t1"
+                        >war</w>
+                    <w lemma="schon" pos="ADV" xml:id="f2213001.m228.t2"
+                        >schon</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m228.t3">,</w>
+                    <w lemma="kommen" pos="VVFIN" xml:id="f2213001.m228.t4"
+                        >kommt</w>
+                    <w lemma="aber" pos="ADV" xml:id="f2213001.m228.t5">aber</w>
+                    <w lemma="nochmal" pos="ADV" xml:id="f2213001.m228.t6"
+                        >nochmal</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t097" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m229">
+                    <time creation="system"> 01:09 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="fein" pos="ADJD" xml:id="f2213001.m229.t1"
+                        >fein</w>
+                    <w pos="EMOASC" xml:id="f2213001.m229.t2">:)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t097" type="standard" who="#f2213001.A21"
+                    xml:id="f2213001.m230">
+                    <time creation="system"> 01:09 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="NN" xml:id="f2213001.m230.t1">teenage</w>
+                    <w pos="VVFIN" xml:id="f2213001.m230.t2">rampage</w>
+                    <w lemma="in" pos="APPR" xml:id="f2213001.m230.t3">in</w>
+                    <w pos="NN" xml:id="f2213001.m230.t4">playliste</w>
+                    <w lemma="drin" pos="ADV" xml:id="f2213001.m230.t5">drin</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t098" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m231">
+                    <time creation="system"> 01:10 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ADJD" xml:id="f2213001.m231.t1">thx</w>
+                    <w pos="EMOASC" xml:id="f2213001.m231.t2">:)</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t099" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m232">
+                    <time creation="system"> 01:11 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-24_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t099" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m233">
+                    <time creation="system"> 01:11 </time>
+                    <name corresp="#f2213001.A02" type="NICK">[_BOT-A02_]</name>
+                    sets mode: +o <name type="NICK">[_NICKNAME_]</name></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t099" type="standard" who="#f2213001.A26"
+                    xml:id="f2213001.m234">
+                    <time creation="system"> 01:11 </time>
+                    <w pos="EMOASC" xml:id="f2213001.m234.t1">-_(Y)</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t099" type="standard" who="#f2213001.A26"
+                    xml:id="f2213001.m235">
+                    <time creation="system"> 01:11 </time>  <w pos="EMOASC"
+                        xml:id="f2213001.m235.t1">_(°-°)</w></post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t099" type="standard" who="#f2213001.A26"
+                    xml:id="f2213001.m236">
+                    <time creation="system"> 01:11 </time>
+                    <anchor type="sentence_start" />
+                    <w lemma="-" pos="$(" xml:id="f2213001.m236.t1">-</w>
+                    <w lemma="(" pos="$(" xml:id="f2213001.m236.t2">(</w>
+                    <w lemma=")" pos="$(" xml:id="f2213001.m236.t3">)</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m236.t4">-</w>
+                    <w lemma="," pos="$," xml:id="f2213001.m236.t5">,</w>
+                    <w lemma="-" pos="$(" xml:id="f2213001.m236.t6">-</w>
+                    <w lemma="(" pos="$(" xml:id="f2213001.m236.t7">(</w>
+                    <w lemma=")" pos="$(" xml:id="f2213001.m236.t8">)</w>
+                    <w lemma="--" pos="APPR" xml:id="f2213001.m236.t9">--</w>
+                    <w pos="NE" xml:id="f2213001.m236.t10">&lt;</w>
+                    <w lemma="{" pos="XY" xml:id="f2213001.m236.t11">{</w>
+                    <w lemma="@" pos="XY" xml:id="f2213001.m236.t12">@</w>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t099" type="standard" who="#f2213001.A26"
+                    xml:id="f2213001.m237">
+                    <time creation="system"> 01:11 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="XY" xml:id="f2213001.m237.t1">.(_)-(_)</w>
+                    <w pos="NE" xml:id="f2213001.m237.t2">HALLÖÖÖ</w>
+                    <ref corresp="#f2213001.A25" type="addressingTerm">
+                        <w pos="NE" xml:id="f2213001.m237.t3"
+                            >[_FEMALE-PARTICIPANT-A25_]</w>
+                    </ref>
+                </post>
+                <post mode="written" creation="human" rend="color:black"
+                    synch="#f2213001.t100" type="standard" who="#f2213001.A25"
+                    xml:id="f2213001.m238">
+                    <time creation="system"> 01:13 </time>
+                    <anchor type="sentence_start" />
+                    <w pos="ITJ" xml:id="f2213001.m238.t1">huhu</w>
+                    <name corresp="#f2213001.A26" type="NICK">
+                        <w pos="NE" xml:id="f2213001.m238.t2"
+                            >[_MALE-PARTICIPANT-A26_]</w>
+                    </name>
+                    <w pos="EMOASC" xml:id="f2213001.m238.t3">:))</w>
+                </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t100" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m239">
+                    <time creation="system"> 01:13 </time>
+                    <name type="NICK">[_NICKNAME_]</name> (<name type="OTH"
+                        >[_OTHERNAME-25_]</name>) Quit (Ping timeout) </post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t101" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m240">
+                    <time creation="system"> 01:17 </time>
+                    <name corresp="#f2213001.A11" type="NICK"
+                        >[_MALE-PARTICIPANT-A11_]</name> (<name type="OTH"
+                        >[_OTHERNAME-26_]</name>) has joined <name type="ROOM"
+                        >[_ROOMNAME_]</name></post>
+                <post mode="written" creation="system" rend="color:black"
+                    synch="#f2213001.t101" type="event"
+                    who="#f2213001.A01_System" xml:id="f2213001.m241">
+                    <time creation="system"> 01:17 </time> Disconnected </post>
+                <post mode="written" creation="system" rend="color:black"
+                    type="event" who="#f2213001.A01_System"
+                    xml:id="f2213001.m242"> Session Close: Thu Jul 14 01:17:46
+                    2005 </post>
+            </div>
+        </body>
+    </text>
+</TEI>
