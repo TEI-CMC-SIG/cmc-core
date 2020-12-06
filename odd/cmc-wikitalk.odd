@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+    <teiHeader>
+        <fileDesc>
+
+            <titleStmt>
+                <title>cmc-wikitalk: Customisation for the encoding of Wiki Talk Pages</title>
+                <author><ref
+                        target="https://wiki.tei-c.org/index.php/SIG:Computer-Mediated_Communication"
+                        >TEI Special Interest Group Computer-Mediated Communication</ref>
+                </author>
+            </titleStmt>
+
+
+            <publicationStmt>
+                <publisher><ref
+                        target="https://wiki.tei-c.org/index.php/SIG:Computer-Mediated_Communication"
+                        >TEI Special Interest Group Computer-Mediated Communication</ref>
+                </publisher>
+                <date when="2019-08-20"/>
+                <idno type="uri">CMC-wikitalk.odd</idno>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by/4.0/"/>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <p>The present ODD was born digital</p>
+            </sourceDesc>
+
+        </fileDesc>
+
+        <encodingDesc>
+            <projectDesc>
+                <p>A customisation by the TEI CMC SIG, containing additional specifications for
+                    encoding wiki talk pages. This ODD imports the (compiled) version of)
+                    cmc-core.odd as specified below in schemaSpec/@source. Derive a schema using
+                        <ref target="http://teic.github.io/PDF/howtoChain.pdf">ODD chaining</ref>
+                </p>
+            </projectDesc>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2020-03-05" who="HL">
+                <label>v2</label>
+                <list>
+                    <item>added div as member of model.divPart.cmc</item>
+                    <item>added desc and emph as members of att.typed</item>
+                    <item>added model.descLike to content of figure</item>
+                    <item>added model.floatP.cmc to content models of head, hi, item</item>
+                </list>
+            </change>
+            <change when="2019-10-30" who="HL">
+                <label>v1</label>
+                <list>
+                    <item>added model class model.floatP.cmc</item>
+                    <item>added element signatureContent</item>
+                    <item>modified p to include model.floatP.cmc in its content</item>
+                    <item>modified s to include model.floatP.cmc in its content</item>
+                </list>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <front>
+            <titlePage>
+                <docTitle>
+                    <titlePart>CMC-wikitalk</titlePart>
+                    <titlePart>Customisation for Wiki talk pages</titlePart>
+                </docTitle>
+                <docDate>2nd version March 2020</docDate>
+                <docDate>First version August 2019</docDate>
+            </titlePage>
+
+            <p>How to derive a schema from cmc-wikitalk.odd using <ref
+                    target="http://teic.github.io/PDF/howtoChain.pdf">ODD Chaining</ref> in Oxygen:
+                    <list type="ordered">
+                    <item>Create a transformation scenario "TEI ODD ODD" for <hi rend="italic"
+                            >cmc-core.odd</hi> in Oxygen by duplicating the predefined scenario TEI
+                        ODD XHTML.</item>
+                    <item>Then edit the new TEI ODD ODD scenario: Remove the two additional XSLT
+                        stylesheets, and set the output to a file named <hi rend="italic"
+                            >cmc-core.compiled.odd</hi>. (Now oxygen will use the stylesheet
+                        odd2odd.xsl with the right parameter settings.)</item>
+                    <item>Apply the new scenario TEI ODD ODD to <hi rend="italic"
+                        >cmc-core.odd</hi></item>
+                    <item> Apply the usual TEI ODD scenarios e.g. TEI ODD RELAX NG XML and TEI ODD
+                        XHMTL to the file <hi rend="italic">cmc-wikitalk.odd</hi>. (The present file
+                        "imports" cmc-core.compiled.odd via schemaSpec/@source)</item>
+                </list>
+            </p>
+
+
+
+        </front>
+
+        <body>
+
+            <!--  M O D U L E   S P E C S    -->
+
+            <!--  S C H E M A   S P E C S    -->
+
+
+
+            <schemaSpec ident="cmc-core" start="TEI teiCorpus" docLang="en"
+                source="cmc-core.compiled.odd">
+                <!-- @start "specifies entry points to the schema, i.e. which patterns may be used as
+                    the root of documents conforming to it." -->
+
+                <moduleRef key="tei"/>
+                <!-- required -->
+                <moduleRef key="cmc"/>
+                <moduleRef key="core"/>
+                <!-- required -->
+                <moduleRef key="corpus"/>
+                <moduleRef key="header"/>
+                <!-- required -->
+                <moduleRef key="iso-fs"/>
+                <moduleRef key="namesdates"/>
+                <moduleRef key="spoken"/>
+                <moduleRef key="textstructure"/>
+                <!-- required -->
+                <moduleRef key="tagdocs"/>
+                <moduleRef key="linking"/>
+                <moduleRef key="analysis"/>
+                <moduleRef key="figures"/>
+
+
+                <!--  M O D E L    C L A S S S P E C S    -->
+
+                <classSpec xml:id="model.floatP.cmc" ident="model.floatP.cmc" type="model"
+                    module="cmc">
+                    <desc>includes the TEI element <gi>signed</gi> to allow it to occur freely and
+                        multiply within the elements that have model.floatP.cmc as part of their
+                        content model. Currently only <gi>p</gi>. In the original TEI, it is p-like,
+                        i.e. restricted to occur between paragraphs only, reflecting the more rigid
+                        structure of written letters. This extension is needed to mark user
+                        signatures in Wikipedia talk which occur within paragraphs. </desc>
+                </classSpec>
+
+                <!--  E L E M E N T   S P E C S    -->
+
+                <elementSpec ident="signatureContent" module="cmc" mode="add">
+                    <desc>is used to describe an individual user’s signature in the user profile in
+                        the TEI header. [Element adopted from the <ref target="#TEIcmc2012"
+                            >DeRiK-Schema</ref>]</desc>
+                    <classes>
+                        <memberOf key="model.persStateLike"/>
+                        <memberOf key="att.global"/>
+                    </classes>
+                    <content>
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <rng:text/>
+                                <rng:ref name="ref"/>
+                                <rng:ref name="model.hiLike"/>
+                                <rng:ref name="model.milestoneLike"/>
+                                <rng:ref name="figure"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                    <exemplum type="Chat2CLARIN">
+                        <p>signature content in Wikipedia talk</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <profileDesc>
+                                <particDesc>
+                                    <listPerson>
+                                        <!--[...]-->
+                                        <person xml:id="A06">
+                                            <persName>Jamiri</persName>
+                                            <signatureContent><ref
+                                                  target="http://de.wikipedia.org/wiki/Benutzer:Jamiri"
+                                                  >Jamiri</ref>
+                                            </signatureContent>
+                                        </person>
+                                        <!-- [...]-->
+                                    </listPerson>
+                                </particDesc>
+                            </profileDesc>
+                            <!--[...]-->
+                            <body>
+                                <div type="thread">
+                                    <head>Freibad statt Tunnel</head>
+                                    <!--[...]-->
+                                    <post type="standard" creation="human" synch="#t02" who="#A06"
+                                        indentLevel="1">
+                                        <p>Ja, sollte eigentlich. Aber der Starrsinn hat bisher über
+                                            die Vernunft gesiegt. Wahrscheinlich muss vor einer
+                                            Bearbeitung des Artikels Spencers Tod abgewartet werden,
+                                            da die Darstellung von Sachverhalten einer noch lebenden
+                                            Person sonst als „Live-Ticker“ revertiert werden könnte.
+                                            Klingt zynisch? Soll's auch. -- <signed
+                                                creation="template" who="#A06"><gap
+                                                  reason="signatureContent"/><time
+                                                  creation="template" who="#A06">11:56, 28. Jul.
+                                                  2011 (CEST)</time></signed></p>
+                                    </post>
+                                    <!--[...]-->
+                                </div>
+                            </body>
+                        </egXML>
+                    </exemplum>
+                </elementSpec>
+
+                <elementSpec ident="p" module="core" mode="change">
+                    <desc>(paragraph) marks paragraphs in prose. In the case of CMC documents,
+                        notably Wiki talk pages, it is necessary that <gi>signed</gi> may also
+                        appear inside paragraphs. In a Wiki talk page, users insert their signature
+                        as part of the paragraph. The only change to the original content model of
+                            <gi>p</gi> is that <gi>signed</gi> is additionally allowed inside
+                            <gi>p</gi>.</desc>
+                    <content>
+                        <!-- original macro.paraContent =  (text | model.gLike | model.phrase | model.inter | model.global | lg | model.lLike)* -->
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <rng:text/>
+                                <rng:ref name="model.gLike"/>
+                                <rng:ref name="model.phrase"/>
+                                <rng:ref name="model.inter"/>
+                                <rng:ref name="model.global"/>
+                                <rng:ref name="lg"/>
+                                <rng:ref name="model.lLike"/>
+                                <rng:ref name="model.floatP.cmc"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                    <exemplum type="Chat2CLARIN">
+                        <p>Usenet news message</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p>Wer die ruhrtour Mailingliste noch nicht kennt, der schaut bitte
+                                weiter unten nach!</p></egXML>
+                    </exemplum>
+                </elementSpec>
+
+                <elementSpec ident="s" module="analysis" mode="change">
+                    <desc>(s-unit) contains a sentence-like division of a text, in the case of CMC
+                        maybe also including elements of the model <ref target="#model.floatP.cmc"
+                            >model.floatP.cmc</ref></desc>
+                    <content>
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <!-- Content as in original TEI: -->
+                                <rng:text/>
+                                <rng:ref name="model.gLike"/>
+                                <rng:ref name="model.global"/>
+                                <rng:ref name="binaryObject"/>
+                                <rng:ref name="formula"/>
+                                <rng:ref name="graphic"/>
+                                <rng:ref name="media"/>
+                                <rng:ref name="code"/>
+                                <rng:ref name="distinct"/>
+                                <rng:ref name="emph"/>
+                                <rng:ref name="foreign"/>
+                                <rng:ref name="gloss"/>
+                                <rng:ref name="ident"/>
+                                <rng:ref name="mentioned"/>
+                                <rng:ref name="soCalled"/>
+                                <rng:ref name="term"/>
+                                <rng:ref name="title"/>
+                                <rng:ref name="hi"/>
+                                <rng:ref name="caesura"/>
+                                <rng:ref name="rhyme"/>
+                                <rng:ref name="address"/>
+                                <rng:ref name="affiliation"/>
+                                <rng:ref name="email"/>
+                                <rng:ref name="date"/>
+                                <rng:ref name="time"/>
+                                <rng:ref name="depth"/>
+                                <rng:ref name="dim"/>
+                                <rng:ref name="geo"/>
+                                <rng:ref name="height"/>
+                                <rng:ref name="measure"/>
+                                <rng:ref name="measureGrp"/>
+                                <rng:ref name="num"/>
+                                <rng:ref name="width"/>
+                                <rng:ref name="name"/>
+                                <rng:ref name="orgName"/>
+                                <rng:ref name="persName"/>
+                                <rng:ref name="geogFeat"/>
+                                <rng:ref name="offset"/>
+                                <rng:ref name="addName"/>
+                                <rng:ref name="forename"/>
+                                <rng:ref name="genName"/>
+                                <rng:ref name="nameLink"/>
+                                <rng:ref name="roleName"/>
+                                <rng:ref name="surname"/>
+                                <rng:ref name="bloc"/>
+                                <rng:ref name="country"/>
+                                <rng:ref name="district"/>
+                                <rng:ref name="geogName"/>
+                                <rng:ref name="placeName"/>
+                                <rng:ref name="region"/>
+                                <rng:ref name="settlement"/>
+                                <rng:ref name="climate"/>
+                                <rng:ref name="location"/>
+                                <rng:ref name="population"/>
+                                <rng:ref name="state"/>
+                                <rng:ref name="terrain"/>
+                                <rng:ref name="trait"/>
+                                <rng:ref name="idno"/>
+                                <rng:ref name="lang"/>
+                                <rng:ref name="rs"/>
+                                <rng:ref name="abbr"/>
+                                <rng:ref name="am"/>
+                                <rng:ref name="choice"/>
+                                <rng:ref name="ex"/>
+                                <rng:ref name="expan"/>
+                                <rng:ref name="subst"/>
+                                <rng:ref name="add"/>
+                                <rng:ref name="app"/>
+                                <rng:ref name="corr"/>
+                                <rng:ref name="damage"/>
+                                <rng:ref name="del"/>
+                                <rng:ref name="handShift"/>
+                                <rng:ref name="mod"/>
+                                <rng:ref name="orig"/>
+                                <rng:ref name="redo"/>
+                                <rng:ref name="reg"/>
+                                <rng:ref name="restore"/>
+                                <rng:ref name="retrace"/>
+                                <rng:ref name="sic"/>
+                                <rng:ref name="supplied"/>
+                                <rng:ref name="surplus"/>
+                                <rng:ref name="unclear"/>
+                                <rng:ref name="undo"/>
+                                <rng:ref name="catchwords"/>
+                                <rng:ref name="dimensions"/>
+                                <rng:ref name="heraldry"/>
+                                <rng:ref name="locus"/>
+                                <rng:ref name="locusGrp"/>
+                                <rng:ref name="material"/>
+                                <rng:ref name="objectType"/>
+                                <rng:ref name="origDate"/>
+                                <rng:ref name="origPlace"/>
+                                <rng:ref name="secFol"/>
+                                <rng:ref name="signatures"/>
+                                <rng:ref name="stamp"/>
+                                <rng:ref name="watermark"/>
+                                <rng:ref name="att"/>
+                                <rng:ref name="gi"/>
+                                <rng:ref name="tag"/>
+                                <rng:ref name="val"/>
+                                <rng:ref name="ptr"/>
+                                <rng:ref name="ref"/>
+                                <rng:ref name="oRef"/>
+                                <rng:ref name="oVar"/>
+                                <rng:ref name="pRef"/>
+                                <rng:ref name="pVar"/>
+                                <rng:ref name="c"/>
+                                <rng:ref name="cl"/>
+                                <rng:ref name="m"/>
+                                <rng:ref name="pc"/>
+                                <rng:ref name="phr"/>
+                                <rng:ref name="seg"/>
+                                <rng:ref name="w"/>
+                                <rng:ref name="specDesc"/>
+                                <rng:ref name="specList"/>
+                                <!-- CMC addition: -->
+                                <rng:ref name="model.floatP.cmc"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="signed" module="textstructure" mode="change">
+                    <desc> (signature) contains the closing salutation, etc., appended to a
+                        foreword, dedicatory epistle, or other division of a text, or appearing
+                        freely within paragraphs, sentences, quotations or the post as a whole
+                        especially of an email, or of a user contribution on a Wikipedia talk page. </desc>
+                    <classes mode="change">
+                        <memberOf mode="add" key="model.floatP.cmc"/>
+                        <!--memberOf mode="add" key="att.typed" /-->
+                    </classes>
+                    <attList>
+                        <!-- added type attribute to distinguish between types of autosignature, mostly
+                      in wikipedia talk pages. Copied from the former autoSignature-->
+                        <attDef ident="type" mode="add">
+                            <valList type="closed">
+                                <valItem ident="signed">
+                                    <desc>indicates that the corresponding posting was explicitly
+                                        signed by a registered user using a user signature mark up
+                                        (e.g. ~~~~). </desc>
+                                </valItem>
+                                <valItem ident="unsigned">
+                                    <desc> indicates that the corresponding posting was marked by
+                                        either a registered or unregistered user using the Unsigned
+                                        or Help template.</desc>
+                                </valItem>
+                                <valItem ident="user_contribution">
+                                    <desc> "user_contribution" indicates that the corresponding
+                                        posting was marked using a [[Special:Contributions/IP]] link
+                                        (e.g by an unregistered user) </desc>
+                                </valItem>
+                                <valItem ident="special_contribution">
+                                    <desc>added 2019-06-14</desc>
+                                    <desc>This is actually the same as "user_contribution"</desc>
+                                    <desc> "special_contribution" indicates that the corresponding
+                                        posting was marked using a [[Special:Contributions/IP]] link
+                                        (e.g by an unregistered user) </desc>
+                                </valItem>
+                            </valList>
+                        </attDef>
+                    </attList>
+                    <exemplum type="WikiTalk">
+                        <p>one post containing an automatic signature (Wikipedia talk page)</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <post type="standard" auto="false" indentLevel="0" synch="t00394400"
+                                who="WU00037741">
+                                <p> Wie findet Ihr den neuen Haupttext? Gut so?-- <signed
+                                        auto="true" who="WU00037741"><gap reason="signatureContent"
+                                            /><time auto="true" who="WU00037741">14:24, 23. Okt.
+                                            2008 (CEST)</time>
+                                    </signed>
+                                </p>
+                            </post>
+                        </egXML>
+                    </exemplum>
+                    <exemplum type="WikiTalk">
+                        <p>Wikipedia talk page "Astronomical Object"</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <p>Where can defining statements be found in relation to man-made
+                                objects, and why aren't they mentioned on this page, I'm no expert
+                                in this field, I need expert definitive opinion on this matter,
+                                please help me if you know where it can be found. Quoting wiki won't
+                                help. <signed creation="template"><ref target="/wiki/User:Penyulap"
+                                        >Penyulap</ref>
+                                    <ref target="/wiki/User_talk:Penyulap">talk</ref>
+                                    <time>21:22, 14 June 2011 (UTC)</time></signed></p>
+                        </egXML>
+                    </exemplum>
+                </elementSpec>
+
+
+                <!-- 2020-03-03 HLU: added desc to att.typed -->
+                <elementSpec ident="desc" module="core" mode="change">
+                    <classes>
+                        <memberOf mode="add" key="att.typed"/>
+                        <memberOf mode="add" key="model.descLike"/>
+                    </classes>
+                </elementSpec>
+
+                <!-- adding att.typed for wiki talk HLU 2020-03-03 -->
+                <elementSpec ident="emph" module="core" mode="change">
+                    <classes>
+                        <memberOf mode="add" key="att.typed"/>
+                    </classes>
+                </elementSpec>
+
+                <!-- adding model.descLike to figure HLU 2020-03-03: -->
+                <elementSpec ident="figure" module="figures" mode="change">
+                    <content>
+                        <rng:zeroOrMore>tei <rng:choice>
+                                <!-- begin original model -->
+                                <rng:ref name="model.headLike"/>
+                                <rng:ref name="model.common"/>
+                                <rng:ref name="figDesc"/>
+                                <rng:ref name="model.graphicLike"/>
+                                <rng:ref name="model.global"/>
+                                <rng:ref name="model.divBottom"/>
+                                <!-- end original model -->
+                                <!-- HLU 2020-03-03: -->
+                                <rng:ref name="model.descLike"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                    <exemplum>
+                        <eg>ToDo</eg>
+                    </exemplum>
+                </elementSpec>
+
+                <!-- 2020-03-03 HLU: adding model.floatP.cmc to head -->
+                <elementSpec ident="head" mode="change" module="core">
+                    <content>
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <!-- BEGIN original content -->
+                                <rng:text/>
+                                <rng:ref name="model.gLike"/>
+                                <rng:ref name="model.phrase"/>
+                                <rng:ref name="model.inter"/>
+                                <rng:ref name="model.global"/>
+                                <rng:ref name="lg"/>
+                                <rng:ref name="model.lLike"/>
+                                <!-- END original content -->
+                                <rng:ref name="model.floatP.cmc"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                </elementSpec>
+
+
+
+                <!-- 2020-03-03 HLU: adding model.floatP.cmc to hi -->
+                <elementSpec ident="hi" mode="change">
+                    <classes mode="change">
+                        <memberOf mode="add" key="model.basic"/>
+                    </classes>
+                    <content>
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <!-- BEGIN macro.paraContent -->
+                                <rng:text/>
+                                <rng:ref name="model.gLike"/>
+                                <rng:ref name="model.phrase"/>
+                                <rng:ref name="model.inter"/>
+                                <rng:ref name="model.global"/>
+                                <rng:ref name="lg"/>
+                                <rng:ref name="model.lLike"/>
+                                <!-- END macro.paraContent -->
+                                <rng:ref name="model.floatP.cmc"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                </elementSpec>
+
+                <!-- 2020-03-03 HLU: adding model.floatP.cmc to  -->
+                <elementSpec ident="item" mode="change" module="core">
+                    <content>
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <!-- BEGIN original content: macro.specialPara -->
+                                <rng:text/>
+                                <rng:ref name="model.gLike"/>
+                                <rng:ref name="model.phrase"/>
+                                <rng:ref name="model.inter"/>
+                                <rng:ref name="model.divPart"/>
+                                <rng:ref name="model.global"/>
+                                <!-- END original content -->
+                                <rng:ref name="model.floatP.cmc"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                </elementSpec>
+
+
+                <!-- 2020-03-05 HLU: adding div to model.divPart.cmc -->
+                <elementSpec ident="div" module="textstructure" mode="change">
+                    <desc>div is added to model.divPart.cmc as in the automatic wp talk generation,
+                        some divs are interspersed on the one level together with post. This is
+                        probably no good modelling of the dialogue on the talk page, but files in
+                        this form should also validate </desc>
+                    <classes mode="change">
+                        <memberOf key="model.divPart.cmc"/>
+                    </classes>
+                </elementSpec>
+
+
+
+                <!--    A T T R I B U T E    C L A S S S P E C S     -->
+            </schemaSpec>
+
+        </body>
+    </text>
+</TEI>
