@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../out/cmc-core.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Private chat: Conversation of two friends about the
+                    composition of an article
+                    https://db.mocoda2.de/#/view/lscLB</title>
+                <editor>TEI Special Interest Group Computer-Mediated
+                    Communication (TEI CMC SIG). Sample annotation accompanying
+                    feature request from Dortmund Chat Corpus in CLARIN-D
+                    v2.2.</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher />
+                <pubPlace />
+                <idno>lscLB</idno>
+                <date>2018-11-26</date>
+                <availability>
+                    <licence
+                        target="https://creativecommons.org/licenses/by/4.0/">CC
+                        BY 4.0. Legal restrictions may arise from data
+                        protection legislation.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording>
+                        <equipment>
+                            <p><ref target="https://www.whatsapp.com/"
+                                    >Messenger: WhatsApp chat</ref></p>
+                        </equipment>
+                        <respStmt>
+                            <resp>Compilation</resp>
+                            <orgName>Project <ref
+                                    target="https://www.whatsapp.com/"
+                                    >MoCoDa</ref></orgName>
+                        </respStmt>
+                        <date>2018-05-14</date>
+                        <time from="16:08:00" to="17:13:00" />
+                    </recording>
+                </recordingStmt>                
+                <biblStruct>
+                    <analytic>
+                        <title>Gespräch zweier Freunde über das Verfassen eines Artikels</title>
+                        <ref type="url" target="https://db.mocoda2.de/#/view/lscLB">https://db.mocoda2.de/#/view/lscLB</ref>
+                        <textLang mainLang="de">German</textLang>
+                        <idno>lscLB</idno>
+                        <date>2018-05-14</date>
+                    </analytic>
+                    <monogr>
+                        <title type="main">Mobile Communication Database 2
+                            (MoCoDa2)</title>
+                        <editor corresp="#lscLB.e1">Michael Beißwenger</editor>
+                        <editor corresp="#lscLB.e2">Wolfgang Imo</editor>
+                        <editor corresp="#lscLB.e3">Evelyn Ziegler</editor>
+                        <editor corresp="#lscLB.e4">Marcel Fladrich</editor>
+                        <editor corresp="#lscLB.e5">Torsten Zesch</editor>
+                        <imprint>
+                            <publisher>Universität Duisburg-Essen</publisher>
+                            <pubPlace>Essen</pubPlace>
+                            <note>https://db.mocoda2.de/</note>
+                            <date>2018</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="sex">estimated on the basis of the nick
+                        name</tagUsage>
+                    <tagUsage gi="post" occurs="34">used to mark a single
+                        posting</tagUsage>
+                </namespace>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person role="system" xml:id="lscLB.A01_System">
+                        <persName type="nickname">system</persName>
+                        <sex>system</sex>
+                    </person>
+                    <person role="participant" xml:id="lscLB.A02">
+                        <persName type="nickname">Paul Horak</persName>
+                        <sex evidence="estimated">male</sex>
+                    </person>
+                    <person role="participant" xml:id="lscLB.A03">
+                        <persName type="nickname">Kara Schimmel</persName>
+                        <sex evidence="estimated">female</sex>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <settingDesc>
+                <p xml:lang="de">Kontext: Kara hat Paul und Julian (begleitet Paul) gebeten, für sie einen Artikel über ihre gemeinsame Jugendarbeit zu schreiben </p>
+            </settingDesc>
+            <textDesc>
+                <channel />
+                <constitution />
+                <derivation />
+                <domain />
+                <factuality />
+                <interaction>
+                    <timeline>
+                        <when absolute="16:08:00" xml:id="lscLB.t001" />
+                        <when absolute="16:11:00" xml:id="lscLB.t002" />
+                        <when absolute="16:13:00" xml:id="lscLB.t003" />
+                        <when absolute="16:14:00" xml:id="lscLB.t004" />
+                        <when absolute="16:15:00" xml:id="lscLB.t005" />
+                        <when absolute="16:16:00" xml:id="lscLB.t006" />
+                        <when absolute="16:22:00" xml:id="lscLB.t007" />
+                        <when absolute="16:23:00" xml:id="lscLB.t008" />
+                        <when absolute="16:41:00" xml:id="lscLB.t009" />
+                        <when absolute="16:46:00" xml:id="lscLB.t010" />
+                        <when absolute="16:47:00" xml:id="lscLB.t011" />
+                        <when absolute="16:48:00" xml:id="lscLB.t012" />
+                        <when absolute="16:49:00" xml:id="lscLB.t013" />
+                        <when absolute="16:50:00" xml:id="lscLB.t014" />
+                        <when absolute="17:04:00" xml:id="lscLB.t015" />
+                        <when absolute="17:05:00" xml:id="lscLB.t016" />
+                        <when absolute="17:06:00" xml:id="lscLB.t017" />
+                        <when absolute="17:07:00" xml:id="lscLB.t018" />
+                        <when absolute="17:08:00" xml:id="lscLB.t019" />
+                        <when absolute="17:11:00" xml:id="lscLB.t020" />
+                        <when absolute="17:13:00" xml:id="lscLB.t021" />
+                    </timeline>
+                </interaction>
+                <preparedness />
+                <purpose />
+            </textDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="logfile">
+                <post mode="written" creation="system" who="#lscLB.A01_System"
+                    xml:id="lscLB.m1"> Mo. 14. Mai 2018 </post>
+                <post mode="spoken" creation="human" synch="#lscLB.t001"
+                    who="#lscLB.A02" xml:id="lscLB.m2"> Was geht! Wir sitzen
+                    gerade äh an der Endfassung von äh von dem Artikel da mit
+                    Julian und ähm wir sind gerade dabei so Aspekte unseres
+                    Teamgeists aufzuzählen ne also zum Beispiel Autorität,
+                    Kreativität, Vielfalt und Zuverlässigkeit, wobei das reicht
+                    schon fast ne aber fünf ist ne <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal> so ne schöne Zahl, und eigentlich wollten wir noch
+                    sowas einbringen wie ähm.. dass... also klar ist es wichtig,
+                    dass wir halt kreativ sind und sowas, aber so dass wir halt
+                    auch so Leute haben die zum Beispiel sagen ja Leute das geht
+                    nicht, wir müssen das kleiner machen oder sowas. Ja so,
+                    genau so dass wir so realitätsbezogen sind oder... keine
+                    Ahnung. Also weißt was ich meine? so jemand, der uns auf dem
+                    Boden hält. Gibts dazu son großes Wort oder gibts das nicht? <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t002"
+                    who="#lscLB.A03" xml:id="lscLB.m3"> Kritikfähigkeit? </post>
+                <post mode="written" creation="human" synch="#lscLB.t002"
+                    who="#lscLB.A03" xml:id="lscLB.m4"> Hmm lass mich überlegen </post>
+                <post mode="spoken" creation="human" synch="#lscLB.t003"
+                    who="#lscLB.A02" xml:id="lscLB.m5"> Okay, kein Stress. Ähm
+                    ich denke wir werden dich sowieso beten äh diesen Text
+                    nochmal durchzulesen und eventuell kannst du ja auch selber
+                    dann noch äh 1 2 Worte umändern oder so <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal> oder 1 2 Sätze 2 3 4 5 Sätze <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal>
+                    <vocal>
+                        <desc>(Hintergrund: "Abschnitte")</desc>
+                    </vocal> Abschni <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal> nein aber ich du weißt was ich meine </post>
+                <post mode="written" creation="human" synch="#lscLB.t004"
+                    who="#lscLB.A03" xml:id="lscLB.m6"> Klar <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">smiling face</desc>
+                        <desc type="unicode">U+263A</desc>
+                    </figure> ich überlege noch <figure type="emoji"
+                        creation="template">
+                        <desc type="meaning">see no evil monkey</desc>
+                        <desc type="unicode">U+1F648</desc>
+                    </figure> ich bin euch sooo dankbar, dass ihr das macht! </post>
+                <post mode="written" creation="human" synch="#lscLB.t004"
+                    who="#lscLB.A02" xml:id="lscLB.m7">
+                    <figure type="image" creation="human">
+                        <desc>Zu sehen sind die beiden Verfasser des Artikels
+                            mit erhobenen Daumen und Skript in der Hand</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t005"
+                    who="#lscLB.A03" xml:id="lscLB.m8"> Ihr seid die besten
+                        <figure type="emoji" creation="template">
+                        <desc type="meaning">smiling face with heart eyes</desc>
+                        <desc type="unicode">U+1F60D</desc>
+                    </figure>
+                    <figure type="emoji" creation="template">
+                        <desc type="meaning">red heart</desc>
+                        <desc type="unicode">U+2764</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t006"
+                    who="#lscLB.A02" xml:id="lscLB.m9"> Oh stop it you <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">face with tears of joy</desc>
+                        <desc type="unicode">U+1F602</desc>
+                    </figure>
+                    <figure type="emoji" creation="template">
+                        <desc type="meaning">winking face</desc>
+                        <desc type="unicode">U+1F609</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t007"
+                    who="#lscLB.A03" xml:id="lscLB.m10"> Mein Bruder meinte
+                    sowas wie Bodenständigkeit, Realitätsnähe </post>
+                <post mode="written" creation="human" synch="#lscLB.t007"
+                    who="#lscLB.A03" xml:id="lscLB.m11"> Irgendwas mit
+                    Bewusstsein hinten </post>
+                <post mode="written" creation="human" synch="#lscLB.t007"
+                    who="#lscLB.A03" xml:id="lscLB.m12"> Wir denken uns einfach
+                    was aus </post>
+                <post mode="written" creation="human" synch="#lscLB.t008"
+                    who="#lscLB.A03" xml:id="lscLB.m13"> Aufwandsbewusstsein </post>
+                <post mode="spoken" creation="human" synch="#lscLB.t009"
+                    who="#lscLB.A02" xml:id="lscLB.m14"> Ja Realitätsnähe oder
+                    Aufwandsbewusstsein kommt dem schon nah, Dankeschön dafür
+                    schon mal <vocal>
+                        <desc>(Hintergrund: "Wir haben noch eine Frage")</desc>
+                    </vocal>
+                    <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal> Richtig! Und zwar: Äh würden wir so als letzten
+                    Satz so machen zum Beispiel weil wir über die fahrt geredet
+                    haben als letztes so ja dass auf Fahrt Belastbarkeit,
+                    Spontanität und sowas dazukommt, und äh was wir beide halt
+                    auch am krassesten finden so auf Fahrt ist dass wir halt die
+                    Kinder so quasi wie auf so ne Traumreise schicken immer oder
+                    halt so ausm Alltag rausholen sodass es für die so voll echt
+                    anfühlt so als wären die jetzt wirklich in nem.. keine
+                    Ahnung.. ja in so ner anderen Zeit oder weisst du was ich
+                    meine mit unseren Kostümen halt und sowas wo wir uns so voll
+                    mühe geben, hast du da vielleicht irgendwie ein Wort oder
+                    nen Punkt oder wie man das aufschreiben kann? ja. ohne dass
+                    es so übertrieben abgehoben findet weil wir haben irgendwie
+                    schon sowas wie ja und die Kunst die kinder zu verzaubern
+                    oder sowas aber das hört sich irgendwie so voll abgehoben an
+                    und das wollten wir nicht </post>
+                <post mode="spoken" creation="human" synch="#lscLB.t010"
+                    who="#lscLB.A03" xml:id="lscLB.m15"> Äh ich bin mir nicht so
+                    ganz sicher was ihr meint also.. quasi dass ugh ich weiß
+                    nicht ob ich das richtig verstanden hab, also dass wir in
+                    der Lage dazu sind, die kinder, den Kindern vorzugaukeln
+                    dass sie sich jetzt, wenn wir zum Beispiel ein Piratenspiel
+                    machen dass sie sich in der Piratenzeit befinden oder wie
+                    meint ihr das jetzt? Also ja aus dem Alltag rauszuholen aber
+                    ich hab das jetzt irgendwie nicht so ganz verstanden wie ihr
+                    das meint mit denen vorzugaukeln dass sie in einer anderen
+                    Welt sind </post>
+                <post mode="spoken" creation="human" synch="#lscLB.t011"
+                    who="#lscLB.A02" xml:id="lscLB.m16">
+                    <desc>Julian der mit Paul Horak unterwegs ist,
+                        spricht</desc> ja ich glaub wir meinen eher so.. brich
+                    nochmal ab <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t011"
+                    who="#lscLB.A03" xml:id="lscLB.m17"> Hahahahahha </post>
+                <post mode="written" creation="human" synch="#lscLB.t011"
+                    who="#lscLB.A03" xml:id="lscLB.m18"> Alltagsflucht? </post>
+                <post mode="written" creation="human" synch="#lscLB.t012"
+                    who="#lscLB.A03" xml:id="lscLB.m19"> Aus dem Alltag
+                    ausbrechen? </post>
+                <post mode="spoken" creation="human" synch="#lscLB.t012"
+                    who="#lscLB.A02" xml:id="lscLB.m20"> Julian: Selber! <vocal>
+                        <desc>(beide lachen)</desc>
+                    </vocal> also wir meinen jetzt eher nicht so dass wir die so
+                    verarschen sondern mehr so dass wir denen einfach dieses
+                    gute Gefühl geben und dass wir sehen wie sie sich darauf
+                    freuen und ähm das richtig zu genießen auf dieser Fahrt
+                    dabei zu sein oder? Paul: Ja. Viele Kinder sagen ja auch so
+                    oh das fühlt sich so an als wären wir wirklich bei.. den
+                    Hungerspielen zum Beispiel also <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal> okay das ist ein blödes Beispiel aber Julian: aber
+                    aber auch wenn die wissen dass es natürlich nicht wirklich
+                    so ist sondern ähm.. so.. Paul: dass es authentisch
+                    rauskommt ah Authentizität wir habens oder? Authentizität
+                    oder wie nennt man das nochmal? Julian: das überlegen wir
+                    jetzt <vocal>
+                        <desc>(Paul lacht)</desc>
+                    </vocal>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t013"
+                    who="#lscLB.A03" xml:id="lscLB.m21"> Hahahahahaha </post>
+                <post mode="written" creation="human" synch="#lscLB.t013"
+                    who="#lscLB.A03" xml:id="lscLB.m22"> Sehr gut <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">face with tears of joy</desc>
+                        <desc type="unicode">U+1F602</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t013"
+                    who="#lscLB.A03" xml:id="lscLB.m23"> Authentizität </post>
+                <post mode="written" creation="human" synch="#lscLB.t013"
+                    who="#lscLB.A03" xml:id="lscLB.m24"> Hört sich sehr gebildet
+                    an </post>
+                <post mode="written" creation="human" synch="#lscLB.t014"
+                    who="#lscLB.A02" xml:id="lscLB.m25"> Haha Danke <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">face with tears of joy</desc>
+                        <desc type="unicode">U+1F602</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t015"
+                    who="#lscLB.A02" xml:id="lscLB.m26"> So schicke dir das
+                    jetzt und du kannst als Bild einfach das von eben nehmen </post>
+                <post mode="written" creation="human" synch="#lscLB.t015"
+                    who="#lscLB.A03" xml:id="lscLB.m27"> Danke <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">folded-hands: medium light skin
+                            tone</desc>
+                        <desc type="unicode">U+1F64F</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t016"
+                    who="#lscLB.A03" xml:id="lscLB.m28"> Das Bild geht
+                    wahrscheinlich nicht <figure type="emoji"
+                        creation="template">
+                        <desc type="meaning">see no evil monkey</desc>
+                        <desc type="unicode">U+1F648</desc>
+                    </figure> das muss mindestens 1 MB groß sein <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">face with rolling eyes</desc>
+                        <desc type="unicode">U+1F644</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t017"
+                    who="#lscLB.A02" xml:id="lscLB.m29"> Hm kann man das nicht 1
+                    mb klein machen? <figure type="emoji" creation="template">
+                        <desc type="meaning">thinking-face</desc>
+                        <desc type="unicode">U+1F914</desc>
+                    </figure>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t018"
+                    who="#lscLB.A03" xml:id="lscLB.m30"> Ne es muss größer sein </post>
+                <post mode="written" creation="human" synch="#lscLB.t019"
+                    who="#lscLB.A03" xml:id="lscLB.m31"> Sonst ist das beim
+                    Drucken zu unscharf </post>
+                <post mode="spoken" creation="human" synch="#lscLB.t020"
+                    who="#lscLB.A02" xml:id="lscLB.m32"> Oh okay ehm ja... also
+                    um ehrlich zu sein... weiß ich gerade nicht wie wir das dann
+                    anders machen sollen also.. ich hab keine Profikamera oder
+                    sowas also weißt du was ich meine? <vocal>
+                        <desc>(lacht)</desc>
+                    </vocal>
+                </post>
+                <post mode="written" creation="human" synch="#lscLB.t021"
+                    who="#lscLB.A03" xml:id="lscLB.m33"> Vielleicht können wir
+                    das ohne Foto machen </post>
+                <post mode="written" creation="human" synch="#lscLB.t021"
+                    who="#lscLB.A02" xml:id="lscLB.m34"> Okay <figure
+                        type="emoji" creation="template">
+                        <desc type="meaning">face with tears of joy</desc>
+                        <desc type="unicode">U+1F602</desc>
+                    </figure>
+                </post>
+            </div>
+        </body>
+    </text>
+</TEI>
