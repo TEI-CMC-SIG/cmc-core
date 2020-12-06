@@ -1,1 +1,409 @@
 
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../out/cmc-core.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Second Life multimodal chat example. Extract from: Group ES studying the
+                    themes of '(e)spaces' , English as their target language (ESL), Reflective
+                    sessions days 3 and 4 of the studio</title>
+                <editor>TEI Special Interest Group Computer-Mediated Communication (TEI CMC SIG).
+                    Sample annotation accompanying feature request from CoMeRe </editor>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher />
+                <pubPlace />
+                <date>2018-11-29</date>
+                <availability>
+                    <licence target="http://creativecommons.org/publicdomain/zero/1.0/">
+                        <p xml:lang="en-GB">The following is the licence note from CoMeRe:</p>
+                        <p xml:lang="en-GB"> The persons who created this work have dedicated the
+                            work to the public domain by waiving all of their rights to the work
+                            worldwide under copyright law, including all related and neighboring
+                            rights, to the extent allowed by law. You can copy, modify, distribute
+                            and perform the work, even for commercial purposes, all without asking
+                            permission. We recommand that researchers reference / cite our work as
+                            mentionned in <gi>titleSmt</gi></p>
+                        <p xml:lang="en-GB">All participants names have been removed and data have
+                            been anonymized. All participants signed a consent form, which can be
+                            found in <idno>oai : mulce.org:mce-archi21-letec-all</idno></p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording xml:id="cmr-archi21-slrefl-es-j3-1-mp4">
+                        <media mimeType="video/mp4"
+                            url="https://hdl.handle.net/11403/comere/cmr-archi21/videos/cmr-archi21-slrefl-es-j3-1.mp4"
+                         />
+                    </recording>
+                </recordingStmt>
+                <biblStruct>
+                    <analytic>
+                        <title>Second Life multimodal chat example. Extract from: Group ES studying
+                            the themes of '(e)spaces'</title>
+                        <idno>cmr-archi21-slrefl-es-j3-1</idno>
+                        <date />
+                    </analytic>
+
+                    <monogr>
+                        <title>
+                            <ref
+                                target="https://hdl.handle.net/11403/comere/cmr-archi21/cmr-archi21-tei-v1"
+                                >Archi21 corpus: collaborative language and architectural learning
+                                in Second Life</ref>
+                        </title>
+                        <idno>cmr-archi21-tei-v1 </idno>
+                        <editor>Thierry Chanier</editor>
+                        <editor>Ciara Wigham</editor>
+                        <imprint>
+                            <publisher>CoMeRe corpora repository. Ortolang.fr</publisher>
+                            <pubPlace>Nancy</pubPlace>
+                            <date>2015</date>
+                        </imprint>
+                    </monogr>
+
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <date from="2011-02-07" to="2011-02-11" />
+                <rs type="city">Clermont-Ferrand, France</rs>
+                <rs type="city">Paris, France</rs>
+                <rs type="TGN">7008202</rs>
+                <rs type="TGN">7008038</rs>
+            </creation>
+            <langUsage>
+                <language ident="eng">English</language>
+            </langUsage>
+            <particDesc>
+                <listPerson>
+                    <person role="learner" xml:id="romeorez">
+                        <sex>male</sex>
+                        <age value="23" />
+                        <residence>fra</residence>
+                        <affiliation>
+                            <orgName>École Nationale Supérieure d'Architecture
+                                Paris-Malaquais</orgName>
+                        </affiliation>
+                        <persName>
+                            <addName type="alias">Roméo</addName>
+                        </persName>
+                        <langKnowledge>
+                            <langKnown tag="fra">
+                                <ident type="L1">First language or language used every day</ident>
+                            </langKnown>
+                        </langKnowledge>
+                        <langKnowledge>
+                            <langKnown tag="eng">
+                                <ident type="L2">Second language (first foreign)</ident>
+                            </langKnown>
+                        </langKnowledge>
+                    </person>
+                    <person role="learner" xml:id="tingrabu">
+                        <sex>male</sex>
+                        <age value="25" />
+                        <residence>fra</residence>
+                        <affiliation>
+                            <orgName>École Nationale Supérieure d'Architecture
+                                Paris-Malaquais</orgName>
+                        </affiliation>
+                        <persName>
+                            <addName type="alias">Denis</addName>
+                        </persName>
+                        <langKnowledge>
+                            <langKnown tag="fra">
+                                <ident type="L1">First language or language used every day</ident>
+                            </langKnown>
+                        </langKnowledge>
+                        <langKnowledge>
+                            <langKnown tag="rus">
+                                <ident type="L2">Second language (first foreign)</ident>
+                            </langKnown>
+                        </langKnowledge>
+                        <langKnowledge>
+                            <langKnown tag="eng">
+                                <ident type="L3">Third language (second foreign)</ident>
+                            </langKnown>
+                        </langKnowledge>
+                    </person>
+                    <person role="tutor" xml:id="tfrez2">
+                        <sex>female</sex>
+                        <age value="29" />
+                        <residence>gbr</residence>
+                        <affiliation>
+                            <orgName>Université Blaise Pascal</orgName>
+                        </affiliation>
+                        <persName>
+                            <addName type="alias">Ciara</addName>
+                        </persName>
+                        <langKnowledge>
+                            <langKnown tag="eng">
+                                <ident type="L1">First language or language used every day</ident>
+                            </langKnown>
+                        </langKnowledge>
+                        <langKnowledge>
+                            <langKnown tag="fra">
+                                <ident type="L2">Second language (first foreign)</ident>
+                            </langKnown>
+                        </langKnowledge>
+                        <langKnowledge>
+                            <langKnown tag="ita">
+                                <ident type="L3">Third language (second foreign)</ident>
+                            </langKnown>
+                        </langKnowledge>
+                    </person>
+
+                </listPerson>
+            </particDesc>
+            <textDesc>
+                <channel />
+                <constitution />
+                <derivation />
+                <domain />
+                <factuality />
+                <interaction>
+                    <timeline>
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts376" interval="445019" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts377" interval="448009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts378" interval="448493" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts379" interval="451009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts380" interval="452820" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts381" interval="453160" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts382" interval="453999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts383" interval="456999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts384" interval="458570" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts385" interval="458860" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts386" interval="459921" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts387" interval="459989" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts388" interval="463009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts389" interval="465999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts390" interval="469009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts391" interval="471999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts392" interval="474710" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts393" interval="475030" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts394" interval="478870" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts395" interval="479690" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts396" interval="479690" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts397" interval="479900" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts398" interval="479950" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts399" interval="489790" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts400" interval="490009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts401" interval="490080" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts402" interval="491090" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts403" interval="493019" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts404" interval="496009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts405" interval="496010" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts406" interval="496380" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts407" interval="498999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts408" interval="502009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts409" interval="504999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts410" interval="508028" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts411" interval="511018" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts412" interval="514009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts413" interval="515155" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts414" interval="516370" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts415" interval="516710" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts416" interval="516999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts417" interval="520009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts418" interval="522999" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts419" interval="523490" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts420" interval="523690" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts421" interval="523780" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts422" interval="524030" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts423" interval="524311" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts424" interval="525480" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts425" interval="525780" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts426" interval="526009" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts427" interval="526960" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts428" interval="527820" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts429" interval="527990" />
+                        <when xml:id="cmr-archi21-slrefl-es-j3-1-ts430" interval="528000" />
+                    </timeline>
+                </interaction>
+                <preparedness />
+                <purpose />
+            </textDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <u xml:id="cmr-archi21-slrefl-es-j3-1-a191" who="#tingrabu"
+                start="#cmr-archi21-slrefl-es-j3-1-ts373" end="#cmr-archi21-slrefl-es-j3-1-ts430">ok
+                hm for me this presentation was hm <pause dur="PT1S" /> become too fast because it's
+                always the same in our architecture school euh we have not time and hm <pause
+                    dur="PT1S" /> too quickly sorry and hm <pause dur="PT1S" /> we can't do good
+                images because euh <pause dur="PT1S" /> euh it's xtime I don't know <pause
+                    dur="PT2S" /> and euh of course we whole project <pause dur="PT2S" /> is about
+                motion and hm we make just some pictures hm statics pictures and hm it's <pause
+                    dur="PT1S" /> and it's it's a big matter because hm we always brought about
+                teleportation our <pause dur="PT1S" /> motion is and hm <pause dur="PT3S" /> and
+                everyday lack of time ok thank you <vocal>
+                    <desc>incomprehensible</desc>
+                </vocal> and hm this is <pause dur="PT1S" /> this is hm really difficult for us
+                because hm we have not enough time to do good presentation euh in <pause dur="PT1S"
+                 /> one night and I hope so tues wednesday could be better <pause dur="PT1S" /> it
+                should be <pause dur="PT1S" /> may be I don't know <vocal>
+                    <desc>chuckles</desc>
+                </vocal>
+            </u>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a192" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts376" end="#cmr-archi21-slrefl-es-j3-1-ts377"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a193" who="#tfrez2"
+                start="#cmr-archi21-slrefl-es-j3-1-ts378" end="#cmr-archi21-slrefl-es-j3-1-ts386"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>type</code>
+                </desc>
+            </kinesic>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a194" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts379" end="#cmr-archi21-slrefl-es-j3-1-ts382"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a195"
+                who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts380"
+                end="#cmr-archi21-slrefl-es-j3-1-ts381" type="chat-message">
+                <p>it went too quickly?</p>
+            </post>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a196" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts383" end="#cmr-archi21-slrefl-es-j3-1-ts387"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a197"
+                who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts384"
+                end="#cmr-archi21-slrefl-es-j3-1-ts385" type="chat-message">
+                <p>or it was too early in the week?</p>
+            </post>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a198" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts388" end="#cmr-archi21-slrefl-es-j3-1-ts389"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a199" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts390" end="#cmr-archi21-slrefl-es-j3-1-ts391"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a200"
+                who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts392"
+                end="#cmr-archi21-slrefl-es-j3-1-ts393" type="chat-message">
+                <p>i think it was to early </p>
+            </post>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a201" who="#tfrez2"
+                start="#cmr-archi21-slrefl-es-j3-1-ts394" end="#cmr-archi21-slrefl-es-j3-1-ts402"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>type</code>
+                </desc>
+            </kinesic>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a202"
+                who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts395"
+                end="#cmr-archi21-slrefl-es-j3-1-ts397" type="chat-message">
+                <p>too</p>
+            </post>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a203"
+                who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts396"
+                end="#cmr-archi21-slrefl-es-j3-1-ts398" type="chat-message">
+                <p>too early ok</p>
+            </post>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a204"
+                who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts399"
+                end="#cmr-archi21-slrefl-es-j3-1-ts401" type="chat-message">
+                <p>too quickly means that you didn't have enough time to speak</p>
+            </post>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a205" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts400" end="#cmr-archi21-slrefl-es-j3-1-ts403"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a206" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts404" end="#cmr-archi21-slrefl-es-j3-1-ts407"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a207"
+                who="#quentinrez" start="#cmr-archi21-slrefl-es-j3-1-ts405"
+                end="#cmr-archi21-slrefl-es-j3-1-ts406" type="chat-message">
+                <p>yes, it's an everyday lack of time</p>
+            </post>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a208" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts408" end="#cmr-archi21-slrefl-es-j3-1-ts409"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a209" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts410" end="#cmr-archi21-slrefl-es-j3-1-ts411"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a210" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts412" end="#cmr-archi21-slrefl-es-j3-1-ts416"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a211" who="#tfrez2"
+                start="#cmr-archi21-slrefl-es-j3-1-ts413" end="#cmr-archi21-slrefl-es-j3-1-ts423"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>type</code>
+                </desc>
+            </kinesic>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a212"
+                who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts414"
+                end="#cmr-archi21-slrefl-es-j3-1-ts415" type="chat-message">
+                <p>that more that we have to show something that we don't really know</p>
+            </post>
+            <kinesic xml:id="cmr-archi21-slrefl-es-j3-1-a213" who="#romeorez"
+                start="#cmr-archi21-slrefl-es-j3-1-ts417" end="#cmr-archi21-slrefl-es-j3-1-ts418"
+                type="body" subtype="kinesics">
+                <desc>
+                    <code>eat(popcorn)</code>
+                </desc>
+            </kinesic>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a214"
+                who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts419"
+                end="#cmr-archi21-slrefl-es-j3-1-ts421" type="chat-message">
+                <p>you didn't have enough time</p>
+            </post>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a215"
+                who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts420"
+                end="#cmr-archi21-slrefl-es-j3-1-ts422" type="chat-message">
+                <p>fore the shape</p>
+            </post>
+            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a216"
+                who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts424"
+                end="#cmr-archi21-slrefl-es-j3-1-ts425" type="chat-message">
+                <p>ok</p>
+            </post>
+        </body>
+    </text>
+</TEI>
