@@ -1,6 +1,6 @@
 # cmc-core
 
-Customisation for CMC dokuments and corpora using the TEI
+Customisation for CMC documents and corpora using the TEI
 
 cmc-core.odd describes an encoding schema for genres of computer-mediated communication                                                                                                          
                 (CMC) / social media. It is meant to define a basic setup that one needs to encode                                                                                                           
