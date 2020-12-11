@@ -167,165 +167,166 @@
         <head>front</head>
         <div type="mods_for" xml:id="TitlePageVerso" n="">
           <head>Releases of the TEI Guidelines</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="dedication" n="">
           <head>Dedication</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="FM1" n="">
           <head>Preface and Acknowledgments</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="AB" n="1">
           <head>About These Guidelines</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="SG" n="">
           <head>A Gentle Introduction to XML</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="CH" n="4">
           <head>Languages and Character Sets</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
       </div>
       <div type="matter">
         <head>body</head>
         <div type="mods_for" xml:id="ST" n="3">
           <head>The TEI Infrastructure</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="HD" n="5">
           <head>The TEI Header</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="CO" n="6">
           <head>Elements Available in All TEI Documents</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="DS" n="7">
           <head>Default Text Structure</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="WD" n="25">
           <head>Characters, Glyphs, and Writing Modes</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="VE" n="9">
           <head>Verse</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="DR" n="10">
           <head>Performance Texts</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="TS" n="11">
           <head>Transcriptions of Speech</head>
-          <ab>None</ab>
+          <!-- None -->
+        </div>
+        <div type="added_chapter" xml:id="CM">
+          <head>Computer-mediated Communication</head>
+          <!-- NEW CHAPTER GOES HERE (per CMC SIG and Council sub-group) -->
         </div>
         <div type="mods_for" xml:id="DI" n="12">
           <head>Dictionaries</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="MS" n="">
           <head>Manuscript Description</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="PH" n="18">
           <head>Representation of Primary Sources</head>
-          <ab>None</ab>
-        </div>
-        <div type="added_chapter" xml:id="CM">
-          <head>Representation of Computer-based Sources</head>
-          <!-- new chapter goes here -->
+          <!-- We will need to ensure the chapter asserts it is about
+               written primary sources, see CMC for born-digital. -->
         </div>
         <div type="mods_for" xml:id="TC" n="19">
           <head>Critical Apparatus</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="ND" n="20">
           <head>Names, Dates, People, and Places</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="FT" n="22">
           <head>Tables, Formulæ, Graphics and Notated Music</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="CC" n="23">
           <head>Language Corpora</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="SA" n="14">
           <head>Linking, Segmentation, and Alignment</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="AI" n="15">
           <head>Simple Analytic Mechanisms</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="FS" n="16">
           <head>Feature Structures</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="GD" n="21">
           <head>Graphs, Networks, and Trees</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="NH" n="31">
           <head>Non-hierarchical Structures</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="CE" n="17">
           <head>Certainty, Precision, and Responsibility</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="TD" n="27">
           <head>Documentation Elements</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="USE" n="">
           <head>Using the TEI</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
       </div>
       <div type="matter">
         <head>back</head>
         <div type="mods_for" xml:id="REF-CLASSES-MODEL" n="">
           <head>Model Classes</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="REF-CLASSES-ATTS" n="">
           <head>Attribute Classes</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="REF-ELEMENTS" n="">
           <head>Elements</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="REF-ATTS" n="">
           <head>Attributes</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="REF-MACROS" n="">
           <head>Datatypes and Other Macros</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="BIB" n="">
           <head>Bibliography</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="DEPRECATIONS" n="">
           <head>Deprecations</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="PREFS" n="">
           <head>Prefatory Notes</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
         <div type="mods_for" xml:id="COL" n="">
           <head>Colophon</head>
-          <ab>None</ab>
+          <!-- None -->
         </div>
       </div>
     </body>
@@ -492,7 +493,7 @@
               linguistic discourse markers, nor for the indentation relations in
               Wiki talk pages. See Lüngen/Herzberg (2019).</desc>
               <datatype minOccurs="1" maxOccurs="unbounded">
-		<dataRef key="teidata.pointer"/>
+                <dataRef key="teidata.pointer"/>
               </datatype>
             </attDef>
             <attDef ident="indentLevel" mode="add">
@@ -504,7 +505,7 @@
               source was HTML. [Adapted from the <ref target="#TEIcmc2012"
               >DeRiK-Schema</ref>]. </desc>
               <datatype minOccurs="1" maxOccurs="1">
-		<dataRef key="teidata.count"/>
+                <dataRef key="teidata.count"/>
               </datatype>
             </attDef>
           </attList>
