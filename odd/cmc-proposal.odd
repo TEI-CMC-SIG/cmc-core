@@ -413,13 +413,13 @@
           and the same <gi>div</gi> in order to be able to represent the combined use
           of written and spoken utterances and nonverbal acts on the GUI of multimodal
           CMC environments. </desc>
-          <desc>The attribute <att>mode</att> for post is required, its value is either
+          <desc>The attribute <att>modality</att> for post is required, its value is either
           written or spoken. The content model of a <gi>post</gi>
-          <att>mode</att>=<val>spoken</val> should be macro.paraContent, i.e. the same
+          <att>modality</att>=<val>spoken</val> should be macro.paraContent, i.e. the same
           as the one for <gi>u</gi>. The content model of a <gi>post</gi>
-          <att>mode</att>=<val>written</val> should be like the one from Chat2CLARIN,
+          <att>modality</att>=<val>written</val> should be like the one from Chat2CLARIN,
           i,e, similar to the one for <gi>div</gi>. However this co-occurrence
-          constraint between the values of <att>mode</att> and the content models
+          constraint between the values of <att>modality</att> and the content models
           cannot be expressed in ODD code. It could be expressed in pure RNG code, but
           so far we have refrained from doing so, because it is ignored by the
           ODD2HTML stylesheets. </desc>
@@ -470,14 +470,14 @@
           </content>
           
           <attList>
-            <attDef ident="mode" usage="req" mode="add">
+            <attDef ident="modality" usage="req" mode="add">
               <desc xml:lang="en">written or spoken mode</desc>
               <valList xml:lang="en" type="closed">
                 <valItem ident="written">
-                  <gloss xml:lang="en">post is in written mode</gloss>
+                  <desc xml:lang="en">post is written, e.g. Unicode text</desc>
                 </valItem>
                 <valItem ident="spoken">
-                  <gloss xml:lang="en">post is in spoken mode</gloss>
+                  <gloss xml:lang="en">post is spoken, e.g. audio recording</gloss>
                 </valItem>
               </valList>
             </attDef>
