@@ -1,1 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../out/cmc-core.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tweets from the account @_lherzberg on the Barcamp RheinNeckar 2018 from 23.
+                    September 2018</title>
+                <editor>TEI Special Interest Group Computer-Mediated Communication (TEI CMC SIG).
+                    Sample annotation accompanying feature request from Dortmund Chat Corpus in
+                    CLARIN-D v2.2.</editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher />
+                <pubPlace />
+                <idno>tweetsbcrn18</idno>
+                <date>2018-11-28</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0. Legal
+                        restrictions may arise from data protection legislation.</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <recordingStmt>
+                    <recording>
+                        <equipment>
+                            <p>Short messaging platform<ref type="URL"
+                                >https://twitter.com/</ref></p>
+                        </equipment>
+                        <date>2018-09-23</date>
+                        <time from="12:31:00" to="18:21:00" />
+                        <p>View "Tweets" from user <ptr target="#p1" />
+                        </p>
+                    </recording>
+                </recordingStmt>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="post" occurs="11">used to mark a single posting</tagUsage>
+                    <tagUsage gi="post">@subtype="retweet": points to the post that is retweeted in
+                        @ref. When the retweet post showed only the original, retweeted tweet, it is
+                        empty in the present corpus encoding and @creation equals "unspecified".
+                        When it contains additional comments or a reply-like message, this will be
+                        the content of the post that constitutes the retweet, and @creation will
+                        be set to "human").</tagUsage>
+                </namespace>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="u1">
+                        <persName>
+                            <name>Laura Herzberg</name>
+                            <addName type="ScreenName" ref="https://twitter.com/_lherzberg"
+                                >_lherzberg</addName>
+                        </persName>
+                    </person>
+                    <person xml:id="u2">
+                        <persName>
+                            <name>André Löffler</name>
+                            <addName type="ScreenName" ref="https://twitter.com/AndreLo79"
+                                >AndreLo79</addName>
+                        </persName>
+                    </person>
+                    <person xml:id="u3">
+                        <persName>
+                            <name>sds</name>
+                            <addName type="ScreenName" ref="https://twitter.com/LuCoEi"
+                                >LuCoEi</addName>
+                        </persName>
+                    </person>
+                    <person xml:id="u4">
+                        <persName>
+                            <name>Heiko Fischer</name>
+                            <addName type="ScreenName" ref="https://twitter.com/DaRealHeiko"
+                                >DaRealHeiko</addName>
+                        </persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <textDesc>
+                <channel />
+                <constitution />
+                <derivation />
+                <domain />
+                <factuality />
+                <interaction>
+                    <timeline>
+                        <when absolute="12:31:00" xml:id="tweetsbcrn18.t001" />
+                        <when absolute="12:43:00" xml:id="tweetsbcrn18.t002" />
+                        <when absolute="14:35:00" xml:id="tweetsbcrn18.t003" />
+                        <when absolute="14:37:00" xml:id="tweetsbcrn18.t004" />
+                        <when absolute="14:41:00" xml:id="tweetsbcrn18.t005" />
+                        <when absolute="16:24:00" xml:id="tweetsbcrn18.t006" />
+                        <when absolute="16:50:00" xml:id="tweetsbcrn18.t007" />
+                        <when absolute="18:21:00" xml:id="tweetsbcrn18.t008" />
+                    </timeline>
+                </interaction>
+                <preparedness />
+                <purpose />
+            </textDesc>
+            <langUsage>
+                <language n="1" ident="de">German</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <post mode="written" key="1043764753502486528" type="tweet" creation="human"
+                synch="#tweetsbcrn18.t001" xml:id="p1" who="#u1" xml:lang="deu">
+                <time creation="system"> 12:31 </time> Heute mit super Unterstützung, wir grunzen,
+                wenn die Zeit vorbei ist. <ref type="hashtag"
+                    target="https://twitter.com/hashtag/bcrn18?src=hash">#bcrn18</ref>
+                <ref type="hashtag" target="https://twitter.com/hashtag/wikidach?src=hash"
+                    >#wikidach</ref> PS: Die beiden brauchen noch Namen. Hinweise dazu am Empfang
+                abgeben! <ref type="twitter-account" target="https://twitter.com/AndreLo79"
+                    >@AndreLo79</ref>
+                <figure type="image" creation="human">
+                    <graphic url="https://pbs.twimg.com/media/DnwygdSW4AAoTUn.jpg:large" />
+                </figure>
+                <trailer>
+                    <!-- The following is CoMeRe Style  -->
+                    <fs>
+                        <f name="medium">
+                            <string>Twitter for iPhone</string>
+                        </f>
+                        <f name="favoritecount">
+                            <numeric value="3" />
+                        </f>
+                        <f name="retweetcount">
+                            <numeric value="1" />
+                        </f>
+                    </fs>
+                </trailer>
+            </post>
+            <post mode="written" key="1043769240136880128" creation="unspecified" type="tweet"
+                subtype="retweet" who="#u1" ref="#p3" synch="#tweetsbcrn18.t002" xml:id="p2" />
 
+            <post mode="written" key="1043767827927388160" creation="human" type="tweet" who="#u3"
+                synch="#tweetsbcrn18.t002" xml:lang="de" xml:id="p3">
+                <time creation="system"> 12:43 </time>
+                <figure type="image" creation="human">
+                    <graphic url="https://pbs.twimg.com/media/Dnw1TRNXgAAKqlK.jpg:large" />
+                </figure>
+                <trailer>
+                    <!-- The following is CoMeRe Style  -->
+                    <fs>
+                        <f name="favoritecount">
+                            <numeric value="2" />
+                        </f>
+                        <f name="retweetcount">
+                            <numeric value="1" />
+                        </f>
+                    </fs>
+                </trailer>
+            </post>
+            <post mode="written" key="1043796550101716993" creation="human" type="tweet"
+                subtype="retweet" who="#u1" xml:id="p4" synch="#tweetsbcrn18.t004" ref="#p5"
+                xml:lang="de"> Ich mich auch? <ref type="hashtag"
+                    target="https://twitter.com/hashtag/dynamicduo?src=hash">#dynamicduo</ref>
+                <ref type="hashtag"
+                    target="https://twitter.com/hashtag/wirk%C3%BCmmernunsauchumIhrenEmpfang?src=hash"
+                    >#wirkümmernunsauchumIhrenEmpfang</ref>
+                <ref type="hashtag" target="https://twitter.com/hashtag/bcrn18?src=hash"
+                    >#bcrn18</ref>
+                <ref type="hashtag" target="https://twitter.com/hashtag/wikidach?src=hash"
+                    >#wikidach</ref>
+            </post>
+            <post mode="written" key="1043796093786566656" creation="human" type="tweet"
+                subtype="retweet" who="#u2" synch="#tweetsbcrn18.t003" xml:lang="de" xml:id="p5">
+                <time creation="system"> 14:35 </time> Immer wieder gerne. Kann ich mich schon für
+                nächstes Jahr als Empfangs- <ref type="hashtag"
+                    target="https://twitter.com/hashtag/Engel?src=hash">#Engel</ref> für das nächste
+                BarCamp bewerben <figure type="emoji" creation="template">
+                    <desc type="meaning">zany face</desc>
+                    <desc type="unicode">U+1F92A</desc>
+                </figure>
+                <ref type="hashtag" target="https://twitter.com/hashtag/bcrn18?src=hash"
+                    >#bcrn18</ref>
+                <trailer>
+                    <!-- The following is CoMeRe Style  -->
+                    <fs>
+                        <f name="favoritecount">
+                            <numeric value="4" />
+                        </f>
+                    </fs>
+                </trailer>
+            </post>
+            <post mode="written" key="1043798190846353408" creation="unspecified" type="tweet"
+                subtype="retweet" who="#u1" ref="#p7" xml:id="p6" synch="#tweetsbcrn18.t005" />
+
+            <post mode="written" key="1043797470407471104" creation="human" type="tweet" who="#u2"
+                synch="#tweetsbcrn18.t005" xml:lang="de" xml:id="p7">
+                <time creation="system"> 14:41 </time> Meine erste Session heute auf dem <ref
+                    type="hashtag" target="https://twitter.com/hashtag/bcrn18?src=hash"
+                    >#bcrn18</ref> „13 Jahre kreatives Chaos“. Neben mir die reizende <ref
+                    type="twitter-account" target="https://twitter.com/_lherzberg">@_lherzberg</ref>
+                . <ref type="hashtag" target="https://twitter.com/hashtag/Engel?src=hash"
+                    >#Engel</ref> -Auszeit <trailer>
+                    <!-- The following is CoMeRe Style  -->
+                    <fs>
+                        <f name="favoritecount">
+                            <numeric value="6" />
+                        </f>
+                        <f name="retweetcount">
+                            <numeric value="1" />
+                        </f>
+                    </fs>
+                </trailer>
+            </post>
+            <post type="tweet" key="1043823300479258624" mode="written" creation="human"
+                synch="#tweetsbcrn18.t006" xml:id="p8" who="#u1" xml:lang="deu">
+                <time creation="system"> 16:24 </time> Bro Tri-Engel...so hab ich mir das
+                vorgestellt!!! <ref type="twitter-account" target="https://twitter.com/AndreLo79"
+                    >@AndreLo79</ref>
+                <ref type="hashtag" target="https://twitter.com/hashtag/bcrn18?src=hash"
+                    >#bcrn18</ref>
+                <ref type="hashtag" target="https://twitter.com/hashtag/wikidach?src=hash"
+                    >#wikidach</ref>
+                <ref type="twitter-account" target="https://twitter.com/Heiko">@Heiko</ref> komm'
+                mal Twitter! <ref type="hashtag" target="https://twitter.com/hashtag/Engel?src=hash"
+                    >#Engel</ref>
+                <figure type="image" creation="human">
+                    <graphic url="https://pbs.twimg.com/media/DnxnwN9XsAEHXw2.jpg:large" />
+                </figure>
+                <trailer>
+                    <!-- The following is CoMeRe Style  -->
+                    <fs>
+                        <f name="favoritecount">
+                            <numeric value="15" />
+                        </f>
+                        <f name="retweetcount">
+                            <numeric value="3" />
+                        </f>
+                    </fs>
+                </trailer>
+            </post>
+            <post mode="written" key="1043844982887657473" creation="human" xml:id="p9" type="tweet"
+                subtype="retweet" who="#u1" ref="#p8" synch="#tweetsbcrn18.t007" xml:lang="de"> Da
+                ist er...I proudly present <ref type="twitter-account"
+                    target="https://twitter.com/DaRealHeiko">@DaRealHeiko</ref> Willkommen bei
+                Twitter! <ref type="hashtag" target="https://twitter.com/hashtag/bcrn18?src=hash"
+                    >#bcrn18</ref>
+                <ref type="hashtag" target="https://twitter.com/hashtag/wikidach?src=hash"
+                    >#wikidach</ref> # <ref type="twitter-account"
+                    target="https://twitter.com/AndreLo79">@AndreLo79</ref>
+                <trailer>
+                    <!-- The following is CoMeRe Style  -->
+                    <fs>
+                        <f name="favoritecount">
+                            <numeric value="12" />
+                        </f>
+                        <f name="retweetcount">
+                            <numeric value="1" />
+                        </f>
+                    </fs>
+                </trailer>
+            </post>
+            <post mode="written" key="1043853367976624132" creation="unspecified" type="tweet"
+                subtype="retweet" synch="#tweetsbcrn18.t008" who="#u1" xml:id="p10" ref="#p11" />
+            <post mode="written" key="1043852746330460161" creation="human" type="tweet" who="#u4"
+                synch="#tweetsbcrn18.t008" xml:lang="de" xml:id="p11">
+                <time creation="system"> 18:21 </time> Bin dank meiner neuen Swagbeauftragten <ref
+                    type="twitter-account" target="https://twitter.com/_lherzberg">@_lherzberg</ref>
+                nach mehreren legendären <ref type="hashtag"
+                    target="https://twitter.com/hashtag/lituations?src=hash">#lituations</ref>
+                nunmehr im 21. Jahrhundert angekommen. <ref type="hashtag"
+                    target="https://twitter.com/hashtag/Knorke?src=hash">#Knorke</ref> af! <trailer>
+                    <!-- The following is CoMeRe Style  -->
+                    <fs>
+                        <f name="favoritecount">
+                            <numeric value="5" />
+                        </f>
+                        <f name="retweetcount">
+                            <numeric value="1" />
+                        </f>
+                    </fs>
+                </trailer>
+            </post>
+        </body>
+    </text>
+</TEI>
