@@ -8,7 +8,7 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2021-03-05T04:56:52Z. .
+# Schema generated from ODD source 2021-03-05T16:07:42Z. .
 # TEI Edition: Version 4.3.0a. Last updated on
 #	25th February 2021, revision 992e522b8
 # TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0a./
@@ -65,7 +65,7 @@ anyElement-content =
     (text | anyElement-content)*
   }
   >> sch:pattern [
-       id = "d8e79028-constraint"
+       id = "d8e78641-constraint"
        "\x{a}" ~
        "         "
        sch:rule [
@@ -96,7 +96,7 @@ anyElement-datatype =
     (text | anyElement-datatype)*
   }
   >> sch:pattern [
-       id = "d8e80250-constraint"
+       id = "d8e79863-constraint"
        "\x{a}" ~
        "         "
        sch:rule [
@@ -559,7 +559,6 @@ cp_att.global.source.attribute.source =
     list { xsd:anyURI+ }
   }?
 cp_att.global.attributes =
-  cp_att.global.CMC.attributes,
   cp_att.global.rendition.attributes,
   cp_att.global.linking.attributes,
   cp_att.global.analytic.attributes,
@@ -1995,6 +1994,7 @@ cp_p =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.declaring.attributes,
     cp_att.fragmentable.attributes,
@@ -2005,17 +2005,26 @@ cp_p =
 cp_foreign =
   ## (foreign) identifies a word or phrase as belonging to some language other than that of the surrounding text. [3.3.2.1. Foreign Words or Expressions]
   element foreign {
-    cp_macro.phraseSeq, cp_att.global.attributes, empty
+    cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
   }
 
 cp_emph =
   ## (emphasized) marks words or phrases which are stressed or emphasized for linguistic or rhetorical effect. [3.3.2.2. Emphatic Words and Phrases 3.3.2. Emphasis, Foreign Words, and Unusual Language]
-  element emph { cp_macro.paraContent, cp_att.global.attributes, empty }
+  element emph {
+    cp_macro.paraContent,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
+  }
 
 cp_hi =
   ## (highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [3.3.2.2. Emphatic Words and Phrases 3.3.2. Emphasis, Foreign Words, and Unusual Language]
   element hi {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.written.attributes,
     empty
@@ -2025,6 +2034,7 @@ cp_distinct =
   ## identifies any word or phrase which is regarded as linguistically distinct, for example as archaic, technical, dialectal, non-preferred, etc., or as forming part of a sublanguage. [3.3.2.3. Other Linguistically Distinct Material]
   element distinct {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     ## specifies the sublanguage or register to which the word or phrase is being assigned
@@ -2044,6 +2054,7 @@ cp_said =
   ## (speech or thought) indicates passages thought or spoken aloud, whether explicitly indicated in the source or not, whether directly or indirectly reported, whether by real people or fictional characters. [3.3.3. Quotation]
   element said {
     cp_macro.specialPara,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.ascribed.directed.attributes,
     ## may be used to indicate whether the quoted matter is regarded as having been vocalized or signed.
@@ -2066,6 +2077,7 @@ cp_quote =
   ## (quotation) contains a phrase or passage attributed by the narrator or author to some agency external to the text. [3.3.3. Quotation 4.3.1. Grouped Texts]
   element quote {
     cp_macro.specialPara.cmc,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.notated.attributes,
@@ -2076,6 +2088,7 @@ cp_q =
   ## (quoted) contains material which is distinguished from the surrounding text using quotation marks or a similar method, for any one of a variety of reasons including, but not limited to: direct speech or thought, technical terms or jargon, authorial distance, quotations from elsewhere, and passages that are mentioned but not used. [3.3.3. Quotation]
   element q {
     cp_macro.specialPara,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.ascribed.directed.attributes,
     ## (type) may be used to indicate whether the offset passage is spoken or thought, or to characterize it more finely.
@@ -2108,6 +2121,7 @@ cp_cit =
      | cp_model.attributable
      | cp_pc
      | cp_q)+,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     empty
@@ -2116,13 +2130,19 @@ cp_cit =
 cp_mentioned =
   ## marks words or phrases mentioned, not used. [3.3.3. Quotation]
   element mentioned {
-    cp_macro.phraseSeq, cp_att.global.attributes, empty
+    cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
   }
 
 cp_soCalled =
   ## (so called) contains a word or phrase for which the author or narrator indicates a disclaiming of responsibility, for example by the use of scare quotes or italics. [3.3.3. Quotation]
   element soCalled {
-    cp_macro.phraseSeq, cp_att.global.attributes, empty
+    cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
   }
 
 cp_desc =
@@ -2152,6 +2172,7 @@ cp_desc =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.translatable.attributes,
     cp_att.typed.attribute.subtype,
@@ -2166,6 +2187,7 @@ cp_gloss =
   ## (gloss) identifies a phrase or word used to provide a gloss or definition for some other word or phrase. [3.4.1. Terms and Glosses 22.4.1. Description of Components]
   element gloss {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.declaring.attributes,
     cp_att.translatable.attributes,
@@ -2179,6 +2201,7 @@ cp_term =
   ## (term) contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. [3.4.1. Terms and Glosses]
   element term {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.declaring.attributes,
     cp_att.pointing.attributes,
@@ -2193,6 +2216,7 @@ cp_ruby =
   ## (ruby container) contains a passage of base text along with its associated ruby gloss(es). [3.4.2. Ruby Annotations]
   element ruby {
     (cp_rb, cp_rt+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     empty
@@ -2291,12 +2315,18 @@ cp_rt =
 
 cp_sic =
   ## (Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [3.5.1. Apparent Errors]
-  element sic { cp_macro.paraContent, cp_att.global.attributes, empty }
+  element sic {
+    cp_macro.paraContent,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
+  }
 
 cp_corr =
   ## (correction) contains the correct form of a passage apparently erroneous in the copy text. [3.5.1. Apparent Errors]
   element corr {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.editLike.attributes,
     cp_att.typed.attributes,
@@ -2306,7 +2336,10 @@ cp_corr =
 cp_choice =
   ## (choice) groups a number of alternative encodings for the same point in a text. [3.5. Simple Editorial Changes]
   element choice {
-    (cp_model.choicePart | cp_choice)+, cp_att.global.attributes, empty
+    (cp_model.choicePart | cp_choice)+,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
   }
 
 cp_reg =
@@ -2314,6 +2347,7 @@ cp_reg =
   ## Normalization 12. Critical Apparatus]
   element reg {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.editLike.attributes,
     cp_att.typed.attributes,
@@ -2323,12 +2357,18 @@ cp_reg =
 cp_orig =
   ## (original form) contains a reading which is marked as following the original, rather than being normalized or corrected. [3.5.2. Regularization and
   ## Normalization 12. Critical Apparatus]
-  element orig { cp_macro.paraContent, cp_att.global.attributes, empty }
+  element orig {
+    cp_macro.paraContent,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
+  }
 
 cp_gap =
   ## (gap) indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [3.5.3. Additions, Deletions, and Omissions]
   element gap {
     (cp_model.descLike | cp_model.certLike)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.timed.attributes,
     cp_att.editLike.attributes,
@@ -2361,6 +2401,7 @@ cp_add =
   ## (addition) contains letters, words, or phrases inserted in the source text by an author, scribe, or a previous annotator or corrector. [3.5.3. Additions, Deletions, and Omissions]
   element add {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.transcriptional.attributes,
     cp_att.placement.attributes,
@@ -2373,6 +2414,7 @@ cp_del =
   ## (deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, or a previous annotator or corrector. [3.5.3. Additions, Deletions, and Omissions]
   element del {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.transcriptional.attributes,
     cp_att.typed.attributes,
@@ -2384,6 +2426,7 @@ cp_unclear =
   ## (unclear) contains a word, phrase, or passage which cannot be transcribed with certainty because it is illegible or inaudible in the source. [11.3.3.1. Damage, Illegibility, and Supplied Text 3.5.3. Additions, Deletions, and Omissions]
   element unclear {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.editLike.attributes,
     cp_att.dimensions.attributes,
@@ -2413,6 +2456,7 @@ cp_name =
   ## (name, proper noun) contains a proper noun or noun phrase. [3.6.1. Referring Strings]
   element name {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.personal.attributes,
     cp_att.datable.attributes,
@@ -2425,6 +2469,7 @@ cp_rs =
   ## (referencing string) contains a general purpose name or referring string. [13.2.1. Personal Names 3.6.1. Referring Strings]
   element rs {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.naming.attributes,
     cp_att.typed.attributes,
@@ -2433,12 +2478,18 @@ cp_rs =
 
 cp_email =
   ## (electronic mail address) contains an email address identifying a location to which email messages can be delivered. [3.6.2. Addresses]
-  element email { cp_macro.phraseSeq, cp_att.global.attributes, empty }
+  element email {
+    cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
+  }
 
 cp_address =
   ## (address) contains a postal address, for example of a publisher, an organization, or an individual. [3.6.2. Addresses 2.2.4. Publication, Distribution, Licensing, etc. 3.12.2.4. Imprint, Size of a Document, and Reprint Information]
   element address {
     (cp_model.global*, (cp_model.addrPart, cp_model.global*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     empty
   }
@@ -2466,6 +2517,7 @@ cp_num =
   ## Measures]
   element num {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     cp_att.ranging.attributes,
@@ -2493,6 +2545,7 @@ cp_measure =
   ## Measures]
   element measure {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     cp_att.measurement.attributes,
@@ -2507,6 +2560,7 @@ cp_measureGrp =
   ## (measure group) contains a group of dimensional specifications which relate to the same object, for example the height and width of a manuscript page. [10.3.4. Dimensions]
   element measureGrp {
     (text | cp_model.gLike | cp_model.measureLike)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.measurement.attributes,
     cp_att.typed.attributes,
@@ -2518,6 +2572,7 @@ cp_unit =
   ## Measures]
   element unit {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.measurement.attributes,
@@ -2528,6 +2583,7 @@ cp_date =
   ## (date) contains a date in any format. [3.6.4. Dates and Times 2.2.4. Publication, Distribution, Licensing, etc. 2.6. The Revision Description 3.12.2.4. Imprint, Size of a Document, and Reprint Information 15.2.3. The Setting Description 13.4. Dates]
   element date {
     (text | cp_model.gLike | cp_model.phrase | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.canonical.attributes,
     cp_att.datable.attributes,
@@ -2542,6 +2598,7 @@ cp_time =
   ## (time) contains a phrase defining a time of day in any format. [3.6.4. Dates and Times]
   element time {
     (text | cp_model.gLike | cp_model.phrase | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.canonical.attributes,
@@ -2556,6 +2613,7 @@ cp_abbr =
   ## (abbreviation) contains an abbreviation of any sort. [3.6.5. Abbreviations and Their Expansions]
   element abbr {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     ## (type) allows the encoder to classify the abbreviation according to some convenient typology.
@@ -2570,6 +2628,7 @@ cp_expan =
   ## (expansion) contains the expansion of an abbreviation. [3.6.5. Abbreviations and Their Expansions]
   element expan {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.editLike.attributes,
     empty
@@ -2600,6 +2659,7 @@ cp_ptr =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.cReferencing.attributes,
     cp_att.declaring.attributes,
     cp_att.global.attributes,
@@ -2635,6 +2695,7 @@ cp_ref =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.cReferencing.attributes,
     cp_att.declaring.attributes,
     cp_att.global.attributes,
@@ -2672,6 +2733,7 @@ cp_list =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.sortable.attributes,
     cp_att.typed.attribute.subtype,
@@ -2708,6 +2770,7 @@ cp_label =
   ## (label) contains any label or heading used to identify part of a text, typically but not exclusively in a list or glossary. [3.8. Lists]
   element label {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.placement.attributes,
@@ -2725,6 +2788,7 @@ cp_head =
      | cp_model.inter
      | cp_model.lLike
      | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.placement.attributes,
@@ -2748,6 +2812,7 @@ cp_note =
   ## (note) contains a note or annotation. [3.9.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.12.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]
   element note {
     cp_macro.specialPara,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.placement.attributes,
     cp_att.pointing.attributes,
@@ -2761,6 +2826,7 @@ cp_noteGrp =
   ## contains a group of notes [3.9.1.1. Encoding Grouped Notes]
   element noteGrp {
     (cp_desc*, (cp_note | cp_noteGrp)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.placement.attributes,
     cp_att.pointing.attributes,
@@ -2774,6 +2840,7 @@ cp_index =
   ## (index entry) marks a location to be indexed for whatever purpose. [3.9.2. Index Entries]
   element index {
     (cp_term, cp_index?)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.spanning.attributes,
     ## a single word which follows the rules defining a legal XML name (see ), supplying a name to specify which index (of several) the index entry belongs to.
@@ -2785,6 +2852,7 @@ cp_media =
   ## indicates the location of any form of external media such as an audio or video clip etc. [3.10. Graphics and Other Non-textual Components]
   element media {
     cp_model.descLike*,
+    cp_att.CMC.attributes,
     cp_att.typed.attributes,
     cp_att.global.attributes,
     cp_att.media.attribute.width,
@@ -2806,6 +2874,7 @@ cp_graphic =
   ## (graphic) indicates the location of a graphic or illustration, either forming part of a text, or providing an image of it. [3.10. Graphics and Other Non-textual Components 11.1. Digital Facsimiles]
   element graphic {
     cp_model.descLike*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.media.attributes,
     cp_att.resourced.attributes,
@@ -2817,6 +2886,7 @@ cp_binaryObject =
   ## provides encoded binary data representing an inline graphic, audio, video or other object. [3.10. Graphics and Other Non-textual Components]
   element binaryObject {
     text,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.media.attributes,
     cp_att.timed.attributes,
@@ -2841,6 +2911,7 @@ cp_milestone =
   ## Elements]
   element milestone {
     empty,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.milestoneUnit.attributes,
     cp_att.typed.attributes,
@@ -2855,6 +2926,7 @@ cp_gb =
   ## Elements]
   element gb {
     empty,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.spanning.attributes,
@@ -2868,6 +2940,7 @@ cp_pb =
   ## Elements]
   element pb {
     empty,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.edition.attributes,
@@ -2881,6 +2954,7 @@ cp_lb =
   ## Elements 7.2.5. Speech Contents]
   element lb {
     empty,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.edition.attributes,
@@ -2894,6 +2968,7 @@ cp_cb =
   ## Elements]
   element cb {
     empty,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.edition.attributes,
@@ -3014,6 +3089,7 @@ cp_title =
   ## (title) contains a title for any kind of work. [3.12.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]
   element title {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     cp_att.canonical.attributes,
@@ -3039,6 +3115,7 @@ cp_meeting =
   ## contains the formalized descriptive title for a meeting or conference, for use in a bibliographic description for an item derived from such a meeting, or as a heading or preamble to publications emanating from it. [3.12.2.2. Titles, Authors, and Editors]
   element meeting {
     cp_macro.limitedContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.canonical.attributes,
@@ -3105,6 +3182,7 @@ cp_bibl =
      | cp_model.ptrLike
      | cp_model.biblPart
      | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.declarable.attributes,
     cp_att.typed.attributes,
@@ -3122,6 +3200,7 @@ cp_biblStruct =
       | cp_model.ptrLike
       | cp_relatedItem
       | cp_citedRange)*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.declarable.attributes,
     cp_att.typed.attributes,
@@ -3138,6 +3217,7 @@ cp_listBibl =
      (cp_model.milestoneLike | cp_relation | cp_listRelation)*,
      (cp_model.biblLike+,
       (cp_model.milestoneLike | cp_relation | cp_listRelation)*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.sortable.attributes,
     cp_att.declarable.attributes,
@@ -3216,6 +3296,7 @@ cp_l =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.fragmentable.attributes,
     empty
@@ -3274,6 +3355,7 @@ cp_lg =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.divLike.attributes,
     cp_att.typed.attributes,
@@ -3308,6 +3390,7 @@ cp_stage =
   ## (stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.4. Stage Directions]
   element stage {
     cp_macro.specialPara,
+    cp_att.CMC.attributes,
     cp_att.ascribed.directed.attributes,
     cp_att.global.attributes,
     cp_att.placement.attributes,
@@ -3705,6 +3788,7 @@ cp_idno =
   ## (identifier) supplies any form of identifier used to identify some object, such as a bibliographic item, a person, a title, an organization, etc. in a standardized way. [13.3.1. Basic Principles 2.2.4. Publication, Distribution, Licensing, etc. 2.2.5. The Series Statement 3.12.2.4. Imprint, Size of a Document, and Reprint Information]
   element idno {
     (text | cp_model.gLike | cp_idno)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.sortable.attributes,
     cp_att.datable.attributes,
@@ -3804,6 +3888,7 @@ cp_biblFull =
        cp_notesStmt?),
       cp_sourceDesc*)
      | (cp_fileDesc, cp_profileDesc)),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.declarable.attributes,
     cp_att.sortable.attributes,
@@ -4801,6 +4886,7 @@ cp_fs =
   ## Feature Value]
   element fs {
     cp_f*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datcat.attributes,
     ## specifies the type of the feature structure.
@@ -4961,12 +5047,17 @@ cp_fLib =
       " (feature) elements. [18.4. Feature Libraries and Feature-Value Libraries]"
     ]
   ]
-  element fLib { cp_f+, cp_att.global.attributes, empty }
+  element fLib {
+    cp_f+, cp_att.CMC.attributes, cp_att.global.attributes, empty
+  }
 
 cp_fvLib =
   ## (feature-value library) assembles a library of reusable feature value elements (including complete feature structures). [18.4. Feature Libraries and Feature-Value Libraries]
   element fvLib {
-    cp_model.featureVal*, cp_att.global.attributes, empty
+    cp_model.featureVal*,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    empty
   }
 cp_att.datable.custom.attributes =
   cp_att.datable.custom.attribute.when-custom,
@@ -5147,6 +5238,7 @@ cp_orgName =
   ## (organization name) contains an organizational name. [13.2.2. Organizational Names]
   element orgName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
@@ -5159,6 +5251,7 @@ cp_persName =
   ## (personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]
   element persName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
@@ -5171,6 +5264,7 @@ cp_surname =
   ## (surname) contains a family (inherited) name, as opposed to a given, baptismal, or nick name. [13.2.1. Personal Names]
   element surname {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.personal.attributes,
     cp_att.typed.attributes,
@@ -5181,6 +5275,7 @@ cp_forename =
   ## (forename) contains a forename, given or baptismal name. [13.2.1. Personal Names]
   element forename {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.personal.attributes,
     cp_att.typed.attributes,
@@ -5191,6 +5286,7 @@ cp_genName =
   ## (generational name component) contains a name component used to distinguish otherwise similar names on the basis of the relative ages or generations of the persons named. [13.2.1. Personal Names]
   element genName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.personal.attributes,
     cp_att.typed.attributes,
@@ -5201,6 +5297,7 @@ cp_nameLink =
   ## (name link) contains a connecting phrase or link used within a name but not regarded as part of it, such as van der or of. [13.2.1. Personal Names]
   element nameLink {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     empty
@@ -5210,6 +5307,7 @@ cp_addName =
   ## (additional name) contains an additional name component, such as a nickname, epithet, or alias, or any other descriptive phrase used within a personal name. [13.2.1. Personal Names]
   element addName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.personal.attributes,
     cp_att.typed.attributes,
@@ -5220,6 +5318,7 @@ cp_roleName =
   ## (role name) contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank. [13.2.1. Personal Names]
   element roleName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.personal.attributes,
     cp_att.typed.attributes,
@@ -5230,6 +5329,7 @@ cp_placeName =
   ## (place name) contains an absolute or relative place name. [13.2.3. Place Names]
   element placeName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
     cp_att.global.attributes,
@@ -5242,6 +5342,7 @@ cp_bloc =
   ## (bloc) contains the name of a geo-political unit consisting of two or more nation states or countries. [13.2.3. Place Names]
   element bloc {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.naming.attributes,
     cp_att.typed.attributes,
@@ -5253,6 +5354,7 @@ cp_country =
   ## (country) contains the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc. [13.2.3. Place Names]
   element country {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.naming.attributes,
     cp_att.typed.attributes,
@@ -5264,6 +5366,7 @@ cp_region =
   ## (region) contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country. [13.2.3. Place Names]
   element region {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.naming.attributes,
     cp_att.typed.attributes,
@@ -5275,6 +5378,7 @@ cp_settlement =
   ## (settlement) contains the name of a settlement such as a city, town, or village identified as a single geo-political or administrative unit. [13.2.3. Place Names]
   element settlement {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.naming.attributes,
     cp_att.typed.attributes,
@@ -5286,6 +5390,7 @@ cp_district =
   ## (district) contains the name of any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic unit. [13.2.3. Place Names]
   element district {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.naming.attributes,
     cp_att.typed.attributes,
@@ -5297,6 +5402,7 @@ cp_offset =
   ## (offset) marks that part of a relative temporal or spatial expression which indicates the direction of the offset between the two place names, dates, or times involved in the expression. [13.2.3. Place Names]
   element offset {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
     cp_att.global.attributes,
@@ -5310,6 +5416,7 @@ cp_geogName =
   ## (geographical name) identifies a name associated with some geographical feature such as Windrush Valley or Mount Sinai. [13.2.3. Place Names]
   element geogName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
     cp_att.global.attributes,
@@ -5322,6 +5429,7 @@ cp_geogFeat =
   ## (geographical feature name) contains a common noun identifying some geographical feature contained within a geographic name, such as valley, mount, etc. [13.2.3. Place Names]
   element geogFeat {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
     cp_att.global.attributes,
@@ -5335,6 +5443,7 @@ cp_affiliation =
   ## (affiliation) contains an informal description of a person's present or past affiliation with some organization, for example an employer or sponsor. [15.2.2. The Participant Description]
   element affiliation {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.editLike.attributes,
     cp_att.datable.attributes,
@@ -5392,6 +5501,7 @@ cp_climate =
      (cp_model.pLike+ | cp_model.labelLike+),
      (cp_model.noteLike | cp_model.biblLike)*,
      cp_climate*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
@@ -5496,7 +5606,11 @@ cp_floruit =
 cp_geo =
   ## (geographical coordinates) contains any expression of a set of geographic coordinates, representing a point, line, or area on the surface of the earth in some notation. [13.3.4.1. Varieties of Location]
   element geo {
-    text, cp_att.global.attributes, cp_att.declaring.attributes, empty
+    text,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    cp_att.declaring.attributes,
+    empty
   }
 cp_langKnowledge =
   [
@@ -5555,6 +5669,7 @@ cp_listOrg =
      cp_desc*,
      (cp_relation | cp_listRelation)*,
      ((cp_org | cp_listOrg)+, (cp_relation | cp_listRelation)*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.declarable.attributes,
@@ -5569,6 +5684,7 @@ cp_listEvent =
      cp_desc*,
      (cp_relation | cp_listRelation)*,
      (cp_model.eventLike+, (cp_relation | cp_listRelation)*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.declarable.attributes,
@@ -5584,6 +5700,7 @@ cp_listPerson =
      (cp_relation | cp_listRelation)*,
      ((cp_model.personLike | cp_listPerson)+,
       (cp_relation | cp_listRelation)*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.declarable.attributes,
@@ -5599,6 +5716,7 @@ cp_listPlace =
      (cp_relation | cp_listRelation)*,
      ((cp_model.placeLike | cp_listPlace)+,
       (cp_relation | cp_listRelation)*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.declarable.attributes,
@@ -5612,6 +5730,7 @@ cp_listRelation =
     (cp_model.headLike*,
      cp_desc*,
      (cp_model.pLike | (cp_relation | cp_listRelation)+)),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.sortable.attributes,
@@ -5628,6 +5747,7 @@ cp_location =
      | cp_model.addressLike
      | cp_model.noteLike
      | cp_model.biblLike)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.datable.attributes,
@@ -5800,6 +5920,7 @@ cp_persPronouns =
   ## (personal pronouns) indicates the personal pronouns used, or assumed to be used, by the individual being described. [13.3.2.1. Personal Characteristics]
   element persPronouns {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.typed.attributes,
@@ -5852,6 +5973,7 @@ cp_population =
      ((cp_model.pLike+ | cp_model.labelLike+),
       (cp_model.noteLike | cp_model.biblLike)*)?,
      cp_population*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
@@ -6025,6 +6147,7 @@ cp_state =
         cp_model.pLike+,
         (cp_model.noteLike | cp_model.biblLike)*)
      | (cp_model.labelLike | cp_model.noteLike | cp_model.biblLike)*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
@@ -6041,6 +6164,7 @@ cp_terrain =
      (cp_model.pLike+ | cp_model.labelLike+),
      (cp_model.noteLike | cp_model.biblLike)*,
      cp_terrain*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
@@ -6057,6 +6181,7 @@ cp_trait =
         cp_model.pLike+,
         (cp_model.noteLike | cp_model.biblLike)*)
      | (cp_model.labelLike | cp_model.noteLike | cp_model.biblLike)*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
@@ -6070,6 +6195,7 @@ cp_objectName =
   ## (name of an object) contains a proper noun or noun phrase used to refer to an object. [13.2.4. Object Names]
   element objectName {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.datable.attributes,
     cp_att.editLike.attributes,
     cp_att.global.attributes,
@@ -6102,6 +6228,7 @@ cp_listObject =
      cp_desc*,
      (cp_relation | cp_listRelation)*,
      (cp_model.objectLike+, (cp_relation | cp_listRelation)*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.declarable.attributes,
@@ -6157,6 +6284,7 @@ cp_listNym =
      cp_desc*,
      (cp_relation | cp_listRelation)*,
      ((cp_nym | cp_listNym)+, (cp_relation | cp_listRelation)*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.declarable.attributes,
@@ -6273,6 +6401,7 @@ cp_pause =
   ## (pause) marks a pause either between or within utterances. [8.3.2. Pausing]
   element pause {
     empty,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.timed.attributes,
     cp_att.typed.attributes,
@@ -6284,6 +6413,7 @@ cp_vocal =
   ## (vocal) marks any vocalized but not necessarily lexical phenomenon, for example voiced pauses, non-lexical backchannels, etc. [8.3.3. Vocal, Kinesic, Incident]
   element vocal {
     cp_model.descLike*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.timed.attributes,
     cp_att.ascribed.directed.attributes,
@@ -6302,6 +6432,7 @@ cp_kinesic =
   ## (kinesic) marks any communicative phenomenon, not necessarily vocalized, for example a gesture, frown, etc. [8.3.3. Vocal, Kinesic, Incident]
   element kinesic {
     cp_model.descLike*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.timed.attributes,
     cp_att.typed.attributes,
@@ -6320,6 +6451,7 @@ cp_incident =
   ## (incident) marks any phenomenon or occurrence, not necessarily vocalized or communicative, for example incidental noises or other events affecting communication. [8.3.3. Vocal, Kinesic, Incident]
   element incident {
     cp_model.descLike*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.timed.attributes,
     cp_att.typed.attributes,
@@ -6331,6 +6463,7 @@ cp_writing =
   ## (writing) contains a passage of written text revealed to participants in the course of a spoken text. [8.3.4. Writing]
   element writing {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.ascribed.directed.attributes,
     cp_att.typed.attributes,
@@ -6370,6 +6503,7 @@ cp_shift =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.ascribed.attributes,
     ## a paralinguistic feature.
@@ -6484,6 +6618,7 @@ cp_floatingText =
      (cp_body | cp_group),
      cp_model.global*,
      (cp_back, cp_model.global*)?),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.declaring.attributes,
     cp_att.typed.attributes,
@@ -6669,6 +6804,7 @@ cp_trailer =
      | cp_model.inter
      | cp_model.lLike
      | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.placement.attributes,
@@ -6684,6 +6820,7 @@ cp_byline =
      | cp_model.phrase
      | cp_docAuthor
      | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     empty
   }
@@ -6696,6 +6833,7 @@ cp_dateline =
      | cp_model.phrase
      | cp_model.global
      | cp_docDate)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     empty
   }
@@ -6705,6 +6843,7 @@ cp_argument =
   element argument {
     ((cp_model.global | cp_model.headLike)*,
      (cp_model.common, cp_model.global*)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     empty
   }
@@ -6713,6 +6852,7 @@ cp_epigraph =
   ## (epigraph) contains a quotation, anonymous or attributed, appearing at the start or end of a section or on a title page. [4.2.3. Arguments, Epigraphs, and Postscripts 4.2. Elements Common to All Divisions 4.6. Title Pages]
   element epigraph {
     (cp_model.common | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     empty
   }
@@ -6730,6 +6870,7 @@ cp_opener =
      | cp_salute
      | cp_signed
      | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.written.attributes,
     empty
@@ -6745,6 +6886,7 @@ cp_closer =
      | cp_salute
      | cp_model.phrase
      | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.written.attributes,
     empty
@@ -6754,6 +6896,7 @@ cp_salute =
   ## (salutation) contains a salutation or greeting prefixed to a foreword, dedicatory epistle, or other division of a text, or the salutation in the closing of a letter, preface, etc. [4.2.2. Openers and Closers]
   element salute {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.written.attributes,
     empty
@@ -6763,6 +6906,7 @@ cp_signed =
   ## (signature) contains the closing salutation, etc., appended to a foreword, dedicatory epistle, or other division of a text. [4.2.2. Openers and Closers]
   element signed {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.written.attributes,
     empty
@@ -6775,6 +6919,7 @@ cp_postscript =
      cp_model.common,
      (cp_model.global | cp_model.common)*,
      (cp_model.divBottomPart, cp_model.global*)*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.written.attributes,
     empty
@@ -6829,6 +6974,7 @@ cp_docAuthor =
   ## (document author) contains the name of the author of the document, as given on the title page (often but not always contained in a byline). [4.6. Title Pages]
   element docAuthor {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.canonical.attributes,
     empty
@@ -6864,6 +7010,7 @@ cp_docDate =
   ## (document date) contains the date of a document, as given on a title page or in a dateline. [4.6. Title Pages]
   element docDate {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     ## (when) gives the value of the date in standard form, i.e. YYYY-MM-DD.
     attribute when {
@@ -8609,6 +8756,7 @@ cp_link =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.attributes,
     cp_att.typed.attributes,
@@ -8619,6 +8767,7 @@ cp_linkGrp =
   ## (link group) defines a collection of associations or hypertextual links. [16.1. Links]
   element linkGrp {
     (cp_link | cp_ptr)+,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.group.attributes,
     empty
@@ -8671,6 +8820,7 @@ cp_ab =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     cp_att.declaring.attributes,
@@ -8682,13 +8832,18 @@ cp_ab =
 cp_anchor =
   ## (anchor point) attaches an identifier to a point within a text, whether or not it corresponds with a textual element. [8.4.2. Synchronization and Overlap 16.5. Correspondence and Alignment]
   element anchor {
-    empty, cp_att.global.attributes, cp_att.typed.attributes, empty
+    empty,
+    cp_att.CMC.attributes,
+    cp_att.global.attributes,
+    cp_att.typed.attributes,
+    empty
   }
 
 cp_seg =
   ## (arbitrary segment) represents any segmentation of text below the chunk level. [16.3. Blocks, Segments, and Anchors 6.2. Components of the Verse Line 7.2.5. Speech Contents]
   element seg {
     cp_macro.paraContent,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -8753,6 +8908,7 @@ cp_timeline =
   ## (timeline) provides a set of ordered points in time which can be linked to elements of a spoken text to create a temporal alignment of that text. [16.4.2. Placing Synchronous Events in Time]
   element timeline {
     cp_when+,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     ## designates the origin of the timeline, i.e. the time at which it begins.
     attribute origin { xsd:anyURI }?,
@@ -8808,6 +8964,7 @@ cp_join =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.attributes,
     cp_att.typed.attributes,
@@ -8845,6 +9002,7 @@ cp_joinGrp =
   ]
   element joinGrp {
     ((cp_equiv | cp_gloss)*, (cp_join | cp_ptr)+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.group.attributes,
     [
@@ -8864,6 +9022,7 @@ cp_alt =
   ## (alternation) identifies an alternation or a set of choices among elements or passages. [16.8. Alternation]
   element alt {
     empty,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.attribute.targetLang,
     cp_att.pointing.attribute.evaluate,
@@ -8902,6 +9061,7 @@ cp_altGrp =
   ]
   element altGrp {
     (cp_alt | cp_ptr)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.group.attributes,
     ## states whether the alternations gathered in this collection are exclusive or inclusive.
@@ -8994,7 +9154,6 @@ cp_annotation =
     cp_att.global.attribute.xmllang,
     cp_att.global.attribute.xmlbase,
     cp_att.global.attribute.xmlspace,
-    cp_att.global.CMC.attribute.creation,
     cp_att.global.rendition.attribute.rend,
     cp_att.global.rendition.attribute.style,
     cp_att.global.rendition.attribute.rendition,
@@ -9128,6 +9287,7 @@ cp_s =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -9139,6 +9299,7 @@ cp_cl =
   ## (clause) represents a grammatical clause. [17.1. Linguistic Segment Categories]
   element cl {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -9150,6 +9311,7 @@ cp_phr =
   ## (phrase) represents a grammatical phrase. [17.1. Linguistic Segment Categories]
   element phr {
     cp_macro.phraseSeq,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -9171,6 +9333,7 @@ cp_w =
      | cp_model.lPart
      | cp_model.hiLike
      | cp_model.pPart.edit)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -9189,6 +9352,7 @@ cp_m =
      | cp_m
      | cp_c
      | cp_model.global)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -9204,6 +9368,7 @@ cp_c =
   ## (character) represents a character. [17.1. Linguistic Segment Categories]
   element c {
     cp_macro.xtext,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -9215,6 +9380,7 @@ cp_pc =
   ## (punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark. [17.1.2. Below the Word Level 17.4.2. Lightweight Linguistic Annotation]
   element pc {
     (text | cp_model.gLike | cp_c | cp_model.pPart.edit)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.segLike.attributes,
     cp_att.typed.attributes,
@@ -9326,6 +9492,7 @@ cp_span =
          "\x{a}" ~
          "         "
        ],
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.interpLike.attribute.inst,
     cp_att.typed.attribute.subtype,
@@ -9352,6 +9519,7 @@ cp_spanGrp =
   ## (span group) collects together span tags. [17.3. Spans and Interpretations]
   element spanGrp {
     cp_span*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.interpLike.attribute.inst,
     cp_att.typed.attribute.subtype,
@@ -9367,6 +9535,7 @@ cp_interp =
   ## (interpretation) summarizes a specific interpretative annotation which can be linked to a span of text. [17.3. Spans and Interpretations]
   element interp {
     (text | cp_model.gLike | cp_model.descLike | cp_model.certLike)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.interpLike.attribute.inst,
     cp_att.typed.attribute.subtype,
@@ -9382,6 +9551,7 @@ cp_interpGrp =
   ## (interpretation group) collects together a set of related interpretations which share responsibility or type. [17.3. Spans and Interpretations]
   element interpGrp {
     (cp_model.descLike*, cp_interp+),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.interpLike.attribute.inst,
     cp_att.typed.attribute.subtype,
@@ -9420,6 +9590,7 @@ cp_table =
      ((cp_row, cp_model.global*)+
       | (cp_model.graphicLike, cp_model.global*)+),
      (cp_model.divBottom, cp_model.global*)*),
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.typed.attributes,
     ## (rows) indicates the number of rows in the table.
@@ -9451,6 +9622,7 @@ cp_formula =
   ## (formula) contains a mathematical or other formula. [14.2. Formulæ and Mathematical Expressions]
   element formula {
     (text | cp_model.graphicLike | cp_model.hiLike)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.notated.attributes,
     empty
@@ -9464,6 +9636,7 @@ cp_notatedMusic =
      | cp_graphic
      | cp_binaryObject
      | cp_seg)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.placement.attributes,
     cp_att.typed.attributes,
@@ -9479,6 +9652,7 @@ cp_figure =
      | cp_model.graphicLike
      | cp_model.global
      | cp_model.divBottom)*,
+    cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.placement.attributes,
     cp_att.typed.attributes,
@@ -9507,11 +9681,12 @@ cp_post =
      | cp_lg
      | cp_model.lLike
      | cp_model.divBottom)*,
+    cp_att.global.attributes,
+    cp_att.CMC.attributes,
     cp_att.ascribed.attributes,
     cp_att.canonical.attributes,
     cp_att.datable.attributes,
     cp_att.docStatus.attributes,
-    cp_att.global.attributes,
     cp_att.timed.attributes,
     cp_att.typed.attributes,
     ## written or spoken mode
@@ -9534,10 +9709,10 @@ cp_post =
     attribute indentLevel { xsd:nonNegativeInteger }?,
     empty
   }
-cp_att.global.CMC.attributes = cp_att.global.CMC.attribute.creation
-cp_att.global.CMC.attribute.creation =
-  ## Marks how the content of the respective element was generated in a CMC environment. 
-  attribute creation {
+cp_att.CMC.attributes = cp_att.CMC.attribute.generatedBy
+cp_att.CMC.attribute.generatedBy =
+  ## (generated by) Marks how the content of the respective element was generated in a CMC environment.
+  attribute generatedBy {
     ## The content of the respective element was "naturally" typed or spoken by a human user
     "human" | ## The content of the respective element was generated after a human user activated a template for its insertion
       "template" | ## The content of the respective element was generated by the system, i.e. the CMC environment
