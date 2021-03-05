@@ -136,9 +136,9 @@
     <text>
         <body>
             <div type="logfile">
-                <post mode="written" creation="system" who="#lscLB.A01_System"
+                <post modality="written" creation="system" who="#lscLB.A01_System"
                     xml:id="lscLB.m1"> Mo. 14. Mai 2018 </post>
-                <post mode="spoken" creation="human" synch="#lscLB.t001"
+                <post modality="spoken" creation="human" synch="#lscLB.t001"
                     who="#lscLB.A02" xml:id="lscLB.m2"> Was geht! Wir sitzen
                     gerade äh an der Endfassung von äh von dem Artikel da mit
                     Julian und ähm wir sind gerade dabei so Aspekte unseres
@@ -157,11 +157,11 @@
                         <desc>(lacht)</desc>
                     </vocal>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t002"
+                <post modality="written" creation="human" synch="#lscLB.t002"
                     who="#lscLB.A03" xml:id="lscLB.m3"> Kritikfähigkeit? </post>
-                <post mode="written" creation="human" synch="#lscLB.t002"
+                <post modality="written" creation="human" synch="#lscLB.t002"
                     who="#lscLB.A03" xml:id="lscLB.m4"> Hmm lass mich überlegen </post>
-                <post mode="spoken" creation="human" synch="#lscLB.t003"
+                <post modality="spoken" creation="human" synch="#lscLB.t003"
                     who="#lscLB.A02" xml:id="lscLB.m5"> Okay, kein Stress. Ähm
                     ich denke wir werden dich sowieso beten äh diesen Text
                     nochmal durchzulesen und eventuell kannst du ja auch selber
@@ -175,7 +175,7 @@
                     </vocal> Abschni <vocal>
                         <desc>(lacht)</desc>
                     </vocal> nein aber ich du weißt was ich meine </post>
-                <post mode="written" creation="human" synch="#lscLB.t004"
+                <post modality="written" creation="human" synch="#lscLB.t004"
                     who="#lscLB.A03" xml:id="lscLB.m6"> Klar <figure
                         type="emoji" creation="template">
                         <desc type="meaning">smiling face</desc>
@@ -185,14 +185,14 @@
                         <desc type="meaning">see no evil monkey</desc>
                         <desc type="unicode">U+1F648</desc>
                     </figure> ich bin euch sooo dankbar, dass ihr das macht! </post>
-                <post mode="written" creation="human" synch="#lscLB.t004"
+                <post modality="written" creation="human" synch="#lscLB.t004"
                     who="#lscLB.A02" xml:id="lscLB.m7">
                     <figure type="image" creation="human">
                         <desc>Zu sehen sind die beiden Verfasser des Artikels
                             mit erhobenen Daumen und Skript in der Hand</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t005"
+                <post modality="written" creation="human" synch="#lscLB.t005"
                     who="#lscLB.A03" xml:id="lscLB.m8"> Ihr seid die besten
                         <figure type="emoji" creation="template">
                         <desc type="meaning">smiling face with heart eyes</desc>
@@ -203,7 +203,7 @@
                         <desc type="unicode">U+2764</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t006"
+                <post modality="written" creation="human" synch="#lscLB.t006"
                     who="#lscLB.A02" xml:id="lscLB.m9"> Oh stop it you <figure
                         type="emoji" creation="template">
                         <desc type="meaning">face with tears of joy</desc>
@@ -214,18 +214,18 @@
                         <desc type="unicode">U+1F609</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t007"
+                <post modality="written" creation="human" synch="#lscLB.t007"
                     who="#lscLB.A03" xml:id="lscLB.m10"> Mein Bruder meinte
                     sowas wie Bodenständigkeit, Realitätsnähe </post>
-                <post mode="written" creation="human" synch="#lscLB.t007"
+                <post modality="written" creation="human" synch="#lscLB.t007"
                     who="#lscLB.A03" xml:id="lscLB.m11"> Irgendwas mit
                     Bewusstsein hinten </post>
-                <post mode="written" creation="human" synch="#lscLB.t007"
+                <post modality="written" creation="human" synch="#lscLB.t007"
                     who="#lscLB.A03" xml:id="lscLB.m12"> Wir denken uns einfach
                     was aus </post>
-                <post mode="written" creation="human" synch="#lscLB.t008"
+                <post modality="written" creation="human" synch="#lscLB.t008"
                     who="#lscLB.A03" xml:id="lscLB.m13"> Aufwandsbewusstsein </post>
-                <post mode="spoken" creation="human" synch="#lscLB.t009"
+                <post modality="spoken" creation="human" synch="#lscLB.t009"
                     who="#lscLB.A02" xml:id="lscLB.m14"> Ja Realitätsnähe oder
                     Aufwandsbewusstsein kommt dem schon nah, Dankeschön dafür
                     schon mal <vocal>
@@ -249,7 +249,7 @@
                     schon sowas wie ja und die Kunst die kinder zu verzaubern
                     oder sowas aber das hört sich irgendwie so voll abgehoben an
                     und das wollten wir nicht </post>
-                <post mode="spoken" creation="human" synch="#lscLB.t010"
+                <post modality="spoken" creation="human" synch="#lscLB.t010"
                     who="#lscLB.A03" xml:id="lscLB.m15"> Äh ich bin mir nicht so
                     ganz sicher was ihr meint also.. quasi dass ugh ich weiß
                     nicht ob ich das richtig verstanden hab, also dass wir in
@@ -260,7 +260,7 @@
                     ich hab das jetzt irgendwie nicht so ganz verstanden wie ihr
                     das meint mit denen vorzugaukeln dass sie in einer anderen
                     Welt sind </post>
-                <post mode="spoken" creation="human" synch="#lscLB.t011"
+                <post modality="spoken" creation="human" synch="#lscLB.t011"
                     who="#lscLB.A02" xml:id="lscLB.m16">
                     <desc>Julian der mit Paul Horak unterwegs ist,
                         spricht</desc> ja ich glaub wir meinen eher so.. brich
@@ -268,14 +268,14 @@
                         <desc>(lacht)</desc>
                     </vocal>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t011"
+                <post modality="written" creation="human" synch="#lscLB.t011"
                     who="#lscLB.A03" xml:id="lscLB.m17"> Hahahahahha </post>
-                <post mode="written" creation="human" synch="#lscLB.t011"
+                <post modality="written" creation="human" synch="#lscLB.t011"
                     who="#lscLB.A03" xml:id="lscLB.m18"> Alltagsflucht? </post>
-                <post mode="written" creation="human" synch="#lscLB.t012"
+                <post modality="written" creation="human" synch="#lscLB.t012"
                     who="#lscLB.A03" xml:id="lscLB.m19"> Aus dem Alltag
                     ausbrechen? </post>
-                <post mode="spoken" creation="human" synch="#lscLB.t012"
+                <post modality="spoken" creation="human" synch="#lscLB.t012"
                     who="#lscLB.A02" xml:id="lscLB.m20"> Julian: Selber! <vocal>
                         <desc>(beide lachen)</desc>
                     </vocal> also wir meinen jetzt eher nicht so dass wir die so
@@ -295,31 +295,31 @@
                         <desc>(Paul lacht)</desc>
                     </vocal>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t013"
+                <post modality="written" creation="human" synch="#lscLB.t013"
                     who="#lscLB.A03" xml:id="lscLB.m21"> Hahahahahaha </post>
-                <post mode="written" creation="human" synch="#lscLB.t013"
+                <post modality="written" creation="human" synch="#lscLB.t013"
                     who="#lscLB.A03" xml:id="lscLB.m22"> Sehr gut <figure
                         type="emoji" creation="template">
                         <desc type="meaning">face with tears of joy</desc>
                         <desc type="unicode">U+1F602</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t013"
+                <post modality="written" creation="human" synch="#lscLB.t013"
                     who="#lscLB.A03" xml:id="lscLB.m23"> Authentizität </post>
-                <post mode="written" creation="human" synch="#lscLB.t013"
+                <post modality="written" creation="human" synch="#lscLB.t013"
                     who="#lscLB.A03" xml:id="lscLB.m24"> Hört sich sehr gebildet
                     an </post>
-                <post mode="written" creation="human" synch="#lscLB.t014"
+                <post modality="written" creation="human" synch="#lscLB.t014"
                     who="#lscLB.A02" xml:id="lscLB.m25"> Haha Danke <figure
                         type="emoji" creation="template">
                         <desc type="meaning">face with tears of joy</desc>
                         <desc type="unicode">U+1F602</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t015"
+                <post modality="written" creation="human" synch="#lscLB.t015"
                     who="#lscLB.A02" xml:id="lscLB.m26"> So schicke dir das
                     jetzt und du kannst als Bild einfach das von eben nehmen </post>
-                <post mode="written" creation="human" synch="#lscLB.t015"
+                <post modality="written" creation="human" synch="#lscLB.t015"
                     who="#lscLB.A03" xml:id="lscLB.m27"> Danke <figure
                         type="emoji" creation="template">
                         <desc type="meaning">folded-hands: medium light skin
@@ -327,7 +327,7 @@
                         <desc type="unicode">U+1F64F</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t016"
+                <post modality="written" creation="human" synch="#lscLB.t016"
                     who="#lscLB.A03" xml:id="lscLB.m28"> Das Bild geht
                     wahrscheinlich nicht <figure type="emoji"
                         creation="template">
@@ -339,19 +339,19 @@
                         <desc type="unicode">U+1F644</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t017"
+                <post modality="written" creation="human" synch="#lscLB.t017"
                     who="#lscLB.A02" xml:id="lscLB.m29"> Hm kann man das nicht 1
                     mb klein machen? <figure type="emoji" creation="template">
                         <desc type="meaning">thinking-face</desc>
                         <desc type="unicode">U+1F914</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t018"
+                <post modality="written" creation="human" synch="#lscLB.t018"
                     who="#lscLB.A03" xml:id="lscLB.m30"> Ne es muss größer sein </post>
-                <post mode="written" creation="human" synch="#lscLB.t019"
+                <post modality="written" creation="human" synch="#lscLB.t019"
                     who="#lscLB.A03" xml:id="lscLB.m31"> Sonst ist das beim
                     Drucken zu unscharf </post>
-                <post mode="spoken" creation="human" synch="#lscLB.t020"
+                <post modality="spoken" creation="human" synch="#lscLB.t020"
                     who="#lscLB.A02" xml:id="lscLB.m32"> Oh okay ehm ja... also
                     um ehrlich zu sein... weiß ich gerade nicht wie wir das dann
                     anders machen sollen also.. ich hab keine Profikamera oder
@@ -359,10 +359,10 @@
                         <desc>(lacht)</desc>
                     </vocal>
                 </post>
-                <post mode="written" creation="human" synch="#lscLB.t021"
+                <post modality="written" creation="human" synch="#lscLB.t021"
                     who="#lscLB.A03" xml:id="lscLB.m33"> Vielleicht können wir
                     das ohne Foto machen </post>
-                <post mode="written" creation="human" synch="#lscLB.t021"
+                <post modality="written" creation="human" synch="#lscLB.t021"
                     who="#lscLB.A02" xml:id="lscLB.m34"> Okay <figure
                         type="emoji" creation="template">
                         <desc type="meaning">face with tears of joy</desc>

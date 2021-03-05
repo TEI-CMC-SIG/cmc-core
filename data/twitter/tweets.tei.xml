@@ -109,7 +109,7 @@
     </teiHeader>
     <text>
         <body>
-            <post mode="written" key="1043764753502486528" type="tweet" creation="human"
+            <post modality="written" key="1043764753502486528" type="tweet" creation="human"
                 synch="#tweetsbcrn18.t001" xml:id="p1" who="#u1" xml:lang="deu">
                 <time creation="system"> 12:31 </time> Heute mit super Unterstützung, wir grunzen,
                 wenn die Zeit vorbei ist. <ref type="hashtag"
@@ -136,10 +136,10 @@
                     </fs>
                 </trailer>
             </post>
-            <post mode="written" key="1043769240136880128" creation="unspecified" type="tweet"
+            <post modality="written" key="1043769240136880128" creation="unspecified" type="tweet"
                 subtype="retweet" who="#u1" ref="#p3" synch="#tweetsbcrn18.t002" xml:id="p2" />
 
-            <post mode="written" key="1043767827927388160" creation="human" type="tweet" who="#u3"
+            <post modality="written" key="1043767827927388160" creation="human" type="tweet" who="#u3"
                 synch="#tweetsbcrn18.t002" xml:lang="de" xml:id="p3">
                 <time creation="system"> 12:43 </time>
                 <figure type="image" creation="human">
@@ -157,7 +157,7 @@
                     </fs>
                 </trailer>
             </post>
-            <post mode="written" key="1043796550101716993" creation="human" type="tweet"
+            <post modality="written" key="1043796550101716993" creation="human" type="tweet"
                 subtype="retweet" who="#u1" xml:id="p4" synch="#tweetsbcrn18.t004" ref="#p5"
                 xml:lang="de"> Ich mich auch? <ref type="hashtag"
                     target="https://twitter.com/hashtag/dynamicduo?src=hash">#dynamicduo</ref>
@@ -169,7 +169,7 @@
                 <ref type="hashtag" target="https://twitter.com/hashtag/wikidach?src=hash"
                     >#wikidach</ref>
             </post>
-            <post mode="written" key="1043796093786566656" creation="human" type="tweet"
+            <post modality="written" key="1043796093786566656" creation="human" type="tweet"
                 subtype="retweet" who="#u2" synch="#tweetsbcrn18.t003" xml:lang="de" xml:id="p5">
                 <time creation="system"> 14:35 </time> Immer wieder gerne. Kann ich mich schon für
                 nächstes Jahr als Empfangs- <ref type="hashtag"
@@ -189,10 +189,10 @@
                     </fs>
                 </trailer>
             </post>
-            <post mode="written" key="1043798190846353408" creation="unspecified" type="tweet"
+            <post modality="written" key="1043798190846353408" creation="unspecified" type="tweet"
                 subtype="retweet" who="#u1" ref="#p7" xml:id="p6" synch="#tweetsbcrn18.t005" />
 
-            <post mode="written" key="1043797470407471104" creation="human" type="tweet" who="#u2"
+            <post modality="written" key="1043797470407471104" creation="human" type="tweet" who="#u2"
                 synch="#tweetsbcrn18.t005" xml:lang="de" xml:id="p7">
                 <time creation="system"> 14:41 </time> Meine erste Session heute auf dem <ref
                     type="hashtag" target="https://twitter.com/hashtag/bcrn18?src=hash"
@@ -211,7 +211,7 @@
                     </fs>
                 </trailer>
             </post>
-            <post type="tweet" key="1043823300479258624" mode="written" creation="human"
+            <post type="tweet" key="1043823300479258624" modality="written" creation="human"
                 synch="#tweetsbcrn18.t006" xml:id="p8" who="#u1" xml:lang="deu">
                 <time creation="system"> 16:24 </time> Bro Tri-Engel...so hab ich mir das
                 vorgestellt!!! <ref type="twitter-account" target="https://twitter.com/AndreLo79"
@@ -238,7 +238,7 @@
                     </fs>
                 </trailer>
             </post>
-            <post mode="written" key="1043844982887657473" creation="human" xml:id="p9" type="tweet"
+            <post modality="written" key="1043844982887657473" creation="human" xml:id="p9" type="tweet"
                 subtype="retweet" who="#u1" ref="#p8" synch="#tweetsbcrn18.t007" xml:lang="de"> Da
                 ist er...I proudly present <ref type="twitter-account"
                     target="https://twitter.com/DaRealHeiko">@DaRealHeiko</ref> Willkommen bei
@@ -259,9 +259,9 @@
                     </fs>
                 </trailer>
             </post>
-            <post mode="written" key="1043853367976624132" creation="unspecified" type="tweet"
+            <post modality="written" key="1043853367976624132" creation="unspecified" type="tweet"
                 subtype="retweet" synch="#tweetsbcrn18.t008" who="#u1" xml:id="p10" ref="#p11" />
-            <post mode="written" key="1043852746330460161" creation="human" type="tweet" who="#u4"
+            <post modality="written" key="1043852746330460161" creation="human" type="tweet" who="#u4"
                 synch="#tweetsbcrn18.t008" xml:lang="de" xml:id="p11">
                 <time creation="system"> 18:21 </time> Bin dank meiner neuen Swagbeauftragten <ref
                     type="twitter-account" target="https://twitter.com/_lherzberg">@_lherzberg</ref>

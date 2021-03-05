@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../out/cmc-core.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -272,7 +271,7 @@
                     <code>eat(popcorn)</code>
                 </desc>
             </kinesic>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a195"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a195"
                 who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts380"
                 end="#cmr-archi21-slrefl-es-j3-1-ts381" type="chat-message">
                 <p>it went too quickly?</p>
@@ -284,7 +283,7 @@
                     <code>eat(popcorn)</code>
                 </desc>
             </kinesic>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a197"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a197"
                 who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts384"
                 end="#cmr-archi21-slrefl-es-j3-1-ts385" type="chat-message">
                 <p>or it was too early in the week?</p>
@@ -303,7 +302,7 @@
                     <code>eat(popcorn)</code>
                 </desc>
             </kinesic>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a200"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a200"
                 who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts392"
                 end="#cmr-archi21-slrefl-es-j3-1-ts393" type="chat-message">
                 <p>i think it was to early </p>
@@ -315,17 +314,17 @@
                     <code>type</code>
                 </desc>
             </kinesic>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a202"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a202"
                 who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts395"
                 end="#cmr-archi21-slrefl-es-j3-1-ts397" type="chat-message">
                 <p>too</p>
             </post>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a203"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a203"
                 who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts396"
                 end="#cmr-archi21-slrefl-es-j3-1-ts398" type="chat-message">
                 <p>too early ok</p>
             </post>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a204"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a204"
                 who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts399"
                 end="#cmr-archi21-slrefl-es-j3-1-ts401" type="chat-message">
                 <p>too quickly means that you didn't have enough time to speak</p>
@@ -344,7 +343,7 @@
                     <code>eat(popcorn)</code>
                 </desc>
             </kinesic>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a207"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a207"
                 who="#quentinrez" start="#cmr-archi21-slrefl-es-j3-1-ts405"
                 end="#cmr-archi21-slrefl-es-j3-1-ts406" type="chat-message">
                 <p>yes, it's an everyday lack of time</p>
@@ -377,7 +376,7 @@
                     <code>type</code>
                 </desc>
             </kinesic>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a212"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a212"
                 who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts414"
                 end="#cmr-archi21-slrefl-es-j3-1-ts415" type="chat-message">
                 <p>that more that we have to show something that we don't really know</p>
@@ -389,17 +388,17 @@
                     <code>eat(popcorn)</code>
                 </desc>
             </kinesic>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a214"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a214"
                 who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts419"
                 end="#cmr-archi21-slrefl-es-j3-1-ts421" type="chat-message">
                 <p>you didn't have enough time</p>
             </post>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a215"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a215"
                 who="#romeorez" start="#cmr-archi21-slrefl-es-j3-1-ts420"
                 end="#cmr-archi21-slrefl-es-j3-1-ts422" type="chat-message">
                 <p>fore the shape</p>
             </post>
-            <post mode="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a216"
+            <post modality="written" creation="human" xml:id="cmr-archi21-slrefl-es-j3-1-a216"
                 who="#tfrez2" start="#cmr-archi21-slrefl-es-j3-1-ts424"
                 end="#cmr-archi21-slrefl-es-j3-1-ts425" type="chat-message">
                 <p>ok</p>

@@ -10,7 +10,6 @@
    <ns prefix="rng" uri="http://relaxng.org/ns/structure/1.0"/>
    <ns prefix="s" uri="http://www.ascc.net/xml/schematron"/>
    <ns prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
-   <ns prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
    <ns prefix="teix" uri="http://www.tei-c.org/ns/Examples"/>
    <!-- ********************* -->
    <!-- namespaces, implicit: -->

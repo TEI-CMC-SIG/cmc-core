@@ -121,7 +121,7 @@
                 <div type="thread">
                     <head>Not an "object"</head>
 
-                    <post mode="written" indentLevel="0" who="#u002" synch="#t001">
+                    <post modality="written" indentLevel="0" who="#u002" synch="#t001">
                         <p>Transiting planet is a propitious orbital alignment, rather than a type
                             of planet. I'm not clear it belongs on the table. Likewise, optical
                             binaries, visual binaries, astrometric binaries, spectroscopic binaries
@@ -140,7 +140,7 @@
                     <head>Is the use of telescopes with cameras to photograph satellites and the
                         space station called astrophotography ?</head>
 
-                    <post xml:id="p1" indentLevel="0" who="#u004" synch="#t002" mode="written">
+                    <post xml:id="p1" indentLevel="0" who="#u004" synch="#t002" modality="written">
                         <p> The ISS and HTV photographed using a telescope-mounted camera in 2011 by
                                 <ref target="/wiki/Astrophotography"> astrophotographer</ref> Ralf
                             Vandebergh (left) and the International Space Station in a time exposure
@@ -164,7 +164,7 @@
                     </post>                    
                     
                     <post xml:id="p2" indentLevel="0" replyTo="#p1" who="#u004" synch="#t003"
-                        mode="written">
+                        modality="written">
                         <p>To make it simple for everyone to discuss this together instead of on
                             different pages, may I suggest discussing it here</p>
                         <p>
@@ -182,7 +182,7 @@
                     </post>
 
 
-                    <post xml:id="p3" mode="written" indentLevel="1" replyTo="#p2" who="#u003"
+                    <post xml:id="p3" modality="written" indentLevel="1" replyTo="#p2" who="#u003"
                         synch="#t004">
                         <p>This article is about astronomical objects, and the ISS is not an
                             astronomical object. So it should not appear here. You should be asking
@@ -196,7 +196,7 @@
                 <div type="thread">
                     <head>Naturally occurring?</head>
 
-                    <post mode="written" xml:id="p4" indentLevel="0" who="#u005" synch="#t005">
+                    <post modality="written" xml:id="p4" indentLevel="0" who="#u005" synch="#t005">
                         <p>I'm not sure that this is a proper criterium, or even what this means.
                             What if we set an explosion that breaks a comet into two pieces? What if
                             we build a moon? Cheers, <signed creation="template"><ref
@@ -205,7 +205,7 @@
                                     July 2011 (UTC)</time></signed></p>
                     </post>
 
-                    <post mode="written" xml:id="p5" indentLevel="1" replyTo="#p4" who="#u006"
+                    <post modality="written" xml:id="p5" indentLevel="1" replyTo="#p4" who="#u006"
                         synch="#t006">
                         <p>Those haven't happened. If they do, we can revisit the concern. <signed
                                 creation="template"><ref target="/wiki/User:Praemonitus"
@@ -219,14 +219,14 @@
                             target="/w/index.php?title=Stellar_body&amp;action=edit&amp;redlink=1"
                             >Stellar body</ref> redirect here?</head>
 
-                    <post mode="written" xml:id="p6" indentLevel="0" who="#u007" synch="#t007">
+                    <post modality="written" xml:id="p6" indentLevel="0" who="#u007" synch="#t007">
                         <p>Per topic. <signed creation="template">--<ref target="/wiki/User:Piotrus"
                                     >Piotr Konieczny aka Prokonsul Piotrus</ref>| <ref
                                     target="/wiki/User_talk:Piotrus">reply here</ref>
                                 <time>12:12, 21 December 2013 (UTC)</time></signed></p>
                     </post>
 
-                    <post mode="written" xml:id="p7" indentLevel="1" replyTo="#p6" who="#u006"
+                    <post modality="written" xml:id="p7" indentLevel="1" replyTo="#p6" who="#u006"
                         synch="#t008">
                         <p>
                             <ref target="/wiki/Star">Star</ref> may be a better choice. <signed

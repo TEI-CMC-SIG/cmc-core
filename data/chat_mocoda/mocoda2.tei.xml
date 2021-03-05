@@ -129,24 +129,24 @@
     <text>
         <body>
             <div type="logfile">
-                <post mode="written" creation="system" who="#A01_System"
+                <post modality="written" creation="system" who="#A01_System"
                     xml:id="m1"> So. 4. Nov. 2018 </post>
-                <post mode="written" creation="human" synch="#t001" who="#A02"
+                <post modality="written" creation="human" synch="#t001" who="#A02"
                     xml:id="m2"> Kann einer von euch vll einen. Guten Friseur
                     empfehlen :)? </post>
-                <post mode="written" creation="human" synch="#t002" who="#A03"
+                <post modality="written" creation="human" synch="#t002" who="#A03"
                     xml:id="m3"> Oliver Schmidt ist aber etwas teurer </post>
-                <post mode="written" creation="human" synch="#t002" who="#A04"
+                <post modality="written" creation="human" synch="#t002" who="#A04"
                     xml:id="m4"> Ich hab leider auch keinen. Gehe immer nur zu
                     einer Freundin zum schneiden aktuell </post>
-                <post mode="written" creation="human" synch="#t002" who="#A04"
+                <post modality="written" creation="human" synch="#t002" who="#A04"
                     xml:id="m5">
                     <figure type="emoji" creation="template">
                         <desc type="meaning">downcast face with sweat</desc>
                         <desc type="unicode">U+1F613</desc>
                     </figure>
                 </post>
-                <post mode="spoken" creation="human" synch="#t003" who="#A05"
+                <post modality="spoken" creation="human" synch="#t003" who="#A05"
                     xml:id="m6"> Hii, also ich war jetzt letztens vor der
                     Konferenz in Düsseldorf bei diesem Oliver's Hair und das war
                     mega mega mega gut, also ist jetzt schon wieder länger her.
@@ -158,28 +158,28 @@
                     Theater-Passage. Ähm ich glaube, der hat auch gute
                     Bewertungen. Musse vielleicht mal gucken. Also ich fand das
                     mega gut </post>
-                <post mode="spoken" creation="human" synch="#t003" who="#A05"
+                <post modality="spoken" creation="human" synch="#t003" who="#A05"
                     xml:id="m7"> Sagt Anne auch gerade. JA! Kann ich zustimmen. </post>
-                <post mode="written" creation="human" synch="#t003" who="#A02"
+                <post modality="written" creation="human" synch="#t003" who="#A02"
                     xml:id="m8"> Da kostet ein Haarschnitt 50 € <figure
                         type="emoji" creation="template">
                         <desc type="meaning">face screaming in fear</desc>
                         <desc type="unicode">U+1F631</desc>
                     </figure>
                 </post>
-                <post mode="spoken" creation="human" synch="#t004" who="#A05"
+                <post modality="spoken" creation="human" synch="#t004" who="#A05"
                     xml:id="m9"> In Düsseldorf gibt's da so Abstufungen. Da
                     gibt's einmal Oliver Schmidt, Oliver Schmidt's Hair Design,
                     also dann, ist eher also, keine Ahnung, zum Beispiel ich war
                     da bei dem etwas Günstigeren dann. Ich weiß nicht, ob's das
                     in Essen auch gibt diese Abstufungen </post>
-                <post mode="written" creation="human" synch="#t004" who="#A02"
+                <post modality="written" creation="human" synch="#t004" who="#A02"
                     xml:id="m10"> Ich schau mal :) </post>
-                <post mode="written" creation="human" synch="#t005" who="#A06"
+                <post modality="written" creation="human" synch="#t005" who="#A06"
                     xml:id="m11"> Ich gehe immer nach Katernberg zu Pasha’s
                     haarem Hahaha also die sind echt entspannt und gut und nicht
                     teuer </post>
-                <post mode="written" creation="human" synch="#t005" who="#A06"
+                <post modality="written" creation="human" synch="#t005" who="#A06"
                     xml:id="m12">
                     <figure type="image" creation="human">
                         <desc>Screenshot von der Google-Suche nach dem Friseur
@@ -189,7 +189,7 @@
                             Öffnungszeiten</desc>
                     </figure>
                 </post>
-                <post mode="written" creation="human" synch="#t006" who="#A03"
+                <post modality="written" creation="human" synch="#t006" who="#A03"
                     xml:id="m13"> Olivers hair und Oliver Schmidt gehören
                     zusammen </post>
             </div>
