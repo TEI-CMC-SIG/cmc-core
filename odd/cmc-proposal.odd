@@ -40,18 +40,41 @@
     </encodingDesc>
     
     <revisionDesc>
-      <change when="2021-03-04" who="#SB">Per meeting of <date
-      when="2021-02-05"/> make <gi>post</gi> a member of model.CMC
-      (instead of model.divPart.cmc), and make that model a member of
-      model.common and <gi>quote</gi>. However, the content of
-      <gi>quote</gi> is a macro, so had to make a new macro (<name
-      type="class">macro.specialPara.cmc</name>) for the
-      purpose.</change>
-      <change when="2021-02-10" who="#SB">Per CMC gropu changed
-      <att>mode</att> to <att>modality</att>.</change>
-      <change when="2020-12-11" who="#SB">Re-worked cmc-core.odd into
-      a structured proposal per our meeting of <date
-      when="2020-12-04"/>, creating this ODD.</change>
+      <change when="2021-03-05" who="#SB">
+	Per today’s meeting:
+	<list>
+	  <item>rename <att>creation</att> to <att>generatedBy</att></item>
+	  <item>change <name type="class">att.global.CMC</name> to <name
+	  type="class">att.CMC</name>, making <gi>post</gi> and every
+	  element that can be a child of post that is <emph>not</emph>
+	  from <name type="module">tagdocs</name> a member of it. (We
+	  have deferred the decision as to whether
+	  <att>generatedBy</att> should be global or not to the full
+	  Council, but figure it is easier for them to imagine
+	  globalness then the restricted version.)</item>
+	  <item>added a <gi>divGen</gi> for the table of contents</item>
+	  <item>moved the <gi>moduleSpec</gi> for <name
+	  type="module">cmc</name> to the portion of this document that
+	  represents the new chapter of the Guidelines.</item>
+	</list>
+      </change>
+      <change when="2021-03-04" who="#SB">
+	Per meeting of <date when="2021-02-05"/> make <gi>post</gi> a
+	member of model.CMC (instead of model.divPart.cmc), and make
+	that model a member of model.common and <gi>quote</gi>.
+	However, the content of <gi>quote</gi> is a macro, so had to
+	make a new macro (<name
+	type="class">macro.specialPara.cmc</name>) for the purpose.
+      </change>
+      <change when="2021-02-10" who="#SB">
+	Per CMC group changed <att>mode</att> to
+	<att>modality</att>.
+      </change>
+      <change when="2020-12-11" who="#SB">
+	Re-worked cmc-core.odd into a structured proposal per our
+	meeting of <date when="2020-12-04"/>, creating this
+	ODD.
+      </change>
     </revisionDesc>
   </teiHeader>
 
@@ -263,6 +286,7 @@
         </div>
         <div type="mods_for" xml:id="PH" n="18">
           <head>Representation of Primary Sources</head>
+          <!-- None -->
           <!-- We will need to ensure the chapter asserts it is about
                written primary sources, see CMC for born-digital. -->
         </div>
@@ -281,6 +305,9 @@
         <div type="mods_for" xml:id="CC" n="23">
           <head>Language Corpora</head>
           <!-- None -->
+	  <!-- May need a paragraph that says, essentially “For a
+	       corpus of born-digital assets, consider the markup
+	       provided by chapter CM.” -->
         </div>
         <div type="mods_for" xml:id="SA" n="14">
           <head>Linking, Segmentation, and Alignment</head>
