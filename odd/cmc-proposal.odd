@@ -482,18 +482,6 @@
                 <valItem ident="spoken">
                   <gloss xml:lang="en">post is spoken, e.g. audio recording</gloss>
                 </valItem>
-                <!-- <valItem ident="image"> -->
-                <!--   <desc xml:lang="en">post is an image (which may include writing)</desc> -->
-                <!-- </valItem> -->
-                <!-- <valItem ident="video"> -->
-                <!--   <desc xml:lang="en">post is of a (silent) video clip or moving image</desc> -->
-                <!-- </valItem> -->
-                <!-- <valItem ident="audio"> -->
-                <!--   <desc xml:lang="en">post is of an audio or sound recording</desc> -->
-                <!-- </valItem> -->
-                <!-- <valItem ident="audio-visual"> -->
-                <!--   <desc xml:lang="en">post is of a video clip with sound</desc> -->
-                <!-- </valItem> -->
               </valList>
               <remarks>
                 <p>This attribute is intended to convey information
@@ -501,14 +489,6 @@
                 created, as opposed to the MIME type of the content
                 conveyed, which is indicated by the elements contained
                 within the <gi>post</gi>.</p>
-                <!-- <p>The <val>spoken</val> value implies an audio -->
-                <!-- recording <emph>of the person posting</emph>, whereas -->
-                <!-- the value <val>audio</val> implies a recording of a -->
-                <!-- third party or parties or other sound, that is not a -->
-                <!-- direct communication from the person posting.</p> -->
-                <!-- <p>While a variety of values are available, it is -->
-                <!-- worth noting that many extant corpora of CMC use only -->
-                <!-- the values <val>written</val> and <val>spoken</val>.</p> -->
               </remarks>
             </attDef>
             <attDef ident="replyTo" mode="add">

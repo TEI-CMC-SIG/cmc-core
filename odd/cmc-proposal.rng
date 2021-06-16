@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.tei-c.org/ns/1.0">
   <!--
-Schema generated from ODD source 2021-03-05T16:07:42Z. .
+Schema generated from ODD source 2021-06-16T13:38:32Z. .
 TEI Edition: Version 4.3.0a. Last updated on
-	25th February 2021, revision 992e522b8
+        10th June 2021, revision 23a361cfd
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0a./
   
 -->
@@ -145,7 +145,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0a./
         </choice>
       </zeroOrMore>
     </element>
-    <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d8e78641-constraint">
+    <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d8e79727-constraint">
       <rule context="tei:content">
         <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -194,7 +194,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0a./
         </choice>
       </zeroOrMore>
     </element>
-    <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d8e79863-constraint">
+    <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d8e80949-constraint">
       <rule context="tei:datatype">
         <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -585,14 +585,18 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
   <define name="cp_att.datable.attribute.calendar">
     <optional>
       <attribute name="calendar">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the system or calendar to which the date represented by the content of this element belongs.</a:documentation>
-        <data type="anyURI"/>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates one or more systems or calendars to which the date represented by the content of this element belongs.</a:documentation>
+        <list>
+          <oneOrMore>
+            <data type="anyURI"/>
+          </oneOrMore>
+        </list>
       </attribute>
     </optional>
   </define>
   <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-att.datable-calendar-calendar-constraint-rule-4">
     <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" context="tei:*[@calendar]">
-      <sch:assert test="string-length(.) gt 0"> @calendar indicates the system or calendar to
+      <sch:assert test="string-length(.) gt 0"> @calendar indicates one or more systems or calendars to
               which the date represented by the content of this element belongs, but this
               <sch:name/> element has no textual content.</sch:assert>
     </sch:rule>
@@ -600,8 +604,12 @@ Sample values include: 1] all; 2] most; 3] range</a:documentation>
   <define name="cp_att.datable.attribute.period">
     <optional>
       <attribute name="period">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies a pointer to some location defining a named period of time within which the datable item is understood to have occurred.</a:documentation>
-        <data type="anyURI"/>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies pointers to one or more definitions of named periods of time (typically <code xmlns="http://www.w3.org/1999/xhtml">&lt;category&gt;</code>s or <code xmlns="http://www.w3.org/1999/xhtml">&lt;calendar&gt;</code>s) within which the datable item is understood to have occurred.</a:documentation>
+        <list>
+          <oneOrMore>
+            <data type="anyURI"/>
+          </oneOrMore>
+        </list>
       </attribute>
     </optional>
   </define>
@@ -881,6 +889,16 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       </attribute>
     </optional>
   </define>
+  <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-att.global.source-source-only_1_ODD_source-constraint-report-4">
+    <rule context="@source">
+      <sch:let xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" name="srcs" value="tokenize( normalize-space(.),' ')"/>
+      <sch:report xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" test="( parent::tei:classRef                             | parent::tei:dataRef                             | parent::tei:elementRef                             | parent::tei:macroRef                             | parent::tei:moduleRef                             | parent::tei:schemaSpec )                             and                             $srcs[2]">
+            When used on a schema description element (like
+            <sch:value-of select="name(..)"/>), the @source attribute
+            should have only 1 value. (This one has <sch:value-of select="count($srcs)"/>.)
+          </sch:report>
+    </rule>
+  </pattern>
   <define name="cp_att.global.attributes">
     <ref name="cp_att.global.rendition.attributes"/>
     <ref name="cp_att.global.linking.attributes"/>
@@ -3520,6 +3538,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
       <ref name="cp_listBibl"/>
       <ref name="cp_divGen"/>
       <ref name="cp_titlePage"/>
+      <ref name="cp_schemaSpec"/>
     </choice>
   </define>
   <define name="cp_model.addrPart">
@@ -3871,14 +3890,14 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
     <element name="p">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.5. Speech Contents]</a:documentation>
       <ref name="cp_macro.paraContent"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-p-abstractModel-structure-p-constraint-report-5">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-p-abstractModel-structure-p-constraint-report-6">
         <rule context="tei:p">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum                |parent::tei:item                |parent::tei:note                |parent::tei:q                |parent::tei:quote                |parent::tei:remarks                |parent::tei:said                |parent::tei:sp                |parent::tei:stage                |parent::tei:cell                |parent::tei:figure                )">
         Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
       </report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-p-abstractModel-structure-l-constraint-report-6">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-p-abstractModel-structure-l-constraint-report-7">
         <rule context="tei:p">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::tei:l[not(.//tei:note//tei:p[. = current()])]">
         Abstract model violation: Lines may not contain higher-level structural elements such as div, p, or ab.
@@ -4087,7 +4106,7 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
   </define>
   <define name="cp_desc">
     <element name="desc">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description) contains a brief description of the object documented by its parent element, typically a documentation element or an entity. [22.4.1. Description of Components]</a:documentation>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description) contains a short description of the purpose, function, or use of its parent element, or when the parent is a documentation element, describes or defines the object being documented.  [22.4.1. Description of Components]</a:documentation>
       <ref name="cp_macro.limitedContent"/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-desc-deprecationInfo-only-in-deprecated-constraint-rule-10">
         <sch:rule xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:desc[ @type eq 'deprecationInfo']">
@@ -4104,10 +4123,16 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
       <ref name="cp_att.typed.attribute.subtype"/>
       <optional>
         <attribute name="type">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
-          <data type="token">
-            <param name="pattern">[^\p{C}\p{Z}]+</param>
-          </data>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] deprecationInfo (deprecation information)</a:documentation>
+          <choice>
+            <value>deprecationInfo</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deprecation
+          information) This element describes why or how its parent element is being deprecated, typically including recommendations for alternate encoding.</a:documentation>
+            <data type="token">
+              <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+          </choice>
         </attribute>
       </optional>
       <empty/>
@@ -4180,7 +4205,7 @@ Suggested values include: 1] spoken (spoken); 2] thought (thought); 3] written (
           <data type="anyURI"/>
         </attribute>
       </optional>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-rt-target-rt-target-not-span-constraint-report-7">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-rt-target-rt-target-not-span-constraint-report-8">
         <rule context="tei:rt/@target">
           <sch:report xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="../@from | ../@to">When target= is
             present, neither from= nor to= should be.</sch:report>
@@ -4649,7 +4674,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
     <element name="ptr">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(pointer) defines a pointer to another location. [3.7. Simple Links and Cross-References 16.1. Links]</a:documentation>
       <empty/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ptr-ptrAtts-constraint-report-8">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ptr-ptrAtts-constraint-report-9">
         <rule context="tei:ptr">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
 attributes @target and @cRef may be supplied on <name/>.</report>
@@ -4669,7 +4694,7 @@ attributes @target and @cRef may be supplied on <name/>.</report>
     <element name="ref">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.7. Simple Links and Cross-References 16.1. Links]</a:documentation>
       <ref name="cp_macro.paraContent"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ref-refAtts-constraint-report-9">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ref-refAtts-constraint-report-10">
         <rule context="tei:ref">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="@target and @cRef">Only one of the
 	attributes @target' and @cRef' may be supplied on <name/>
@@ -5445,7 +5470,7 @@ Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] sho
           <ref name="cp_model.ptrLike"/>
         </choice>
       </optional>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-relatedItem-targetorcontent1-constraint-report-10">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-relatedItem-targetorcontent1-constraint-report-11">
         <rule context="tei:relatedItem">
           <sch:report xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" test="@target and count( child::* ) &gt; 0">
 If the @target attribute on <sch:name/> is used, the
@@ -5477,7 +5502,7 @@ relatedItem element must be empty</sch:report>
           <ref name="cp_model.global"/>
         </choice>
       </zeroOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-l-abstractModel-structure-l-constraint-report-11">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-l-abstractModel-structure-l-constraint-report-12">
         <rule context="tei:l">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::tei:l[not(.//tei:note//tei:l[. = current()])]">
         Abstract model violation: Lines may not contain lines or lg elements.
@@ -5530,7 +5555,7 @@ relatedItem element must be empty</sch:report>
         must contain at least one child l, lg, or gap element.</sch:assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-lg-abstractModel-structure-l-constraint-report-12">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-lg-abstractModel-structure-l-constraint-report-13">
         <rule context="tei:lg">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::tei:l[not(.//tei:note//tei:lg[. = current()])]">
         Abstract model violation: Lines may not contain line groups.
@@ -5813,9 +5838,16 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
       <optional>
         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" name="type" a:defaultValue="single">
           <a:documentation>specifies how the text was constituted.</a:documentation>
-          <data type="token">
-            <param name="pattern">[^\p{C}\p{Z}]+</param>
-          </data>
+          <choice>
+            <value>single</value>
+            <a:documentation>a single complete text</a:documentation>
+            <value>composite</value>
+            <a:documentation>a text made by combining several smaller items, each individually complete</a:documentation>
+            <value>frags</value>
+            <a:documentation>(fragments) a text made by combining several smaller, not necessarily complete, items</a:documentation>
+            <value>unknown</value>
+            <a:documentation>composition unknown or unspecified</a:documentation>
+          </choice>
         </attribute>
       </optional>
       <empty/>
@@ -5829,7 +5861,8 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
       <ref name="cp_att.typed.attribute.subtype"/>
       <optional>
         <attribute name="type">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the derivation of the text.</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the derivation of the text.
+Sample values include: 1] original; 2] revision; 3] translation; 4] abridgment; 5] plagiarism; 6] traditional</a:documentation>
           <data type="token">
             <param name="pattern">[^\p{C}\p{Z}]+</param>
           </data>
@@ -5846,7 +5879,8 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
       <ref name="cp_att.typed.attribute.subtype"/>
       <optional>
         <attribute name="type">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the domain of use.</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the domain of use.
+Sample values include: 1] art; 2] domestic; 3] religious; 4] business; 5] education; 6] govt (government); 7] public</a:documentation>
           <data type="token">
             <param name="pattern">[^\p{C}\p{Z}]+</param>
           </data>
@@ -5864,9 +5898,16 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
       <optional>
         <attribute name="type">
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the factuality of the text.</a:documentation>
-          <data type="token">
-            <param name="pattern">[^\p{C}\p{Z}]+</param>
-          </data>
+          <choice>
+            <value>fiction</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the text is to be regarded as entirely imaginative</a:documentation>
+            <value>fact</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the text is to be regarded as entirely informative or factual</a:documentation>
+            <value>mixed</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the text contains a mixture of fact and fiction</a:documentation>
+            <value>inapplicable</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the fiction/fact distinction is not regarded as helpful or appropriate to this text</a:documentation>
+          </choice>
         </attribute>
       </optional>
       <empty/>
@@ -5881,9 +5922,16 @@ Sample values include: 1] index; 2] toc; 3] figlist; 4] tablist</a:documentation
       <optional>
         <attribute name="type">
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the degree of interaction between active and passive participants in the text.</a:documentation>
-          <data type="token">
-            <param name="pattern">[^\p{C}\p{Z}]+</param>
-          </data>
+          <choice>
+            <value>none</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">no interaction of any kind, e.g. a monologue</a:documentation>
+            <value>partial</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">some degree of interaction, e.g. a monologue with set responses</a:documentation>
+            <value>complete</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">complete interaction, e.g. a face to face conversation</a:documentation>
+            <value>inapplicable</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">this parameter is inappropriate or inapplicable in this case</a:documentation>
+          </choice>
         </attribute>
       </optional>
       <optional>
@@ -5937,7 +5985,8 @@ Suggested values include: 1] self; 2] single; 3] many; 4] group; 5] world</a:doc
       <ref name="cp_att.typed.attribute.subtype"/>
       <optional>
         <attribute name="type">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a keyword characterizing the type of preparedness.</a:documentation>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a keyword characterizing the type of preparedness.
+Sample values include: 1] none; 2] scripted; 3] formulaic; 4] revised</a:documentation>
           <data type="token">
             <param name="pattern">[^\p{C}\p{Z}]+</param>
           </data>
@@ -5954,10 +6003,21 @@ Suggested values include: 1] self; 2] single; 3] many; 4] group; 5] world</a:doc
       <ref name="cp_att.typed.attribute.subtype"/>
       <optional>
         <attribute name="type">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies a particular kind of purpose.</a:documentation>
-          <data type="token">
-            <param name="pattern">[^\p{C}\p{Z}]+</param>
-          </data>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies a particular kind of purpose.
+Suggested values include: 1] persuade; 2] express; 3] inform; 4] entertain</a:documentation>
+          <choice>
+            <value>persuade</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">didactic, advertising, propaganda, etc.</a:documentation>
+            <value>express</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">self expression, confessional, etc.</a:documentation>
+            <value>inform</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">convey information, educate, etc.</a:documentation>
+            <value>entertain</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">amuse, entertain, etc.</a:documentation>
+            <data type="token">
+              <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+          </choice>
         </attribute>
       </optional>
       <optional>
@@ -6505,7 +6565,7 @@ Suggested values include: 1] ISBN; 2] ISSN; 3] DOI; 4] URI; 5] VIAF; 6] ESTC; 7]
       <zeroOrMore>
         <ref name="cp_model.pLike"/>
       </zeroOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-quotation-quotationContents-constraint-report-13">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-quotation-quotationContents-constraint-report-14">
         <rule context="tei:quotation">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="not(@marks) and not (tei:p)">
 On <name/>, either the @marks attribute should be used, or a paragraph of description provided</report>
@@ -9284,12 +9344,12 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
           <assert xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="@ref or @key or @name">One of the attributes  'name', 'ref' or 'key' must be supplied</assert>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-relation-activemutual-constraint-report-14">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-relation-activemutual-constraint-report-15">
         <rule context="tei:relation">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="@active and @mutual">Only one of the attributes @active and @mutual may be supplied</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-relation-activepassive-constraint-report-15">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-relation-activepassive-constraint-report-16">
         <rule context="tei:relation">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="@passive and not(@active)">the attribute 'passive' may be supplied only if the attribute 'active' is supplied</report>
         </rule>
@@ -9644,7 +9704,7 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
           <ref name="cp_address"/>
         </choice>
       </zeroOrMore>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-objectIdentifier-objectIdentifier_minimal-constraint-report-16">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-objectIdentifier-objectIdentifier_minimal-constraint-report-17">
         <rule context="tei:objectIdentifier">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="not(count(*) gt 0)">An objectIdentifier must contain at minimum a single piece of locating or identifying information.</report>
         </rule>
@@ -10402,14 +10462,14 @@ Suggested values include: 1] tempo; 2] loud; 3] pitch; 4] tension; 5] rhythm; 6]
           </group>
         </optional>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-div-abstractModel-structure-l-constraint-report-17">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-div-abstractModel-structure-l-constraint-report-18">
         <rule context="tei:div">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::tei:l">
         Abstract model violation: Lines may not contain higher-level structural elements such as div.
       </report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-div-abstractModel-structure-p-constraint-report-18">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-div-abstractModel-structure-p-constraint-report-19">
         <rule context="tei:div">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="ancestor::tei:p or ancestor::tei:ab and not(ancestor::tei:floatingText)">
         Abstract model violation: p and ab may not contain higher-level structural elements such as div.
@@ -11568,9 +11628,20 @@ Sample values include: 1] TEI; 2] DBK (docbook); 3] XX (unknown); 4] Schematron;
       <optional>
         <attribute name="type">
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the type of XML tag intended</a:documentation>
-          <data type="token">
-            <param name="pattern">[^\p{C}\p{Z}]+</param>
-          </data>
+          <choice>
+            <value>start</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a start-tag, with delimiters &lt; and &gt; is intended</a:documentation>
+            <value>end</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">an end-tag, with delimiters &lt;/ and &gt; is intended</a:documentation>
+            <value>empty</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">an empty tag, with delimiters &lt; and /&gt; is intended</a:documentation>
+            <value>pi</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a pi (processing instruction), with delimiters &lt;? and ?&gt; is intended</a:documentation>
+            <value>comment</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a comment, with delimiters &lt;!-- and --&gt; is intended</a:documentation>
+            <value>ms</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a marked-section, with delimiters &lt;[CDATA[ and ]]&gt; is intended</a:documentation>
+          </choice>
         </attribute>
       </optional>
       <optional>
@@ -11715,13 +11786,6 @@ Child elements of <name/> are only allowed when an external module is being load
         </report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-moduleRef-not-same-prefix-constraint-rule-21">
-        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" context="tei:moduleRef">
-          <report test="//*[ not( generate-id(.) eq generate-id(      current() ) ) ]/@prefix = @prefix">The prefix attribute
-          of <name/> should not match that of any other
-          element (it would defeat the purpose)</report>
-        </rule>
-      </pattern>
       <ref name="cp_att.global.attributes"/>
       <optional>
         <attribute name="prefix">
@@ -11729,6 +11793,13 @@ Child elements of <name/> are only allowed when an external module is being load
           <data type="NCName"/>
         </attribute>
       </optional>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-moduleRef-prefix-not-same-prefix-constraint-rule-21">
+        <rule xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" context="tei:moduleRef">
+          <report test="//*[ not( generate-id(.) eq generate-id(      current() ) ) ]/@prefix = @prefix">The prefix attribute
+	    of <name/> should not match that of any other
+	    element (it would defeat the purpose)</report>
+        </rule>
+      </pattern>
       <choice>
         <optional>
           <attribute name="include">
@@ -12459,7 +12530,7 @@ Sample values include: 1] web; 2] print; 3] plain</a:documentation>
           </zeroOrMore>
         </group>
       </group>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-modelSequence-no_outputs_nor_predicates_4_my_kids-constraint-report-23">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-modelSequence-no_outputs_nor_predicates_4_my_kids-constraint-report-24">
         <rule context="tei:modelSequence">
           <sch:report xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" test="tei:model[@output]" role="warning">The 'model' children
       of a 'modelSequence' element inherit the @output attribute of the
@@ -12727,7 +12798,7 @@ Suggested values include: 1] alternate; 2] default; 3] height; 4] id; 5] label; 
         </optional>
       </group>
       <sch:ns xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" prefix="s" uri="http://www.ascc.net/xml/schematron"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-constraintSpec-sch_no_more-constraint-report-24">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-constraintSpec-sch_no_more-constraint-report-25">
         <rule context="tei:constraintSpec">
           <sch:report xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" test="tei:constraint/s:*  and  @scheme = ('isoschematron','schematron')">Rules
         in the Schematron 1.* language must be inside a constraintSpec
@@ -12736,7 +12807,7 @@ Suggested values include: 1] alternate; 2] default; 3] height; 4] id; 5] label; 
         </rule>
       </pattern>
       <sch:ns xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-constraintSpec-isosch-constraint-report-25">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-constraintSpec-isosch-constraint-report-26">
         <rule context="tei:constraintSpec">
           <sch:report xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xi="http://www.w3.org/2001/XInclude" test="tei:constraint/sch:*  and  not( @scheme eq 'schematron')">Rules
         in the ISO Schematron language must be inside a constraintSpec
@@ -13280,12 +13351,17 @@ Suggested values include: 1] schematron (ISO Schematron)</a:documentation>
   <define name="cp_linkGrp">
     <element name="linkGrp">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(link group) defines a collection of associations or hypertextual links. [16.1. Links]</a:documentation>
-      <oneOrMore>
-        <choice>
-          <ref name="cp_link"/>
-          <ref name="cp_ptr"/>
-        </choice>
-      </oneOrMore>
+      <group>
+        <zeroOrMore>
+          <ref name="cp_model.descLike"/>
+        </zeroOrMore>
+        <oneOrMore>
+          <choice>
+            <ref name="cp_link"/>
+            <ref name="cp_ptr"/>
+          </choice>
+        </oneOrMore>
+      </group>
       <ref name="cp_att.CMC.attributes"/>
       <ref name="cp_att.global.attributes"/>
       <ref name="cp_att.pointing.group.attributes"/>
@@ -13296,14 +13372,14 @@ Suggested values include: 1] schematron (ISO Schematron)</a:documentation>
     <element name="ab">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anonymous block) contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of, a paragraph. [16.3. Blocks, Segments, and Anchors]</a:documentation>
       <ref name="cp_macro.paraContent"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ab-abstractModel-structure-ab-constraint-report-31">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ab-abstractModel-structure-ab-constraint-report-32">
         <rule context="tei:ab">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="not(ancestor::tei:floatingText) and (ancestor::tei:p or ancestor::tei:ab)          and not(parent::tei:exemplum         |parent::tei:item         |parent::tei:note         |parent::tei:q         |parent::tei:quote         |parent::tei:remarks         |parent::tei:said         |parent::tei:sp         |parent::tei:stage         |parent::tei:cell         |parent::tei:figure)">
         Abstract model violation: ab may not occur inside paragraphs or other ab elements.
       </report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ab-abstractModel-structure-l-constraint-report-32">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-ab-abstractModel-structure-l-constraint-report-33">
         <rule context="tei:ab">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="ancestor::tei:l or ancestor::tei:lg">
         Abstract model violation: Lines may not contain higher-level divisions such as p or ab.
@@ -13510,6 +13586,7 @@ You must supply at least two values for @target on <name/>
           <choice>
             <ref name="cp_equiv"/>
             <ref name="cp_gloss"/>
+            <ref name="cp_model.descLike"/>
           </choice>
         </zeroOrMore>
         <oneOrMore>
@@ -13581,12 +13658,17 @@ You must supply at least two values for @target on <name/>
   <define name="cp_altGrp">
     <element name="altGrp">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(alternation group) groups a collection of <code xmlns="http://www.w3.org/1999/xhtml">&lt;alt&gt;</code> elements and possibly pointers. [16.8. Alternation]</a:documentation>
-      <zeroOrMore>
-        <choice>
-          <ref name="cp_alt"/>
-          <ref name="cp_ptr"/>
-        </choice>
-      </zeroOrMore>
+      <group>
+        <zeroOrMore>
+          <ref name="cp_model.descLike"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <choice>
+            <ref name="cp_alt"/>
+            <ref name="cp_ptr"/>
+          </choice>
+        </zeroOrMore>
+      </group>
       <ref name="cp_att.CMC.attributes"/>
       <ref name="cp_att.global.attributes"/>
       <ref name="cp_att.pointing.group.attributes"/>
@@ -13837,7 +13919,7 @@ You must supply at least two values for @target on <name/>
     <element name="s">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(s-unit) contains a sentence-like division of a text. [17.1. Linguistic Segment Categories 8.4.1. Segmentation]</a:documentation>
       <ref name="cp_macro.phraseSeq"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-s-noNestedS-constraint-report-33">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-s-noNestedS-constraint-report-34">
         <rule context="tei:s">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" test="tei:s">You may not nest one s element within
       another: use seg instead</report>
@@ -13994,27 +14076,27 @@ You must supply at least two values for @target on <name/>
     <element name="span">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">associates an interpretative annotation directly with a span of text. [17.3. Spans and Interpretations]</a:documentation>
       <ref name="cp_macro.phraseSeq.limited"/>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-targetfrom-constraint-report-34">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-targetfrom-constraint-report-35">
         <rule context="tei:span">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="@from and @target">
 Only one of the attributes @target and @from may be supplied on <name/>
                </report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-targetto-constraint-report-35">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-targetto-constraint-report-36">
         <rule context="tei:span">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="@to and @target">
 Only one of the attributes @target and @to may be supplied on <name/>
                </report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-tonotfrom-constraint-report-36">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-tonotfrom-constraint-report-37">
         <rule context="tei:span">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="@to and not(@from)">
 If @to is supplied on <name/>, @from must be supplied as well</report>
         </rule>
       </pattern>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-tofrom-constraint-report-37">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="cmc-proposal-span-tofrom-constraint-report-38">
         <rule context="tei:span">
           <report xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" test="contains(normalize-space(@to),' ') or contains(normalize-space(@from),' ')">
 The attributes @to and @from on <name/> may each contain only a single value</report>
@@ -14052,9 +14134,14 @@ Sample values include: 1] image; 2] character; 3] theme; 4] allusion</a:document
   <define name="cp_spanGrp">
     <element name="spanGrp">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(span group) collects together span tags. [17.3. Spans and Interpretations]</a:documentation>
-      <zeroOrMore>
-        <ref name="cp_span"/>
-      </zeroOrMore>
+      <group>
+        <zeroOrMore>
+          <ref name="cp_model.descLike"/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name="cp_span"/>
+        </zeroOrMore>
+      </group>
       <ref name="cp_att.CMC.attributes"/>
       <ref name="cp_att.global.attributes"/>
       <ref name="cp_att.interpLike.attribute.inst"/>
@@ -14334,12 +14421,16 @@ Suggested values include: 1] label; 2] data</a:documentation>
       <ref name="cp_att.timed.attributes"/>
       <ref name="cp_att.typed.attributes"/>
       <attribute name="modality">
-        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">written or spoken mode</a:documentation>
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">written or spoken mode
+Suggested values include: 1] written; 2] spoken (post is spoken, e.g. audio recording)</a:documentation>
         <choice>
           <value>written</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">post is written, e.g. Unicode text</a:documentation>
           <value>spoken</value>
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(post is spoken, e.g. audio recording) </a:documentation>
+          <data type="token">
+            <param name="pattern">[^\p{C}\p{Z}]+</param>
+          </data>
         </choice>
       </attribute>
       <optional>

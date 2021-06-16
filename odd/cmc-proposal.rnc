@@ -8,9 +8,9 @@ namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xi = "http://www.w3.org/2001/XInclude"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2021-03-05T16:07:42Z. .
+# Schema generated from ODD source 2021-06-16T13:38:32Z. .
 # TEI Edition: Version 4.3.0a. Last updated on
-#	25th February 2021, revision 992e522b8
+#         10th June 2021, revision 23a361cfd
 # TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.3.0a./
 #
 
@@ -65,7 +65,7 @@ anyElement-content =
     (text | anyElement-content)*
   }
   >> sch:pattern [
-       id = "d8e78641-constraint"
+       id = "d8e79727-constraint"
        "\x{a}" ~
        "         "
        sch:rule [
@@ -96,7 +96,7 @@ anyElement-datatype =
     (text | anyElement-datatype)*
   }
   >> sch:pattern [
-       id = "d8e79863-constraint"
+       id = "d8e80949-constraint"
        "\x{a}" ~
        "         "
        sch:rule [
@@ -394,8 +394,10 @@ cp_att.datable.attributes =
   cp_att.datable.attribute.calendar,
   cp_att.datable.attribute.period
 cp_att.datable.attribute.calendar =
-  ## indicates the system or calendar to which the date represented by the content of this element belongs.
-  attribute calendar { xsd:anyURI }?
+  ## indicates one or more systems or calendars to which the date represented by the content of this element belongs.
+  attribute calendar {
+    list { xsd:anyURI+ }
+  }?
 sch:pattern [
   id = "cmc-proposal-att.datable-calendar-calendar-constraint-rule-4"
   "\x{a}" ~
@@ -406,7 +408,7 @@ sch:pattern [
     "         "
     sch:assert [
       test = "string-length(.) gt 0"
-      " @calendar indicates the system or calendar to\x{a}" ~
+      " @calendar indicates one or more systems or calendars to\x{a}" ~
       "              which the date represented by the content of this element belongs, but this\x{a}" ~
       "              "
       sch:name [ ]
@@ -419,8 +421,18 @@ sch:pattern [
   "   "
 ]
 cp_att.datable.attribute.period =
-  ## supplies a pointer to some location defining a named period of time within which the datable item is understood to have occurred.
-  attribute period { xsd:anyURI }?
+  [
+    a:documentation [
+      "supplies pointers to one or more definitions of named periods of time (typically "
+      ns1:code [ "<category>" ]
+      "s or "
+      ns1:code [ "<calendar>" ]
+      "s) within which the datable item is understood to have occurred."
+    ]
+  ]
+  attribute period {
+    list { xsd:anyURI+ }
+  }?
 cp_att.datcat.attributes =
   cp_att.datcat.attribute.datcat, cp_att.datcat.attribute.valueDatcat
 cp_att.datcat.attribute.datcat =
@@ -558,6 +570,40 @@ cp_att.global.source.attribute.source =
   attribute source {
     list { xsd:anyURI+ }
   }?
+sch:pattern [
+  id =
+    "cmc-proposal-att.global.source-source-only_1_ODD_source-constraint-report-4"
+  "\x{a}" ~
+  "      "
+  sch:rule [
+    context = "@source"
+    "\x{a}" ~
+    "         "
+    sch:let [
+      name = "srcs"
+      value = "tokenize( normalize-space(.),' ')"
+    ]
+    "\x{a}" ~
+    "         "
+    sch:report [
+      test =
+        "( parent::tei:classRef                             | parent::tei:dataRef                             | parent::tei:elementRef                             | parent::tei:macroRef                             | parent::tei:moduleRef                             | parent::tei:schemaSpec )                             and                             $srcs[2]"
+      "\x{a}" ~
+      "            When used on a schema description element (like\x{a}" ~
+      "            "
+      sch:value-of [ select = "name(..)" ]
+      "), the @source attribute\x{a}" ~
+      "            should have only 1 value. (This one has "
+      sch:value-of [ select = "count($srcs)" ]
+      ".)\x{a}" ~
+      "          "
+    ]
+    "\x{a}" ~
+    "      "
+  ]
+  "\x{a}" ~
+  "   "
+]
 cp_att.global.attributes =
   cp_att.global.rendition.attributes,
   cp_att.global.linking.attributes,
@@ -1758,7 +1804,11 @@ cp_model.biblPart =
   | cp_listRelation
   | cp_objectIdentifier
 cp_model.frontPart =
-  cp_model.frontPart.drama | cp_listBibl | cp_divGen | cp_titlePage
+  cp_model.frontPart.drama
+  | cp_listBibl
+  | cp_divGen
+  | cp_titlePage
+  | cp_schemaSpec
 cp_model.addrPart =
   cp_model.nameLike | cp_addrLine | cp_street | cp_postCode | cp_postBox
 cp_model.pPart.data =
@@ -1952,7 +2002,7 @@ cp_p =
     cp_macro.paraContent
     >> sch:pattern [
          id =
-           "cmc-proposal-p-abstractModel-structure-p-constraint-report-5"
+           "cmc-proposal-p-abstractModel-structure-p-constraint-report-6"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -1974,7 +2024,7 @@ cp_p =
        ]
     >> sch:pattern [
          id =
-           "cmc-proposal-p-abstractModel-structure-l-constraint-report-6"
+           "cmc-proposal-p-abstractModel-structure-l-constraint-report-7"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -2146,7 +2196,7 @@ cp_soCalled =
   }
 
 cp_desc =
-  ## (description) contains a brief description of the object documented by its parent element, typically a documentation element or an entity. [22.4.1. Description of Components]
+  ## (description) contains a short description of the purpose, function, or use of its parent element, or when the parent is a documentation element, describes or defines the object being documented.  [22.4.1. Description of Components]
   element desc {
     cp_macro.limitedContent
     >> sch:pattern [
@@ -2177,8 +2227,12 @@ cp_desc =
     cp_att.translatable.attributes,
     cp_att.typed.attribute.subtype,
     ## characterizes the element in some sense, using any convenient classification scheme or typology.
+    ## Suggested values include: 1] deprecationInfo (deprecation information)
     attribute type {
-      xsd:token { pattern = "[^\p{C}\p{Z}]+" }
+      ## (deprecation
+      ##           information) This element describes why or how its parent element is being deprecated, typically including recommendations for alternate encoding.
+      "deprecationInfo"
+      | xsd:token { pattern = "[^\p{C}\p{Z}]+" }
     }?,
     empty
   }
@@ -2244,7 +2298,7 @@ cp_rt =
      attribute target { xsd:anyURI }?)
     >> sch:pattern [
          id =
-           "cmc-proposal-rt-target-rt-target-not-span-constraint-report-7"
+           "cmc-proposal-rt-target-rt-target-not-span-constraint-report-8"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -2639,7 +2693,7 @@ cp_ptr =
   element ptr {
     empty
     >> sch:pattern [
-         id = "cmc-proposal-ptr-ptrAtts-constraint-report-8"
+         id = "cmc-proposal-ptr-ptrAtts-constraint-report-9"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -2674,7 +2728,7 @@ cp_ref =
   element ref {
     cp_macro.paraContent
     >> sch:pattern [
-         id = "cmc-proposal-ref-refAtts-constraint-report-9"
+         id = "cmc-proposal-ref-refAtts-constraint-report-10"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -3231,7 +3285,7 @@ cp_relatedItem =
     ((cp_model.biblLike | cp_model.ptrLike)?)
     >> sch:pattern [
          id =
-           "cmc-proposal-relatedItem-targetorcontent1-constraint-report-10"
+           "cmc-proposal-relatedItem-targetorcontent1-constraint-report-11"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -3276,7 +3330,7 @@ cp_l =
       | cp_model.global)*)
     >> sch:pattern [
          id =
-           "cmc-proposal-l-abstractModel-structure-l-constraint-report-11"
+           "cmc-proposal-l-abstractModel-structure-l-constraint-report-12"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -3335,7 +3389,7 @@ cp_lg =
        ]
     >> sch:pattern [
          id =
-           "cmc-proposal-lg-abstractModel-structure-l-constraint-report-12"
+           "cmc-proposal-lg-abstractModel-structure-l-constraint-report-13"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -3533,7 +3587,11 @@ cp_constitution =
     ## specifies how the text was constituted.
     [ a:defaultValue = "single" ]
     attribute type {
-      xsd:token { pattern = "[^\p{C}\p{Z}]+" }
+      ## a single complete text
+      "single" | ## a text made by combining several smaller items, each individually complete
+        "composite" | ## (fragments) a text made by combining several smaller, not necessarily complete, items
+        "frags" | ## composition unknown or unspecified
+        "unknown"
     }?,
     empty
   }
@@ -3545,6 +3603,7 @@ cp_derivation =
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     ## categorizes the derivation of the text.
+    ## Sample values include: 1] original; 2] revision; 3] translation; 4] abridgment; 5] plagiarism; 6] traditional
     attribute type {
       xsd:token { pattern = "[^\p{C}\p{Z}]+" }
     }?,
@@ -3558,6 +3617,7 @@ cp_domain =
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     ## categorizes the domain of use.
+    ## Sample values include: 1] art; 2] domestic; 3] religious; 4] business; 5] education; 6] govt (government); 7] public
     attribute type {
       xsd:token { pattern = "[^\p{C}\p{Z}]+" }
     }?,
@@ -3572,7 +3632,11 @@ cp_factuality =
     cp_att.typed.attribute.subtype,
     ## categorizes the factuality of the text.
     attribute type {
-      xsd:token { pattern = "[^\p{C}\p{Z}]+" }
+      ## the text is to be regarded as entirely imaginative
+      "fiction" | ## the text is to be regarded as entirely informative or factual
+        "fact" | ## the text contains a mixture of fact and fiction
+        "mixed" | ## the fiction/fact distinction is not regarded as helpful or appropriate to this text
+        "inapplicable"
     }?,
     empty
   }
@@ -3585,7 +3649,11 @@ cp_interaction =
     cp_att.typed.attribute.subtype,
     ## specifies the degree of interaction between active and passive participants in the text.
     attribute type {
-      xsd:token { pattern = "[^\p{C}\p{Z}]+" }
+      ## no interaction of any kind, e.g. a monologue
+      "none" | ## some degree of interaction, e.g. a monologue with set responses
+        "partial" | ## complete interaction, e.g. a face to face conversation
+        "complete" | ## this parameter is inappropriate or inapplicable in this case
+        "inapplicable"
     }?,
     ## specifies the number of active participants (or addressors) producing parts of the text.
     ## Suggested values include: 1] singular; 2] plural; 3] corporate; 4] unknown
@@ -3618,6 +3686,7 @@ cp_preparedness =
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     ## a keyword characterizing the type of preparedness.
+    ## Sample values include: 1] none; 2] scripted; 3] formulaic; 4] revised
     attribute type {
       xsd:token { pattern = "[^\p{C}\p{Z}]+" }
     }?,
@@ -3631,8 +3700,14 @@ cp_purpose =
     cp_att.global.attributes,
     cp_att.typed.attribute.subtype,
     ## specifies a particular kind of purpose.
+    ## Suggested values include: 1] persuade; 2] express; 3] inform; 4] entertain
     attribute type {
-      xsd:token { pattern = "[^\p{C}\p{Z}]+" }
+      ## didactic, advertising, propaganda, etc.
+      "persuade" | ## self expression, confessional, etc.
+        "express" | ## convey information, educate, etc.
+        "inform" | ## amuse, entertain, etc.
+        "entertain"
+      | xsd:token { pattern = "[^\p{C}\p{Z}]+" }
     }?,
     ## specifies the extent to which this purpose predominates.
     attribute degree {
@@ -3989,7 +4064,7 @@ cp_quotation =
     (cp_model.pLike*)
     >> sch:pattern [
          id =
-           "cmc-proposal-quotation-quotationContents-constraint-report-13"
+           "cmc-proposal-quotation-quotationContents-constraint-report-14"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -6007,7 +6082,7 @@ cp_relation =
          "         "
        ]
     >> sch:pattern [
-         id = "cmc-proposal-relation-activemutual-constraint-report-14"
+         id = "cmc-proposal-relation-activemutual-constraint-report-15"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -6025,7 +6100,7 @@ cp_relation =
          "         "
        ]
     >> sch:pattern [
-         id = "cmc-proposal-relation-activepassive-constraint-report-15"
+         id = "cmc-proposal-relation-activepassive-constraint-report-16"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -6242,7 +6317,7 @@ cp_objectIdentifier =
     ((cp_model.placeNamePart | cp_idno | cp_objectName | cp_address)*)
     >> sch:pattern [
          id =
-           "cmc-proposal-objectIdentifier-objectIdentifier_minimal-constraint-report-16"
+           "cmc-proposal-objectIdentifier-objectIdentifier_minimal-constraint-report-17"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -6636,7 +6711,7 @@ cp_div =
       (cp_model.divBottom, cp_model.global*)*)?)
     >> sch:pattern [
          id =
-           "cmc-proposal-div-abstractModel-structure-l-constraint-report-17"
+           "cmc-proposal-div-abstractModel-structure-l-constraint-report-18"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -6657,7 +6732,7 @@ cp_div =
        ]
     >> sch:pattern [
          id =
-           "cmc-proposal-div-abstractModel-structure-p-constraint-report-18"
+           "cmc-proposal-div-abstractModel-structure-p-constraint-report-19"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -7362,7 +7437,13 @@ cp_tag =
     cp_att.typed.attribute.subtype,
     ## indicates the type of XML tag intended
     attribute type {
-      xsd:token { pattern = "[^\p{C}\p{Z}]+" }
+      ## a start-tag, with delimiters < and > is intended
+      "start" | ## an end-tag, with delimiters </ and > is intended
+        "end" | ## an empty tag, with delimiters < and /> is intended
+        "empty" | ## a pi (processing instruction), with delimiters <? and ?> is intended
+        "pi" | ## a comment, with delimiters <!-- and --> is intended
+        "comment" | ## a marked-section, with delimiters <[CDATA[ and ]]> is intended
+        "ms"
     }?,
     ## supplies the name of the schema in which this tag is defined.
     ## Sample values include: 1] TEI (text encoding initiative); 2] DBK (docbook); 3] XX (unknown); 4] Schematron; 5] HTML
@@ -7469,10 +7550,14 @@ cp_moduleRef =
          ]
          "\x{a}" ~
          "         "
-       ]
+       ],
+    cp_att.global.attributes,
+    (
+     ## specifies a default prefix which will be prepended to all patterns from the imported module
+     attribute prefix { xsd:NCName }?)
     >> sch:pattern [
          id =
-           "cmc-proposal-moduleRef-not-same-prefix-constraint-rule-21"
+           "cmc-proposal-moduleRef-prefix-not-same-prefix-constraint-rule-21"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -7483,10 +7568,10 @@ cp_moduleRef =
              test =
                "//*[ not( generate-id(.) eq generate-id(      current() ) ) ]/@prefix = @prefix"
              "The prefix attribute\x{a}" ~
-             "          of "
+             "	    of "
              sch:name [ ]
              " should not match that of any other\x{a}" ~
-             "          element (it would defeat the purpose)"
+             "	    element (it would defeat the purpose)"
            ]
            "\x{a}" ~
            "            "
@@ -7494,9 +7579,6 @@ cp_moduleRef =
          "\x{a}" ~
          "         "
        ],
-    cp_att.global.attributes,
-    ## specifies a default prefix which will be prepended to all patterns from the imported module
-    attribute prefix { xsd:NCName }?,
     (
      ## supplies a list of the elements which are to be copied from the specified module into the schema being defined.
      attribute include {
@@ -7964,7 +8046,7 @@ cp_modelSequence =
      (cp_model, cp_model, cp_model*))
     >> sch:pattern [
          id =
-           "cmc-proposal-modelSequence-no_outputs_nor_predicates_4_my_kids-constraint-report-23"
+           "cmc-proposal-modelSequence-no_outputs_nor_predicates_4_my_kids-constraint-report-24"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -8204,7 +8286,7 @@ cp_constraintSpec =
        ]
     >> sch:pattern [
          id =
-           "cmc-proposal-constraintSpec-sch_no_more-constraint-report-24"
+           "cmc-proposal-constraintSpec-sch_no_more-constraint-report-25"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -8230,7 +8312,7 @@ cp_constraintSpec =
          uri = "http://purl.oclc.org/dsdl/schematron"
        ]
     >> sch:pattern [
-         id = "cmc-proposal-constraintSpec-isosch-constraint-report-25"
+         id = "cmc-proposal-constraintSpec-isosch-constraint-report-26"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -8766,7 +8848,7 @@ cp_link =
 cp_linkGrp =
   ## (link group) defines a collection of associations or hypertextual links. [16.1. Links]
   element linkGrp {
-    (cp_link | cp_ptr)+,
+    (cp_model.descLike*, (cp_link | cp_ptr)+),
     cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.group.attributes,
@@ -8779,7 +8861,7 @@ cp_ab =
     cp_macro.paraContent
     >> sch:pattern [
          id =
-           "cmc-proposal-ab-abstractModel-structure-ab-constraint-report-31"
+           "cmc-proposal-ab-abstractModel-structure-ab-constraint-report-32"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -8801,7 +8883,7 @@ cp_ab =
        ]
     >> sch:pattern [
          id =
-           "cmc-proposal-ab-abstractModel-structure-l-constraint-report-32"
+           "cmc-proposal-ab-abstractModel-structure-l-constraint-report-33"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -9001,7 +9083,7 @@ cp_joinGrp =
     ]
   ]
   element joinGrp {
-    ((cp_equiv | cp_gloss)*, (cp_join | cp_ptr)+),
+    ((cp_equiv | cp_gloss | cp_model.descLike)*, (cp_join | cp_ptr)+),
     cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.group.attributes,
@@ -9060,7 +9142,7 @@ cp_altGrp =
     ]
   ]
   element altGrp {
-    (cp_alt | cp_ptr)*,
+    (cp_model.descLike*, (cp_alt | cp_ptr)*),
     cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.pointing.group.attributes,
@@ -9269,7 +9351,7 @@ cp_s =
   element s {
     cp_macro.phraseSeq
     >> sch:pattern [
-         id = "cmc-proposal-s-noNestedS-constraint-report-33"
+         id = "cmc-proposal-s-noNestedS-constraint-report-34"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -9406,7 +9488,7 @@ cp_span =
   element span {
     cp_macro.phraseSeq.limited
     >> sch:pattern [
-         id = "cmc-proposal-span-targetfrom-constraint-report-34"
+         id = "cmc-proposal-span-targetfrom-constraint-report-35"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -9428,7 +9510,7 @@ cp_span =
          "         "
        ]
     >> sch:pattern [
-         id = "cmc-proposal-span-targetto-constraint-report-35"
+         id = "cmc-proposal-span-targetto-constraint-report-36"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -9450,7 +9532,7 @@ cp_span =
          "         "
        ]
     >> sch:pattern [
-         id = "cmc-proposal-span-tonotfrom-constraint-report-36"
+         id = "cmc-proposal-span-tonotfrom-constraint-report-37"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -9471,7 +9553,7 @@ cp_span =
          "         "
        ]
     >> sch:pattern [
-         id = "cmc-proposal-span-tofrom-constraint-report-37"
+         id = "cmc-proposal-span-tofrom-constraint-report-38"
          "\x{a}" ~
          "            "
          sch:rule [
@@ -9518,7 +9600,7 @@ cp_span =
 cp_spanGrp =
   ## (span group) collects together span tags. [17.3. Spans and Interpretations]
   element spanGrp {
-    cp_span*,
+    (cp_model.descLike*, cp_span*),
     cp_att.CMC.attributes,
     cp_att.global.attributes,
     cp_att.interpLike.attribute.inst,
@@ -9690,10 +9772,12 @@ cp_post =
     cp_att.timed.attributes,
     cp_att.typed.attributes,
     ## written or spoken mode
+    ## Suggested values include: 1] written; 2] spoken (post is spoken, e.g. audio recording)
     attribute modality {
       ## post is written, e.g. Unicode text
       "written" | ## (post is spoken, e.g. audio recording) 
         "spoken"
+      | xsd:token { pattern = "[^\p{C}\p{Z}]+" }
     },
     ## indicates to which previous post the current post replies or refers to. This attribute should be used to encode "technical" reply information, i.e. which is due to a formal reply action (such as activating a "reply" button in the client software) and which is also formally represented in the source, e.g. in the "references" field of an email or Usenet message header. It should rather not be used for inferred, or interpreted reply relations such as based on linguistic discourse markers, nor for the indentation relations in Wiki talk pages. See Lüngen/Herzberg (2019).
     attribute replyTo {
