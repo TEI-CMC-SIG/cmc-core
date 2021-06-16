@@ -40,40 +40,48 @@
     </encodingDesc>
     
     <revisionDesc>
+      <change when="2021-06-16" who="#SB">
+        Per today’s meeting, added an explicit <gi>datatype</gi> and
+        paragraph of <gi>remarks</gi> for <att>modality</att>. Also
+        added were some comments that reflected some of our thoughts
+        on the subject. These comments were checked-in to git for
+        posterity, but then removed so as not to confuse future
+        readers.
+      </change>
       <change when="2021-03-05" who="#SB">
-	Per today’s meeting:
-	<list>
-	  <item>rename <att>creation</att> to <att>generatedBy</att></item>
-	  <item>change <name type="class">att.global.CMC</name> to <name
-	  type="class">att.CMC</name>, making <gi>post</gi> and every
-	  element that can be a child of post that is <emph>not</emph>
-	  from <name type="module">tagdocs</name> a member of it. (We
-	  have deferred the decision as to whether
-	  <att>generatedBy</att> should be global or not to the full
-	  Council, but figure it is easier for them to imagine
-	  globalness then the restricted version.)</item>
-	  <item>added a <gi>divGen</gi> for the table of contents</item>
-	  <item>moved the <gi>moduleSpec</gi> for <name
-	  type="module">cmc</name> to the portion of this document that
-	  represents the new chapter of the Guidelines.</item>
-	</list>
+        Per today’s meeting:
+        <list>
+          <item>rename <att>creation</att> to <att>generatedBy</att></item>
+          <item>change <name type="class">att.global.CMC</name> to <name
+          type="class">att.CMC</name>, making <gi>post</gi> and every
+          element that can be a child of post that is <emph>not</emph>
+          from <name type="module">tagdocs</name> a member of it. (We
+          have deferred the decision as to whether
+          <att>generatedBy</att> should be global or not to the full
+          Council, but figure it is easier for them to imagine
+          globalness then the restricted version.)</item>
+          <item>added a <gi>divGen</gi> for the table of contents</item>
+          <item>moved the <gi>moduleSpec</gi> for <name
+          type="module">cmc</name> to the portion of this document that
+          represents the new chapter of the Guidelines.</item>
+        </list>
       </change>
       <change when="2021-03-04" who="#SB">
-	Per meeting of <date when="2021-02-05"/> make <gi>post</gi> a
-	member of model.CMC (instead of model.divPart.cmc), and make
-	that model a member of model.common and <gi>quote</gi>.
-	However, the content of <gi>quote</gi> is a macro, so had to
-	make a new macro (<name
-	type="class">macro.specialPara.cmc</name>) for the purpose.
+        Per meeting of <date when="2021-02-05"/> make <gi>post</gi> a
+        member of model.CMC (instead of model.divPart.cmc), and make
+        that model a member of model.common and <gi>quote</gi>.
+        However, the content of <gi>quote</gi> is a macro, so had to
+        make a new macro (<name
+        type="class">macro.specialPara.cmc</name>) for the purpose.
       </change>
       <change when="2021-02-10" who="#SB">
-	Per CMC group changed <att>mode</att> to
-	<att>modality</att>.
+        Per CMC group changed <att>mode</att> to
+        <att>modality</att>.
       </change>
       <change when="2020-12-11" who="#SB">
-	Re-worked cmc-core.odd into a structured proposal per our
-	meeting of <date when="2020-12-04"/>, creating this
-	ODD.
+        Re-worked cmc-core.odd into a structured proposal per our
+        meeting of <date when="2020-12-04"/>, creating this
+        ODD.
       </change>
     </revisionDesc>
   </teiHeader>
@@ -243,9 +251,9 @@
         <div type="mods_for" xml:id="DS" n="7">
           <head>Default Text Structure</head>
           <!-- None yet -->
-	  <!-- May need a paragraph differentiating <div> from <post>
-	       and referring the reader to the <post> portion of
-	       chapter CM. -->
+          <!-- May need a paragraph differentiating <div> from <post>
+               and referring the reader to the <post> portion of
+               chapter CM. -->
         </div>
         <div type="mods_for" xml:id="WD" n="25">
           <head>Characters, Glyphs, and Writing Modes</head>
@@ -265,20 +273,20 @@
         </div>
         <div type="added_chapter" xml:id="CM">
           <head>Computer-mediated Communication</head>
-	  <!--
-	      NEW CHAPTER GOES HERE (per CMC SIG and Council sub-group)
-	      Prose being developed in separate document:
-	      https://docs.google.com/document/d/18zRRX-oR0Te9es9MJH8oq9MdWuhAU8eKSsF8M6Roqdc/edit?usp=sharing
-	  -->
-	  <moduleSpec ident="cmc">
-	    <desc xml:lang="en">Elements, attributes, and classes for computer-mediated
-	    communication (CMC). This module collects all cmc-specific extensions. Hence
-	    these will only be added to a TEI schema when this module is selected in a
-	    customisation.</desc>
-	    <altIdent>TEI-CMC</altIdent>
-	    <altIdent xml:lang="en">Computer-Mediated Communication</altIdent>
-	  </moduleSpec>
-	</div>
+          <!--
+              NEW CHAPTER GOES HERE (per CMC SIG and Council sub-group)
+              Prose being developed in separate document:
+              https://docs.google.com/document/d/18zRRX-oR0Te9es9MJH8oq9MdWuhAU8eKSsF8M6Roqdc/edit?usp=sharing
+          -->
+          <moduleSpec ident="cmc">
+            <desc xml:lang="en">Elements, attributes, and classes for computer-mediated
+            communication (CMC). This module collects all cmc-specific extensions. Hence
+            these will only be added to a TEI schema when this module is selected in a
+            customisation.</desc>
+            <altIdent>TEI-CMC</altIdent>
+            <altIdent xml:lang="en">Computer-Mediated Communication</altIdent>
+          </moduleSpec>
+        </div>
         <div type="mods_for" xml:id="DI" n="12">
           <head>Dictionaries</head>
           <!-- None yet -->
@@ -308,9 +316,9 @@
         <div type="mods_for" xml:id="CC" n="23">
           <head>Language Corpora</head>
           <!-- None yet -->
-	  <!-- May need a paragraph that says, essentially “For a
-	       corpus of born-digital assets, consider the markup
-	       provided by chapter CM.” -->
+          <!-- May need a paragraph that says, essentially “For a
+               corpus of born-digital assets, consider the markup
+               provided by chapter CM.” -->
         </div>
         <div type="mods_for" xml:id="SA" n="14">
           <head>Linking, Segmentation, and Alignment</head>
@@ -370,8 +378,8 @@
         <div type="mods_for" xml:id="BIB" n="">
           <head>Bibliography</head>
           <!-- None yet -->
-	  <!-- Probably want 2 or 3 of the “REFERENCES” above to be in
-	       the “Reading List” portion. -->
+          <!-- Probably want 2 or 3 of the “REFERENCES” above to be in
+               the “Reading List” portion. -->
         </div>
         <div type="mods_for" xml:id="DEPRECATIONS" n="">
           <head>Deprecations</head>
@@ -438,7 +446,7 @@
           <classes>
             <memberOf key="model.CMC" />
             <memberOf key="att.global" />
-	    <memberOf key="att.CMC" />
+            <memberOf key="att.CMC" />
             <memberOf key="att.ascribed" />
             <memberOf key="att.canonical" />
             <memberOf key="att.datable" />
@@ -464,14 +472,44 @@
           <attList>
             <attDef ident="modality" usage="req" mode="add">
               <desc xml:lang="en">written or spoken mode</desc>
-              <valList xml:lang="en" type="closed">
+              <datatype minOccurs="1" maxOccurs="1">
+                <dataRef key="teidata.enumerated"/>
+              </datatype>
+              <valList xml:lang="en" type="semi">
                 <valItem ident="written">
                   <desc xml:lang="en">post is written, e.g. Unicode text</desc>
                 </valItem>
                 <valItem ident="spoken">
                   <gloss xml:lang="en">post is spoken, e.g. audio recording</gloss>
                 </valItem>
+                <!-- <valItem ident="image"> -->
+                <!--   <desc xml:lang="en">post is an image (which may include writing)</desc> -->
+                <!-- </valItem> -->
+                <!-- <valItem ident="video"> -->
+                <!--   <desc xml:lang="en">post is of a (silent) video clip or moving image</desc> -->
+                <!-- </valItem> -->
+                <!-- <valItem ident="audio"> -->
+                <!--   <desc xml:lang="en">post is of an audio or sound recording</desc> -->
+                <!-- </valItem> -->
+                <!-- <valItem ident="audio-visual"> -->
+                <!--   <desc xml:lang="en">post is of a video clip with sound</desc> -->
+                <!-- </valItem> -->
               </valList>
+              <remarks>
+                <p>This attribute is intended to convey information
+                about the CMC environment in which the post was
+                created, as opposed to the MIME type of the content
+                conveyed, which is indicated by the elements contained
+                within the <gi>post</gi>.</p>
+                <!-- <p>The <val>spoken</val> value implies an audio -->
+                <!-- recording <emph>of the person posting</emph>, whereas -->
+                <!-- the value <val>audio</val> implies a recording of a -->
+                <!-- third party or parties or other sound, that is not a -->
+                <!-- direct communication from the person posting.</p> -->
+                <!-- <p>While a variety of values are available, it is -->
+                <!-- worth noting that many extant corpora of CMC use only -->
+                <!-- the values <val>written</val> and <val>spoken</val>.</p> -->
+              </remarks>
             </attDef>
             <attDef ident="replyTo" mode="add">
               <desc>indicates to which previous post the current post replies or
@@ -629,66 +667,66 @@
             </egXML>
           </exemplum>
           <remarks>
-	    <p>Even though in some CMC genres (e.g., WhatsApp), the
-	    other parties are informed by an automated alert about the
-	    fact that another party is currently composing a new post,
-	    they cannot track the process of verbalization, i.e. how
-	    the written utterance emerges in the entry form on the
-	    user interface of its author. It is not until the author
-	    performs a ‘posting’ action (e.g., by hitting the ‘enter’
-	    key or by activating a ‘send’ button with the mouse) that
-	    the result of the composition process - the post - is made
-	    available for the other parties. From the perspective of
-	    its addressees/readers, a post is a stretch of text that
-	    has been composed in advance. Different from spoken
-	    utterances but similar to edited text, (1) the reader of a
-	    post does not have access to the verbalization process and
-	    (2) the mental processing of a post is not possible until
-	    the process of verbalization (the composition) has been
-	    finished and the posting action has been performed by the
-	    author. Posts occur in a broad range of written CMC
-	    genres: as user ‘messages’ in chats and WhatsApp
-	    dialogues, as SMS messages, as tweets in Twitter
-	    timelines, as individual comments following a status
-	    update on Facebook pages, as posts in forum threads, as
-	    contributions on Wikipedia talk pages or in the comments
-	    section of a weblog. [Element adopted from the <ref
-	    target="#TEIcmc2012">DeRiK schema</ref>. Aspects of the
-	    model adopted from the <ref target="#descmr">CoMeRe
-	    Schema</ref>]. The <gi>post</gi> element is a member of
-	    the model class model.common (via model.CMC). This allows
-	    for using (and combining) occurrences of <gi>post</gi>,
-	    <gi>u</gi>, <gi>incident</gi>, and <gi>kinesic</gi>in one
-	    and the same <gi>div</gi> in order to be able to represent
-	    the combined use of written and spoken utterances and
-	    nonverbal acts on the GUI of multimodal CMC
-	    environments.</p>
-	    <p>The attribute <att>modality</att> for post is required,
-	    its value is either written or spoken. The content model
-	    of a <gi>post</gi> <att>modality</att>=<val>spoken</val>
-	    should be macro.paraContent, i.e. the same as the one for
-	    <gi>u</gi>. The content model of a <gi>post</gi>
-	    <att>modality</att>=<val>written</val> should be like the
-	    one from Chat2CLARIN, i,e, similar to the one for
-	    <gi>div</gi>. However this co-occurrence constraint
-	    between the values of <att>modality</att> and the content
-	    models cannot be expressed in ODD code. It could be
-	    expressed in pure RNG code, but so far we have refrained
-	    from doing so, because it is ignored by the ODD2HTML
-	    stylesheets.</p>
-	    <p>References: <!--bibl>Lüngen, Harald, and Herzberg,
-	    Laura (2018): Reply relations in CMC: Types and
-	    annotation. In: <ref
-	    target="https://www.uantwerpen.be/images/uantwerpen/container49896/files/proceedings_CMCcorpora2018.pdf"
-	    > >Proceedings of the 6th Conference on Computer-Mediated
-	    Communication (CMC) and Social Media Corpora (CMC-corpora
-	    2018) 17-18 September 2018, University of
-	    Antwerp</ref></bibl--> <bibl>Lüngen, Harald, and Herzberg,
-	    Laura (2019): Types and annotation of reply relations in
-	    computer-mediated communication In <ref
-	    target="https://doi.org/10.1515/eujal-2019-0006">European
-	    Journal of Applied Linguistics, Vol.7(2),</ref>
-	    pp.305-331.</bibl>
+            <p>Even though in some CMC genres (e.g., WhatsApp), the
+            other parties are informed by an automated alert about the
+            fact that another party is currently composing a new post,
+            they cannot track the process of verbalization, i.e. how
+            the written utterance emerges in the entry form on the
+            user interface of its author. It is not until the author
+            performs a ‘posting’ action (e.g., by hitting the ‘enter’
+            key or by activating a ‘send’ button with the mouse) that
+            the result of the composition process - the post - is made
+            available for the other parties. From the perspective of
+            its addressees/readers, a post is a stretch of text that
+            has been composed in advance. Different from spoken
+            utterances but similar to edited text, (1) the reader of a
+            post does not have access to the verbalization process and
+            (2) the mental processing of a post is not possible until
+            the process of verbalization (the composition) has been
+            finished and the posting action has been performed by the
+            author. Posts occur in a broad range of written CMC
+            genres: as user ‘messages’ in chats and WhatsApp
+            dialogues, as SMS messages, as tweets in Twitter
+            timelines, as individual comments following a status
+            update on Facebook pages, as posts in forum threads, as
+            contributions on Wikipedia talk pages or in the comments
+            section of a weblog. [Element adopted from the <ref
+            target="#TEIcmc2012">DeRiK schema</ref>. Aspects of the
+            model adopted from the <ref target="#descmr">CoMeRe
+            Schema</ref>]. The <gi>post</gi> element is a member of
+            the model class model.common (via model.CMC). This allows
+            for using (and combining) occurrences of <gi>post</gi>,
+            <gi>u</gi>, <gi>incident</gi>, and <gi>kinesic</gi>in one
+            and the same <gi>div</gi> in order to be able to represent
+            the combined use of written and spoken utterances and
+            nonverbal acts on the GUI of multimodal CMC
+            environments.</p>
+            <p>The attribute <att>modality</att> for post is required,
+            its value is either written or spoken. The content model
+            of a <gi>post</gi> <att>modality</att>=<val>spoken</val>
+            should be macro.paraContent, i.e. the same as the one for
+            <gi>u</gi>. The content model of a <gi>post</gi>
+            <att>modality</att>=<val>written</val> should be like the
+            one from Chat2CLARIN, i,e, similar to the one for
+            <gi>div</gi>. However this co-occurrence constraint
+            between the values of <att>modality</att> and the content
+            models cannot be expressed in ODD code. It could be
+            expressed in pure RNG code, but so far we have refrained
+            from doing so, because it is ignored by the ODD2HTML
+            stylesheets.</p>
+            <p>References: <!--bibl>Lüngen, Harald, and Herzberg,
+            Laura (2018): Reply relations in CMC: Types and
+            annotation. In: <ref
+            target="https://www.uantwerpen.be/images/uantwerpen/container49896/files/proceedings_CMCcorpora2018.pdf"
+            > >Proceedings of the 6th Conference on Computer-Mediated
+            Communication (CMC) and Social Media Corpora (CMC-corpora
+            2018) 17-18 September 2018, University of
+            Antwerp</ref></bibl--> <bibl>Lüngen, Harald, and Herzberg,
+            Laura (2019): Types and annotation of reply relations in
+            computer-mediated communication In <ref
+            target="https://doi.org/10.1515/eujal-2019-0006">European
+            Journal of Applied Linguistics, Vol.7(2),</ref>
+            pp.305-331.</bibl>
             </p>
           </remarks>
         </elementSpec>
@@ -699,863 +737,863 @@
           </content>
         </elementSpec>
 
-	<elementSpec ident="c" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="cl" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="interp" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="interpGrp" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="m" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="pc" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="phr" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="s" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="span" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="spanGrp" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="w" module="analysis" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="abbr" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="add" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="address" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="bibl" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="biblStruct" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="binaryObject" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="cb" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="choice" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="cit" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="corr" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="date" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="del" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="desc" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="distinct" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="email" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="emph" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="expan" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="foreign" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="gap" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="gb" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="gloss" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="graphic" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="head" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="hi" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="index" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="l" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="label" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="lb" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="lg" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="list" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listBibl" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="measure" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="measureGrp" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="media" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="meeting" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="mentioned" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="milestone" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="name" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="note" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="noteGrp" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="num" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="orig" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="p" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="pb" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="ptr" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="q" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="quote" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="ref" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="reg" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="rs" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="ruby" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="said" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="sic" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="soCalled" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="stage" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="term" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="time" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="title" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="unclear" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="unit" module="core" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="figure" module="figures" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="formula" module="figures" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="notatedMusic" module="figures" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="table" module="figures" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="biblFull" module="header" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="idno" module="header" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="fLib" module="iso-fs" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="fs" module="iso-fs" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="fvLib" module="iso-fs" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="ab" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="alt" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="altGrp" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="anchor" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="join" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="joinGrp" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="link" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="linkGrp" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="seg" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="timeline" module="linking" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="addName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="affiliation" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="bloc" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="climate" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="country" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="district" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="forename" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="genName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="geo" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="geogFeat" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="geogName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listEvent" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listNym" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listObject" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listOrg" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listPerson" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listPlace" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="listRelation" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="location" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="nameLink" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="objectName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="offset" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="orgName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="persName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="persPronouns" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="placeName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="population" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="region" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="roleName" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="settlement" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="state" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="surname" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="terrain" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="trait" module="namesdates" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="incident" module="spoken" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="kinesic" module="spoken" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="pause" module="spoken" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="shift" module="spoken" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="vocal" module="spoken" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="writing" module="spoken" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="argument" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="byline" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="closer" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="dateline" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="docAuthor" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="docDate" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="epigraph" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="floatingText" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="opener" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="postscript" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="salute" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="signed" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
-
-	<elementSpec ident="trailer" module="textstructure" mode="change">
-	  <classes mode="change">
-	    <memberOf key="att.CMC" mode="add"/>
-	  </classes>
-	</elementSpec>
+        <elementSpec ident="c" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="cl" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="interp" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="interpGrp" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="m" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="pc" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="phr" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="s" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="span" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="spanGrp" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="w" module="analysis" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="abbr" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="add" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="address" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="bibl" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="biblStruct" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="binaryObject" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="cb" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="choice" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="cit" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="corr" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="date" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="del" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="desc" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="distinct" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="email" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="emph" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="expan" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="foreign" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="gap" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="gb" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="gloss" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="graphic" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="head" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="hi" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="index" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="l" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="label" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="lb" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="lg" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="list" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listBibl" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="measure" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="measureGrp" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="media" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="meeting" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="mentioned" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="milestone" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="name" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="note" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="noteGrp" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="num" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="orig" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="p" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="pb" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="ptr" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="q" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="quote" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="ref" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="reg" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="rs" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="ruby" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="said" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="sic" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="soCalled" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="stage" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="term" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="time" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="title" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="unclear" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="unit" module="core" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="figure" module="figures" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="formula" module="figures" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="notatedMusic" module="figures" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="table" module="figures" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="biblFull" module="header" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="idno" module="header" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="fLib" module="iso-fs" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="fs" module="iso-fs" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="fvLib" module="iso-fs" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="ab" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="alt" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="altGrp" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="anchor" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="join" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="joinGrp" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="link" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="linkGrp" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="seg" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="timeline" module="linking" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="addName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="affiliation" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="bloc" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="climate" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="country" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="district" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="forename" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="genName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="geo" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="geogFeat" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="geogName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listEvent" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listNym" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listObject" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listOrg" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listPerson" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listPlace" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="listRelation" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="location" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="nameLink" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="objectName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="offset" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="orgName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="persName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="persPronouns" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="placeName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="population" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="region" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="roleName" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="settlement" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="state" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="surname" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="terrain" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="trait" module="namesdates" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="incident" module="spoken" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="kinesic" module="spoken" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="pause" module="spoken" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="shift" module="spoken" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="vocal" module="spoken" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="writing" module="spoken" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="argument" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="byline" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="closer" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="dateline" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="docAuthor" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="docDate" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="epigraph" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="floatingText" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="opener" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="postscript" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="salute" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="signed" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="trailer" module="textstructure" mode="change">
+          <classes mode="change">
+            <memberOf key="att.CMC" mode="add"/>
+          </classes>
+        </elementSpec>
 
 
         <!--    M A C R O    S P E C S     -->
@@ -1592,7 +1630,7 @@
           the element content was created in a CMC environment.</desc>
           <attList>
             <attDef ident="generatedBy" mode="add" module="cmc" usage="opt">
-	      <gloss xml:lang="en">generated by</gloss>
+              <gloss xml:lang="en">generated by</gloss>
               <desc>Marks how the content of the respective element was generated in a
               CMC environment.</desc>
               <datatype minOccurs="1" maxOccurs="1">
@@ -1653,8 +1691,8 @@
                   <post type="event" creation="system" rend="color:red">
                     <p>
                       <name type="nickname" corresp="#A08">c_bo</name> hat die
-		      Farbe gewechselt.
-		    </p>
+                      Farbe gewechselt.
+                    </p>
                   </post>
                 </egXML>
               </exemplum>
